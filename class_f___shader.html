@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Shader类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_f___shader-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Shader类 参考<div class="ingroups"><a class="el" href="group___shader.html">着色器模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供着色器的加载、设置和管理功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_f___shader_8h_source.html">F_Shader.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a049da29b492e52a44d5872a5ff78b925" id="r_a049da29b492e52a44d5872a5ff78b925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049da29b492e52a44d5872a5ff78b925">F_Shader</a> ()</td></tr>
+<tr class="memdesc:a049da29b492e52a44d5872a5ff78b925"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="separator:a049da29b492e52a44d5872a5ff78b925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed979d75e979ed7943edab59d584379" id="r_a6ed979d75e979ed7943edab59d584379"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ed979d75e979ed7943edab59d584379">F_Shader</a> (const Shader &amp;shader)</td></tr>
+<tr class="memdesc:a6ed979d75e979ed7943edab59d584379"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a6ed979d75e979ed7943edab59d584379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90da8ac33b85f6474d5e7e4fc3dc646" id="r_af90da8ac33b85f6474d5e7e4fc3dc646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af90da8ac33b85f6474d5e7e4fc3dc646">LoadFromFile</a> (const char *vs, const char *fs)</td></tr>
+<tr class="memdesc:af90da8ac33b85f6474d5e7e4fc3dc646"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件加载着色器  <br /></td></tr>
+<tr class="separator:af90da8ac33b85f6474d5e7e4fc3dc646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601bae80738093a6c1395d9f7db8b94e" id="r_a601bae80738093a6c1395d9f7db8b94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601bae80738093a6c1395d9f7db8b94e">LoadFromCode</a> (const char *vs, const char *fs)</td></tr>
+<tr class="memdesc:a601bae80738093a6c1395d9f7db8b94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从代码加载着色器  <br /></td></tr>
+<tr class="separator:a601bae80738093a6c1395d9f7db8b94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3508ce0a58f799e822b9eea427ae168f" id="r_a3508ce0a58f799e822b9eea427ae168f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3508ce0a58f799e822b9eea427ae168f">SetValue</a> (const char *name, const void *value, int type)</td></tr>
+<tr class="memdesc:a3508ce0a58f799e822b9eea427ae168f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置着色器参数  <br /></td></tr>
+<tr class="separator:a3508ce0a58f799e822b9eea427ae168f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7da4ea10d53eaa457aa5741b044914f" id="r_ac7da4ea10d53eaa457aa5741b044914f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7da4ea10d53eaa457aa5741b044914f">SetValueTexture</a> (const char *name, Texture texture)</td></tr>
+<tr class="memdesc:ac7da4ea10d53eaa457aa5741b044914f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纹理参数  <br /></td></tr>
+<tr class="separator:ac7da4ea10d53eaa457aa5741b044914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59fca97692b3da99b6fd2005156f34a" id="r_ad59fca97692b3da99b6fd2005156f34a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59fca97692b3da99b6fd2005156f34a">SetrValueMatrix</a> (const char *name, Matrix mat)</td></tr>
+<tr class="memdesc:ad59fca97692b3da99b6fd2005156f34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置矩阵参数  <br /></td></tr>
+<tr class="separator:ad59fca97692b3da99b6fd2005156f34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63dcb611844796250a47f3db82c06603" id="r_a63dcb611844796250a47f3db82c06603"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63dcb611844796250a47f3db82c06603">GetLoc</a> (const char *name)</td></tr>
+<tr class="memdesc:a63dcb611844796250a47f3db82c06603"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取参数位置  <br /></td></tr>
+<tr class="separator:a63dcb611844796250a47f3db82c06603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60e94b0c8df668d4c0d9f386963b9c5" id="r_af60e94b0c8df668d4c0d9f386963b9c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af60e94b0c8df668d4c0d9f386963b9c5">Unload</a> ()</td></tr>
+<tr class="memdesc:af60e94b0c8df668d4c0d9f386963b9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载着色器  <br /></td></tr>
+<tr class="separator:af60e94b0c8df668d4c0d9f386963b9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a4221d932ecfd1d79d7d484bc32271" id="r_ad1a4221d932ecfd1d79d7d484bc32271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a4221d932ecfd1d79d7d484bc32271">Begin</a> ()</td></tr>
+<tr class="memdesc:ad1a4221d932ecfd1d79d7d484bc32271"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始使用着色器  <br /></td></tr>
+<tr class="separator:ad1a4221d932ecfd1d79d7d484bc32271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc07fa764e429f2ff250cb113e35f2de" id="r_adc07fa764e429f2ff250cb113e35f2de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc07fa764e429f2ff250cb113e35f2de">End</a> ()</td></tr>
+<tr class="memdesc:adc07fa764e429f2ff250cb113e35f2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束使用着色器  <br /></td></tr>
+<tr class="separator:adc07fa764e429f2ff250cb113e35f2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供着色器的加载、设置和管理功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a049da29b492e52a44d5872a5ff78b925">F_Shader</a> shader;</div>
+<div class="line">shader.<a class="code hl_function" href="#af90da8ac33b85f6474d5e7e4fc3dc646">LoadFromFile</a>(<span class="stringliteral">&quot;vertex.vs&quot;</span>, <span class="stringliteral">&quot;fragment.fs&quot;</span>);</div>
+<div class="line">shader.<a class="code hl_function" href="#ad1a4221d932ecfd1d79d7d484bc32271">Begin</a>();</div>
+<div class="line"><span class="comment">// 设置着色器参数</span></div>
+<div class="line">shader.<a class="code hl_function" href="#adc07fa764e429f2ff250cb113e35f2de">End</a>();</div>
+<div class="ttc" id="aclass_f___shader_html_a049da29b492e52a44d5872a5ff78b925"><div class="ttname"><a href="#a049da29b492e52a44d5872a5ff78b925">F_Shader::F_Shader</a></div><div class="ttdeci">F_Shader()</div><div class="ttdoc">默认构造函数</div></div>
+<div class="ttc" id="aclass_f___shader_html_ad1a4221d932ecfd1d79d7d484bc32271"><div class="ttname"><a href="#ad1a4221d932ecfd1d79d7d484bc32271">F_Shader::Begin</a></div><div class="ttdeci">void Begin()</div><div class="ttdoc">开始使用着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_adc07fa764e429f2ff250cb113e35f2de"><div class="ttname"><a href="#adc07fa764e429f2ff250cb113e35f2de">F_Shader::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">结束使用着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_af90da8ac33b85f6474d5e7e4fc3dc646"><div class="ttname"><a href="#af90da8ac33b85f6474d5e7e4fc3dc646">F_Shader::LoadFromFile</a></div><div class="ttdeci">void LoadFromFile(const char *vs, const char *fs)</div><div class="ttdoc">从文件加载着色器</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a049da29b492e52a44d5872a5ff78b925" name="a049da29b492e52a44d5872a5ff78b925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049da29b492e52a44d5872a5ff78b925">&#9670;&#160;</a></span>F_Shader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Shader::F_Shader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a id="a6ed979d75e979ed7943edab59d584379" name="a6ed979d75e979ed7943edab59d584379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed979d75e979ed7943edab59d584379">&#9670;&#160;</a></span>F_Shader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Shader::F_Shader </td>
+          <td>(</td>
+          <td class="paramtype">const Shader &amp;</td>          <td class="paramname"><span class="paramname"><em>shader</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td>着色器对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad1a4221d932ecfd1d79d7d484bc32271" name="ad1a4221d932ecfd1d79d7d484bc32271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a4221d932ecfd1d79d7d484bc32271">&#9670;&#160;</a></span>Begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::Begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始使用着色器 </p>
+
+</div>
+</div>
+<a id="adc07fa764e429f2ff250cb113e35f2de" name="adc07fa764e429f2ff250cb113e35f2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc07fa764e429f2ff250cb113e35f2de">&#9670;&#160;</a></span>End()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::End </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束使用着色器 </p>
+
+</div>
+</div>
+<a id="a63dcb611844796250a47f3db82c06603" name="a63dcb611844796250a47f3db82c06603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63dcb611844796250a47f3db82c06603">&#9670;&#160;</a></span>GetLoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F_Shader::GetLoc </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取参数位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>参数名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数位置 </dd></dl>
+
+</div>
+</div>
+<a id="a601bae80738093a6c1395d9f7db8b94e" name="a601bae80738093a6c1395d9f7db8b94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601bae80738093a6c1395d9f7db8b94e">&#9670;&#160;</a></span>LoadFromCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::LoadFromCode </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>vs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从代码加载着色器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vs</td><td>顶点着色器代码 </td></tr>
+    <tr><td class="paramname">fs</td><td>片段着色器代码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af90da8ac33b85f6474d5e7e4fc3dc646" name="af90da8ac33b85f6474d5e7e4fc3dc646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90da8ac33b85f6474d5e7e4fc3dc646">&#9670;&#160;</a></span>LoadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::LoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>vs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从文件加载着色器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vs</td><td>顶点着色器文件路径 </td></tr>
+    <tr><td class="paramname">fs</td><td>片段着色器文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad59fca97692b3da99b6fd2005156f34a" name="ad59fca97692b3da99b6fd2005156f34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59fca97692b3da99b6fd2005156f34a">&#9670;&#160;</a></span>SetrValueMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::SetrValueMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix</td>          <td class="paramname"><span class="paramname"><em>mat</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置矩阵参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>参数名称 </td></tr>
+    <tr><td class="paramname">mat</td><td>矩阵对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3508ce0a58f799e822b9eea427ae168f" name="a3508ce0a58f799e822b9eea427ae168f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3508ce0a58f799e822b9eea427ae168f">&#9670;&#160;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置着色器参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>参数名称 </td></tr>
+    <tr><td class="paramname">value</td><td>参数值 </td></tr>
+    <tr><td class="paramname">type</td><td>参数类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7da4ea10d53eaa457aa5741b044914f" name="ac7da4ea10d53eaa457aa5741b044914f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7da4ea10d53eaa457aa5741b044914f">&#9670;&#160;</a></span>SetValueTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::SetValueTexture </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Texture</td>          <td class="paramname"><span class="paramname"><em>texture</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置纹理参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>参数名称 </td></tr>
+    <tr><td class="paramname">texture</td><td>纹理对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af60e94b0c8df668d4c0d9f386963b9c5" name="af60e94b0c8df668d4c0d9f386963b9c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60e94b0c8df668d4c0d9f386963b9c5">&#9670;&#160;</a></span>Unload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Shader::Unload </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>卸载着色器 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_f___shader_8h_source.html">F_Shader.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

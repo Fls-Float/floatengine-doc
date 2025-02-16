@@ -1,0 +1,886 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Resource类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_f___resource-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Resource类 参考<div class="ingroups"><a class="el" href="group___resource.html">资源模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供资源的加载、管理和卸载功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_f___resource_8h_source.html">F_Resource.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5c26e5aaddac5f71dbcd6f13b196f2c6" id="r_a5c26e5aaddac5f71dbcd6f13b196f2c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource</a> ()</td></tr>
+<tr class="memdesc:a5c26e5aaddac5f71dbcd6f13b196f2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a5c26e5aaddac5f71dbcd6f13b196f2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bb10f2504e91c024a6143c4c4443ac" id="r_a40bb10f2504e91c024a6143c4c4443ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40bb10f2504e91c024a6143c4c4443ac">~F_Resource</a> ()</td></tr>
+<tr class="memdesc:a40bb10f2504e91c024a6143c4c4443ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a40bb10f2504e91c024a6143c4c4443ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40da082f757652e8d46be73da070730e" id="r_a40da082f757652e8d46be73da070730e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40da082f757652e8d46be73da070730e">SetZipPath</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a40da082f757652e8d46be73da070730e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置zip路径  <br /></td></tr>
+<tr class="separator:a40da082f757652e8d46be73da070730e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3b9a702966621e23df561d1a5bf396" id="r_aed3b9a702966621e23df561d1a5bf396"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed3b9a702966621e23df561d1a5bf396">SetPassword</a> (const char *password)</td></tr>
+<tr class="memdesc:aed3b9a702966621e23df561d1a5bf396"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置压缩包密码  <br /></td></tr>
+<tr class="separator:aed3b9a702966621e23df561d1a5bf396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c7491bfbd54a08112f7c4900316105" id="r_a99c7491bfbd54a08112f7c4900316105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c7491bfbd54a08112f7c4900316105">NoPassword</a> ()</td></tr>
+<tr class="memdesc:a99c7491bfbd54a08112f7c4900316105"><td class="mdescLeft">&#160;</td><td class="mdescRight">不使用密码  <br /></td></tr>
+<tr class="separator:a99c7491bfbd54a08112f7c4900316105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9def8cac5e627c6964d4960e9c6642b" id="r_ae9def8cac5e627c6964d4960e9c6642b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9def8cac5e627c6964d4960e9c6642b">Setup</a> (const std::string &amp;path, const char *password=&quot;&quot;, bool _has_password=0)</td></tr>
+<tr class="memdesc:ae9def8cac5e627c6964d4960e9c6642b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置压缩包  <br /></td></tr>
+<tr class="separator:ae9def8cac5e627c6964d4960e9c6642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd5cccda8aa090acef0e208d47b390f" id="r_a7cd5cccda8aa090acef0e208d47b390f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cd5cccda8aa090acef0e208d47b390f">LoadResource</a> (const std::string &amp;path, const std::string &amp;id, <a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type)</td></tr>
+<tr class="memdesc:a7cd5cccda8aa090acef0e208d47b390f"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载资源  <br /></td></tr>
+<tr class="separator:a7cd5cccda8aa090acef0e208d47b390f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751e6bbbd17e49d8a6f9ce6da379ac96" id="r_a751e6bbbd17e49d8a6f9ce6da379ac96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751e6bbbd17e49d8a6f9ce6da379ac96">LoadFontResource</a> (const std::string &amp;path, const std::string &amp;id, int font_size, int *codepoints, int codepoints_size)</td></tr>
+<tr class="memdesc:a751e6bbbd17e49d8a6f9ce6da379ac96"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载字体资源  <br /></td></tr>
+<tr class="separator:a751e6bbbd17e49d8a6f9ce6da379ac96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af806dcaddb9b04cfb5de0889c3e71716" id="r_af806dcaddb9b04cfb5de0889c3e71716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af806dcaddb9b04cfb5de0889c3e71716">AddResource</a> (const std::string &amp;id, <a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type, void *resource)</td></tr>
+<tr class="memdesc:af806dcaddb9b04cfb5de0889c3e71716"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入资源  <br /></td></tr>
+<tr class="separator:af806dcaddb9b04cfb5de0889c3e71716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407ed5aede6cb05f8dc110ce3cbf3877" id="r_a407ed5aede6cb05f8dc110ce3cbf3877"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a407ed5aede6cb05f8dc110ce3cbf3877">GetTexture</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a407ed5aede6cb05f8dc110ce3cbf3877"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取纹理资源  <br /></td></tr>
+<tr class="separator:a407ed5aede6cb05f8dc110ce3cbf3877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a47699a7e5dd292fd3befede83c9d8" id="r_ae7a47699a7e5dd292fd3befede83c9d8"><td class="memItemLeft" align="right" valign="top">Sound&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7a47699a7e5dd292fd3befede83c9d8">GetSound</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ae7a47699a7e5dd292fd3befede83c9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取声音资源  <br /></td></tr>
+<tr class="separator:ae7a47699a7e5dd292fd3befede83c9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9318ab92c4fe405b930e35359f2f9c" id="r_aae9318ab92c4fe405b930e35359f2f9c"><td class="memItemLeft" align="right" valign="top">Music&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae9318ab92c4fe405b930e35359f2f9c">GetMusic</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:aae9318ab92c4fe405b930e35359f2f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音乐资源  <br /></td></tr>
+<tr class="separator:aae9318ab92c4fe405b930e35359f2f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac513e98f8c1243b421514681f242af9b" id="r_ac513e98f8c1243b421514681f242af9b"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac513e98f8c1243b421514681f242af9b">GetFont</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ac513e98f8c1243b421514681f242af9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体资源  <br /></td></tr>
+<tr class="separator:ac513e98f8c1243b421514681f242af9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bc2c8397d719d1402b2103af5e9b7a" id="r_a79bc2c8397d719d1402b2103af5e9b7a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79bc2c8397d719d1402b2103af5e9b7a">GetText</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a79bc2c8397d719d1402b2103af5e9b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文本资源  <br /></td></tr>
+<tr class="separator:a79bc2c8397d719d1402b2103af5e9b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5b3eb12ff5f3a3cfe0d6671afbfbc9" id="r_a4c5b3eb12ff5f3a3cfe0d6671afbfbc9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c5b3eb12ff5f3a3cfe0d6671afbfbc9">GetData</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a4c5b3eb12ff5f3a3cfe0d6671afbfbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取数据资源  <br /></td></tr>
+<tr class="separator:a4c5b3eb12ff5f3a3cfe0d6671afbfbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80e2cb6dd1a4119c3b3aad6416f2fe7" id="r_aa80e2cb6dd1a4119c3b3aad6416f2fe7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa80e2cb6dd1a4119c3b3aad6416f2fe7">HasResource</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:aa80e2cb6dd1a4119c3b3aad6416f2fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断资源是否存在  <br /></td></tr>
+<tr class="separator:aa80e2cb6dd1a4119c3b3aad6416f2fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fdde2b44f00f644e73fa3869277cdb" id="r_aa8fdde2b44f00f644e73fa3869277cdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8fdde2b44f00f644e73fa3869277cdb">HasResource</a> (const std::string &amp;id, <a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type)</td></tr>
+<tr class="memdesc:aa8fdde2b44f00f644e73fa3869277cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断资源是否存在  <br /></td></tr>
+<tr class="separator:aa8fdde2b44f00f644e73fa3869277cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3167d60ac47e8bfdd65eb052d6023088" id="r_a3167d60ac47e8bfdd65eb052d6023088"><td class="memItemLeft" align="right" valign="top">Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3167d60ac47e8bfdd65eb052d6023088">GetTextureP</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a3167d60ac47e8bfdd65eb052d6023088"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取纹理资源指针  <br /></td></tr>
+<tr class="separator:a3167d60ac47e8bfdd65eb052d6023088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ee18ae90da2bba9d0c46d7f9c20f15" id="r_af1ee18ae90da2bba9d0c46d7f9c20f15"><td class="memItemLeft" align="right" valign="top">Sound *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ee18ae90da2bba9d0c46d7f9c20f15">GetSoundP</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:af1ee18ae90da2bba9d0c46d7f9c20f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取声音资源指针  <br /></td></tr>
+<tr class="separator:af1ee18ae90da2bba9d0c46d7f9c20f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55cdcf4563c4aaee0efacca9da4021f" id="r_ac55cdcf4563c4aaee0efacca9da4021f"><td class="memItemLeft" align="right" valign="top">Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55cdcf4563c4aaee0efacca9da4021f">GetMusicP</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ac55cdcf4563c4aaee0efacca9da4021f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音乐资源指针  <br /></td></tr>
+<tr class="separator:ac55cdcf4563c4aaee0efacca9da4021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277e8fd6a516f88ee809106f20188f78" id="r_a277e8fd6a516f88ee809106f20188f78"><td class="memItemLeft" align="right" valign="top">Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a277e8fd6a516f88ee809106f20188f78">GetFontP</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a277e8fd6a516f88ee809106f20188f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体资源指针  <br /></td></tr>
+<tr class="separator:a277e8fd6a516f88ee809106f20188f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c0ec3fa2cad9f4e8ed5b991ed78e75" id="r_ab0c0ec3fa2cad9f4e8ed5b991ed78e75"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c0ec3fa2cad9f4e8ed5b991ed78e75">GetTextP</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:ab0c0ec3fa2cad9f4e8ed5b991ed78e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文本资源指针  <br /></td></tr>
+<tr class="separator:ab0c0ec3fa2cad9f4e8ed5b991ed78e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d8024fc0bd7f5b0e5fce89bb14411b" id="r_a34d8024fc0bd7f5b0e5fce89bb14411b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d8024fc0bd7f5b0e5fce89bb14411b">UnloadResource</a> (const std::string &amp;id, <a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type)</td></tr>
+<tr class="memdesc:a34d8024fc0bd7f5b0e5fce89bb14411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载单个资源  <br /></td></tr>
+<tr class="separator:a34d8024fc0bd7f5b0e5fce89bb14411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f0ebc595785a89c03180fc65da4c8d" id="r_a48f0ebc595785a89c03180fc65da4c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48f0ebc595785a89c03180fc65da4c8d">UnloadAllResources</a> ()</td></tr>
+<tr class="memdesc:a48f0ebc595785a89c03180fc65da4c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载所有资源  <br /></td></tr>
+<tr class="separator:a48f0ebc595785a89c03180fc65da4c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供资源的加载、管理和卸载功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource</a> resource;</div>
+<div class="line">resource.<a class="code hl_function" href="#a40da082f757652e8d46be73da070730e">SetZipPath</a>(<span class="stringliteral">&quot;resources.zip&quot;</span>);</div>
+<div class="line">resource.<a class="code hl_function" href="#aed3b9a702966621e23df561d1a5bf396">SetPassword</a>(<span class="stringliteral">&quot;password&quot;</span>);</div>
+<div class="line">resource.<a class="code hl_function" href="#a7cd5cccda8aa090acef0e208d47b390f">LoadResource</a>(<span class="stringliteral">&quot;image.png&quot;</span>, <span class="stringliteral">&quot;image&quot;</span>, <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082">ResTexture</a>);</div>
+<div class="line">Texture2D texture = resource.<a class="code hl_function" href="#a407ed5aede6cb05f8dc110ce3cbf3877">GetTexture</a>(<span class="stringliteral">&quot;image&quot;</span>);</div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082">ResTexture</a></div><div class="ttdeci">@ ResTexture</div><div class="ttdoc">纹理资源</div><div class="ttdef"><b>定义</b> F_Resource.h:30</div></div>
+<div class="ttc" id="aclass_f___resource_html_a407ed5aede6cb05f8dc110ce3cbf3877"><div class="ttname"><a href="#a407ed5aede6cb05f8dc110ce3cbf3877">F_Resource::GetTexture</a></div><div class="ttdeci">Texture2D GetTexture(const std::string &amp;id)</div><div class="ttdoc">获取纹理资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a40da082f757652e8d46be73da070730e"><div class="ttname"><a href="#a40da082f757652e8d46be73da070730e">F_Resource::SetZipPath</a></div><div class="ttdeci">void SetZipPath(const std::string &amp;path)</div><div class="ttdoc">设置zip路径</div></div>
+<div class="ttc" id="aclass_f___resource_html_a5c26e5aaddac5f71dbcd6f13b196f2c6"><div class="ttname"><a href="#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource::F_Resource</a></div><div class="ttdeci">F_Resource()</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_f___resource_html_a7cd5cccda8aa090acef0e208d47b390f"><div class="ttname"><a href="#a7cd5cccda8aa090acef0e208d47b390f">F_Resource::LoadResource</a></div><div class="ttdeci">bool LoadResource(const std::string &amp;path, const std::string &amp;id, ResourceType type)</div><div class="ttdoc">加载资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_aed3b9a702966621e23df561d1a5bf396"><div class="ttname"><a href="#aed3b9a702966621e23df561d1a5bf396">F_Resource::SetPassword</a></div><div class="ttdeci">void SetPassword(const char *password)</div><div class="ttdoc">设置压缩包密码</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a5c26e5aaddac5f71dbcd6f13b196f2c6" name="a5c26e5aaddac5f71dbcd6f13b196f2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c26e5aaddac5f71dbcd6f13b196f2c6">&#9670;&#160;</a></span>F_Resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Resource::F_Resource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="a40bb10f2504e91c024a6143c4c4443ac" name="a40bb10f2504e91c024a6143c4c4443ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bb10f2504e91c024a6143c4c4443ac">&#9670;&#160;</a></span>~F_Resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Resource::~F_Resource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af806dcaddb9b04cfb5de0889c3e71716" name="af806dcaddb9b04cfb5de0889c3e71716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af806dcaddb9b04cfb5de0889c3e71716">&#9670;&#160;</a></span>AddResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::AddResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>resource</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+    <tr><td class="paramname">type</td><td>资源类型 </td></tr>
+    <tr><td class="paramname">resource</td><td>资源指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c5b3eb12ff5f3a3cfe0d6671afbfbc9" name="a4c5b3eb12ff5f3a3cfe0d6671afbfbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5b3eb12ff5f3a3cfe0d6671afbfbc9">&#9670;&#160;</a></span>GetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; unsigned char &gt; F_Resource::GetData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取数据资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数据资源 </dd></dl>
+
+</div>
+</div>
+<a id="ac513e98f8c1243b421514681f242af9b" name="ac513e98f8c1243b421514681f242af9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac513e98f8c1243b421514681f242af9b">&#9670;&#160;</a></span>GetFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font F_Resource::GetFont </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>字体资源 </dd></dl>
+
+</div>
+</div>
+<a id="a277e8fd6a516f88ee809106f20188f78" name="a277e8fd6a516f88ee809106f20188f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277e8fd6a516f88ee809106f20188f78">&#9670;&#160;</a></span>GetFontP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font * F_Resource::GetFontP </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体资源指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>字体资源指针 </dd></dl>
+
+</div>
+</div>
+<a id="aae9318ab92c4fe405b930e35359f2f9c" name="aae9318ab92c4fe405b930e35359f2f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9318ab92c4fe405b930e35359f2f9c">&#9670;&#160;</a></span>GetMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Music F_Resource::GetMusic </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音乐资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>音乐资源 </dd></dl>
+
+</div>
+</div>
+<a id="ac55cdcf4563c4aaee0efacca9da4021f" name="ac55cdcf4563c4aaee0efacca9da4021f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55cdcf4563c4aaee0efacca9da4021f">&#9670;&#160;</a></span>GetMusicP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Music * F_Resource::GetMusicP </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音乐资源指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>音乐资源指针 </dd></dl>
+
+</div>
+</div>
+<a id="ae7a47699a7e5dd292fd3befede83c9d8" name="ae7a47699a7e5dd292fd3befede83c9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a47699a7e5dd292fd3befede83c9d8">&#9670;&#160;</a></span>GetSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sound F_Resource::GetSound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取声音资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>声音资源 </dd></dl>
+
+</div>
+</div>
+<a id="af1ee18ae90da2bba9d0c46d7f9c20f15" name="af1ee18ae90da2bba9d0c46d7f9c20f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ee18ae90da2bba9d0c46d7f9c20f15">&#9670;&#160;</a></span>GetSoundP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sound * F_Resource::GetSoundP </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取声音资源指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>声音资源指针 </dd></dl>
+
+</div>
+</div>
+<a id="a79bc2c8397d719d1402b2103af5e9b7a" name="a79bc2c8397d719d1402b2103af5e9b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bc2c8397d719d1402b2103af5e9b7a">&#9670;&#160;</a></span>GetText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string F_Resource::GetText </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取文本资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文本资源 </dd></dl>
+
+</div>
+</div>
+<a id="ab0c0ec3fa2cad9f4e8ed5b991ed78e75" name="ab0c0ec3fa2cad9f4e8ed5b991ed78e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c0ec3fa2cad9f4e8ed5b991ed78e75">&#9670;&#160;</a></span>GetTextP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string * F_Resource::GetTextP </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取文本资源指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文本资源指针 </dd></dl>
+
+</div>
+</div>
+<a id="a407ed5aede6cb05f8dc110ce3cbf3877" name="a407ed5aede6cb05f8dc110ce3cbf3877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407ed5aede6cb05f8dc110ce3cbf3877">&#9670;&#160;</a></span>GetTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D F_Resource::GetTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取纹理资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>纹理资源 </dd></dl>
+
+</div>
+</div>
+<a id="a3167d60ac47e8bfdd65eb052d6023088" name="a3167d60ac47e8bfdd65eb052d6023088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3167d60ac47e8bfdd65eb052d6023088">&#9670;&#160;</a></span>GetTextureP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D * F_Resource::GetTextureP </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取纹理资源指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>纹理资源指针 </dd></dl>
+
+</div>
+</div>
+<a id="aa80e2cb6dd1a4119c3b3aad6416f2fe7" name="aa80e2cb6dd1a4119c3b3aad6416f2fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80e2cb6dd1a4119c3b3aad6416f2fe7">&#9670;&#160;</a></span>HasResource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Resource::HasResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断资源是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>存在返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="aa8fdde2b44f00f644e73fa3869277cdb" name="aa8fdde2b44f00f644e73fa3869277cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fdde2b44f00f644e73fa3869277cdb">&#9670;&#160;</a></span>HasResource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Resource::HasResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断资源是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+    <tr><td class="paramname">type</td><td>资源类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>存在返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a751e6bbbd17e49d8a6f9ce6da379ac96" name="a751e6bbbd17e49d8a6f9ce6da379ac96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751e6bbbd17e49d8a6f9ce6da379ac96">&#9670;&#160;</a></span>LoadFontResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Resource::LoadFontResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>codepoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>codepoints_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载字体资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>字体路径 </td></tr>
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">codepoints</td><td>码点数组 </td></tr>
+    <tr><td class="paramname">codepoints_size</td><td>码点数组大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a7cd5cccda8aa090acef0e208d47b390f" name="a7cd5cccda8aa090acef0e208d47b390f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd5cccda8aa090acef0e208d47b390f">&#9670;&#160;</a></span>LoadResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Resource::LoadResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>资源路径 </td></tr>
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+    <tr><td class="paramname">type</td><td>资源类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a99c7491bfbd54a08112f7c4900316105" name="a99c7491bfbd54a08112f7c4900316105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c7491bfbd54a08112f7c4900316105">&#9670;&#160;</a></span>NoPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::NoPassword </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>不使用密码 </p>
+
+</div>
+</div>
+<a id="aed3b9a702966621e23df561d1a5bf396" name="aed3b9a702966621e23df561d1a5bf396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3b9a702966621e23df561d1a5bf396">&#9670;&#160;</a></span>SetPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::SetPassword </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>password</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置压缩包密码 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">password</td><td>密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___resource_aed3b9a702966621e23df561d1a5bf396_icgraph.png" border="0" usemap="#aclass_f___resource_aed3b9a702966621e23df561d1a5bf396_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae9def8cac5e627c6964d4960e9c6642b" name="ae9def8cac5e627c6964d4960e9c6642b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9def8cac5e627c6964d4960e9c6642b">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::Setup </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>password</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_has_password</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置压缩包 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>压缩包路径 </td></tr>
+    <tr><td class="paramname">password</td><td>密码 </td></tr>
+    <tr><td class="paramname">_has_password</td><td>是否有密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___resource_ae9def8cac5e627c6964d4960e9c6642b_cgraph.png" border="0" usemap="#aclass_f___resource_ae9def8cac5e627c6964d4960e9c6642b_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a40da082f757652e8d46be73da070730e" name="a40da082f757652e8d46be73da070730e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40da082f757652e8d46be73da070730e">&#9670;&#160;</a></span>SetZipPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::SetZipPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置zip路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>zip文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___resource_a40da082f757652e8d46be73da070730e_icgraph.png" border="0" usemap="#aclass_f___resource_a40da082f757652e8d46be73da070730e_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a48f0ebc595785a89c03180fc65da4c8d" name="a48f0ebc595785a89c03180fc65da4c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f0ebc595785a89c03180fc65da4c8d">&#9670;&#160;</a></span>UnloadAllResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::UnloadAllResources </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>卸载所有资源 </p>
+
+</div>
+</div>
+<a id="a34d8024fc0bd7f5b0e5fce89bb14411b" name="a34d8024fc0bd7f5b0e5fce89bb14411b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d8024fc0bd7f5b0e5fce89bb14411b">&#9670;&#160;</a></span>UnloadResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Resource::UnloadResource </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>卸载单个资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>资源ID </td></tr>
+    <tr><td class="paramname">type</td><td>资源类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_f___resource_8h_source.html">F_Resource.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+digraph "Room_Get_Now"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Room_Get_Now",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Create_InstanceTemplate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_room_8h.html#a05b62674863776f4f1c2b0e05f464d1f",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Create_InstanceTemplate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_room_8h.html#ae909de6a535a83f057e389f1bba1da9a",tooltip=" "];
+}

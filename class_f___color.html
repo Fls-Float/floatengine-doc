@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Color类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_f___color-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Color类 参考<div class="ingroups"><a class="el" href="group___float_api.html">浮动引擎模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供颜色处理功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_float_api_8h_source.html">FloatApi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa090deda61539dc7061945b67975c0cd" id="r_aa090deda61539dc7061945b67975c0cd"><td class="memItemLeft" align="right" valign="top">struct Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa090deda61539dc7061945b67975c0cd">To_RlCol</a> ()</td></tr>
+<tr class="memdesc:aa090deda61539dc7061945b67975c0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换为raylib的Color对象  <br /></td></tr>
+<tr class="separator:aa090deda61539dc7061945b67975c0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698b09a07e3ffe16ab1a5ebb7ba50c5e" id="r_a698b09a07e3ffe16ab1a5ebb7ba50c5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a698b09a07e3ffe16ab1a5ebb7ba50c5e">operator struct Color</a> ()</td></tr>
+<tr class="memdesc:a698b09a07e3ffe16ab1a5ebb7ba50c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型转换操作符重载  <br /></td></tr>
+<tr class="separator:a698b09a07e3ffe16ab1a5ebb7ba50c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:adf42814c0cc2216339ff402bf3fcb992" id="r_adf42814c0cc2216339ff402bf3fcb992"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf42814c0cc2216339ff402bf3fcb992">R</a></td></tr>
+<tr class="separator:adf42814c0cc2216339ff402bf3fcb992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9115ae2c4724aa6fc932002ff2952883" id="r_a9115ae2c4724aa6fc932002ff2952883"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9115ae2c4724aa6fc932002ff2952883">G</a></td></tr>
+<tr class="separator:a9115ae2c4724aa6fc932002ff2952883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba452180e61d58ba364a4ef37271165b" id="r_aba452180e61d58ba364a4ef37271165b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba452180e61d58ba364a4ef37271165b">B</a></td></tr>
+<tr class="separator:aba452180e61d58ba364a4ef37271165b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193358d1f009589ce399d54d743622d5" id="r_a193358d1f009589ce399d54d743622d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a193358d1f009589ce399d54d743622d5">A</a></td></tr>
+<tr class="separator:a193358d1f009589ce399d54d743622d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aa5918cff243c93442ce4eb0400be6eae" id="r_aa5918cff243c93442ce4eb0400be6eae"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5918cff243c93442ce4eb0400be6eae">LightGray</a></td></tr>
+<tr class="separator:aa5918cff243c93442ce4eb0400be6eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114618b741c59cd5c242fbdf6d2a3acb" id="r_a114618b741c59cd5c242fbdf6d2a3acb"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a114618b741c59cd5c242fbdf6d2a3acb">Gray</a></td></tr>
+<tr class="separator:a114618b741c59cd5c242fbdf6d2a3acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b08c9bb751da95846fbd24f340d4e97" id="r_a3b08c9bb751da95846fbd24f340d4e97"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b08c9bb751da95846fbd24f340d4e97">DarkGray</a></td></tr>
+<tr class="separator:a3b08c9bb751da95846fbd24f340d4e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa8438e0bea3e3c7b69e87d2d6afda0" id="r_a8fa8438e0bea3e3c7b69e87d2d6afda0"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fa8438e0bea3e3c7b69e87d2d6afda0">DrakGray</a></td></tr>
+<tr class="separator:a8fa8438e0bea3e3c7b69e87d2d6afda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc55b72c35cc0daa69f06dbea677214d" id="r_acc55b72c35cc0daa69f06dbea677214d"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc55b72c35cc0daa69f06dbea677214d">Gold</a></td></tr>
+<tr class="separator:acc55b72c35cc0daa69f06dbea677214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc1458cef7231c28af8dc0b3d7ed329" id="r_a5fc1458cef7231c28af8dc0b3d7ed329"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fc1458cef7231c28af8dc0b3d7ed329">Orange</a></td></tr>
+<tr class="separator:a5fc1458cef7231c28af8dc0b3d7ed329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bef06795473bd48e91e9bd17c19ac9a" id="r_a5bef06795473bd48e91e9bd17c19ac9a"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bef06795473bd48e91e9bd17c19ac9a">Pink</a></td></tr>
+<tr class="separator:a5bef06795473bd48e91e9bd17c19ac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389d3403a6a470e132ac421150d48c42" id="r_a389d3403a6a470e132ac421150d48c42"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a389d3403a6a470e132ac421150d48c42">Red</a></td></tr>
+<tr class="separator:a389d3403a6a470e132ac421150d48c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fdb693fad4e70eb68e2b6fd55bc7be" id="r_a78fdb693fad4e70eb68e2b6fd55bc7be"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78fdb693fad4e70eb68e2b6fd55bc7be">Maroon</a></td></tr>
+<tr class="separator:a78fdb693fad4e70eb68e2b6fd55bc7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60052efb506a7f99b32d5c2184a542c" id="r_ab60052efb506a7f99b32d5c2184a542c"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab60052efb506a7f99b32d5c2184a542c">Green</a></td></tr>
+<tr class="separator:ab60052efb506a7f99b32d5c2184a542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6238670a0e42d696f27eebe9e07935" id="r_acc6238670a0e42d696f27eebe9e07935"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc6238670a0e42d696f27eebe9e07935">Lime</a></td></tr>
+<tr class="separator:acc6238670a0e42d696f27eebe9e07935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005acb8a39be8feefafccd84cea64dad" id="r_a005acb8a39be8feefafccd84cea64dad"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005acb8a39be8feefafccd84cea64dad">DarkGreen</a></td></tr>
+<tr class="separator:a005acb8a39be8feefafccd84cea64dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c11106e95fac542d0481ce540f9748" id="r_a19c11106e95fac542d0481ce540f9748"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c11106e95fac542d0481ce540f9748">SkyBlue</a></td></tr>
+<tr class="separator:a19c11106e95fac542d0481ce540f9748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42224cb6da7409c72ecef83160d074b" id="r_ae42224cb6da7409c72ecef83160d074b"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae42224cb6da7409c72ecef83160d074b">Blue</a></td></tr>
+<tr class="separator:ae42224cb6da7409c72ecef83160d074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdfe202549681cc9149a7a3152d43c5" id="r_a2cdfe202549681cc9149a7a3152d43c5"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cdfe202549681cc9149a7a3152d43c5">DarkBlue</a></td></tr>
+<tr class="separator:a2cdfe202549681cc9149a7a3152d43c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a8fb9c583cedc4262a3134027b4399" id="r_a64a8fb9c583cedc4262a3134027b4399"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64a8fb9c583cedc4262a3134027b4399">Purple</a></td></tr>
+<tr class="separator:a64a8fb9c583cedc4262a3134027b4399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf67662e0c7fe7b4f1d24a1f4007435" id="r_a6bf67662e0c7fe7b4f1d24a1f4007435"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf67662e0c7fe7b4f1d24a1f4007435">Violet</a></td></tr>
+<tr class="separator:a6bf67662e0c7fe7b4f1d24a1f4007435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b93a69e26319150e03db23bd742c1e2" id="r_a2b93a69e26319150e03db23bd742c1e2"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b93a69e26319150e03db23bd742c1e2">Darkpurple</a></td></tr>
+<tr class="separator:a2b93a69e26319150e03db23bd742c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d1d56f3db9fc74e16cb5fcbb14dbb7" id="r_a89d1d56f3db9fc74e16cb5fcbb14dbb7"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89d1d56f3db9fc74e16cb5fcbb14dbb7">Beige</a></td></tr>
+<tr class="separator:a89d1d56f3db9fc74e16cb5fcbb14dbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b725e432bea40a916fa6602f4dcf0d" id="r_a69b725e432bea40a916fa6602f4dcf0d"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69b725e432bea40a916fa6602f4dcf0d">Borwn</a></td></tr>
+<tr class="separator:a69b725e432bea40a916fa6602f4dcf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ab959a3239c33160c38b4d86f507ae" id="r_a50ab959a3239c33160c38b4d86f507ae"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ab959a3239c33160c38b4d86f507ae">DarkBrown</a></td></tr>
+<tr class="separator:a50ab959a3239c33160c38b4d86f507ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0a5943cc441586b82c4d728f53847d" id="r_a5f0a5943cc441586b82c4d728f53847d"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f0a5943cc441586b82c4d728f53847d">White</a></td></tr>
+<tr class="separator:a5f0a5943cc441586b82c4d728f53847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea9dcb0fe78f8737428b0a31ecdb6ed" id="r_a6ea9dcb0fe78f8737428b0a31ecdb6ed"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea9dcb0fe78f8737428b0a31ecdb6ed">Black</a></td></tr>
+<tr class="separator:a6ea9dcb0fe78f8737428b0a31ecdb6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac184fb44fcb86a71b0d885326d850978" id="r_ac184fb44fcb86a71b0d885326d850978"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac184fb44fcb86a71b0d885326d850978">Blank</a></td></tr>
+<tr class="separator:ac184fb44fcb86a71b0d885326d850978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de37055b1ea3a4294c14c12f9be62bd" id="r_a8de37055b1ea3a4294c14c12f9be62bd"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8de37055b1ea3a4294c14c12f9be62bd">Magenta</a></td></tr>
+<tr class="separator:a8de37055b1ea3a4294c14c12f9be62bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe009439379940bdcfba8b8d25a4ec50" id="r_afe009439379940bdcfba8b8d25a4ec50"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe009439379940bdcfba8b8d25a4ec50">RayWhite</a></td></tr>
+<tr class="separator:afe009439379940bdcfba8b8d25a4ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177d96f612304a134926a38230d5377c" id="r_a177d96f612304a134926a38230d5377c"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a177d96f612304a134926a38230d5377c">Yellow</a></td></tr>
+<tr class="separator:a177d96f612304a134926a38230d5377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供颜色处理功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_class" href="class_f___color.html">F_Color</a> color = <a class="code hl_function" href="_float_api_8h.html#a637e97d4af2b3554444f9581ed4d6c3c">Make_FColor_RGB</a>(255, 0, 0, 1.0f);</div>
+<div class="ttc" id="a_float_api_8h_html_a637e97d4af2b3554444f9581ed4d6c3c"><div class="ttname"><a href="_float_api_8h.html#a637e97d4af2b3554444f9581ed4d6c3c">Make_FColor_RGB</a></div><div class="ttdeci">F_Color Make_FColor_RGB(int r, int g, int b, float a=1.0f)</div><div class="ttdoc">创建FColor对象</div></div>
+<div class="ttc" id="aclass_f___color_html"><div class="ttname"><a href="class_f___color.html">F_Color</a></div><div class="ttdoc">提供颜色处理功能</div><div class="ttdef"><b>定义</b> FloatApi.h:304</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a698b09a07e3ffe16ab1a5ebb7ba50c5e" name="a698b09a07e3ffe16ab1a5ebb7ba50c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698b09a07e3ffe16ab1a5ebb7ba50c5e">&#9670;&#160;</a></span>operator struct Color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Color::operator struct Color </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>类型转换操作符重载 </p>
+<dl class="section return"><dt>返回</dt><dd>Color对象 </dd></dl>
+
+</div>
+</div>
+<a id="aa090deda61539dc7061945b67975c0cd" name="aa090deda61539dc7061945b67975c0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa090deda61539dc7061945b67975c0cd">&#9670;&#160;</a></span>To_RlCol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct Color F_Color::To_RlCol </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>转换为raylib的Color对象 </p>
+<dl class="section return"><dt>返回</dt><dd>Color对象 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___color_aa090deda61539dc7061945b67975c0cd_cgraph.png" border="0" usemap="#aclass_f___color_aa090deda61539dc7061945b67975c0cd_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___color_aa090deda61539dc7061945b67975c0cd_icgraph.png" border="0" usemap="#aclass_f___color_aa090deda61539dc7061945b67975c0cd_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a193358d1f009589ce399d54d743622d5" name="a193358d1f009589ce399d54d743622d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193358d1f009589ce399d54d743622d5">&#9670;&#160;</a></span>A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float F_Color::A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba452180e61d58ba364a4ef37271165b" name="aba452180e61d58ba364a4ef37271165b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba452180e61d58ba364a4ef37271165b">&#9670;&#160;</a></span>B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F_Color::B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89d1d56f3db9fc74e16cb5fcbb14dbb7" name="a89d1d56f3db9fc74e16cb5fcbb14dbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d1d56f3db9fc74e16cb5fcbb14dbb7">&#9670;&#160;</a></span>Beige</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Beige</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ea9dcb0fe78f8737428b0a31ecdb6ed" name="a6ea9dcb0fe78f8737428b0a31ecdb6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea9dcb0fe78f8737428b0a31ecdb6ed">&#9670;&#160;</a></span>Black</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Black</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac184fb44fcb86a71b0d885326d850978" name="ac184fb44fcb86a71b0d885326d850978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac184fb44fcb86a71b0d885326d850978">&#9670;&#160;</a></span>Blank</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Blank</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae42224cb6da7409c72ecef83160d074b" name="ae42224cb6da7409c72ecef83160d074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42224cb6da7409c72ecef83160d074b">&#9670;&#160;</a></span>Blue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Blue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69b725e432bea40a916fa6602f4dcf0d" name="a69b725e432bea40a916fa6602f4dcf0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b725e432bea40a916fa6602f4dcf0d">&#9670;&#160;</a></span>Borwn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Borwn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cdfe202549681cc9149a7a3152d43c5" name="a2cdfe202549681cc9149a7a3152d43c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cdfe202549681cc9149a7a3152d43c5">&#9670;&#160;</a></span>DarkBlue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::DarkBlue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50ab959a3239c33160c38b4d86f507ae" name="a50ab959a3239c33160c38b4d86f507ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ab959a3239c33160c38b4d86f507ae">&#9670;&#160;</a></span>DarkBrown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::DarkBrown</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b08c9bb751da95846fbd24f340d4e97" name="a3b08c9bb751da95846fbd24f340d4e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b08c9bb751da95846fbd24f340d4e97">&#9670;&#160;</a></span>DarkGray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::DarkGray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a005acb8a39be8feefafccd84cea64dad" name="a005acb8a39be8feefafccd84cea64dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005acb8a39be8feefafccd84cea64dad">&#9670;&#160;</a></span>DarkGreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::DarkGreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b93a69e26319150e03db23bd742c1e2" name="a2b93a69e26319150e03db23bd742c1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b93a69e26319150e03db23bd742c1e2">&#9670;&#160;</a></span>Darkpurple</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Darkpurple</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fa8438e0bea3e3c7b69e87d2d6afda0" name="a8fa8438e0bea3e3c7b69e87d2d6afda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa8438e0bea3e3c7b69e87d2d6afda0">&#9670;&#160;</a></span>DrakGray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::DrakGray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9115ae2c4724aa6fc932002ff2952883" name="a9115ae2c4724aa6fc932002ff2952883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9115ae2c4724aa6fc932002ff2952883">&#9670;&#160;</a></span>G</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F_Color::G</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc55b72c35cc0daa69f06dbea677214d" name="acc55b72c35cc0daa69f06dbea677214d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc55b72c35cc0daa69f06dbea677214d">&#9670;&#160;</a></span>Gold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Gold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a114618b741c59cd5c242fbdf6d2a3acb" name="a114618b741c59cd5c242fbdf6d2a3acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114618b741c59cd5c242fbdf6d2a3acb">&#9670;&#160;</a></span>Gray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Gray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab60052efb506a7f99b32d5c2184a542c" name="ab60052efb506a7f99b32d5c2184a542c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60052efb506a7f99b32d5c2184a542c">&#9670;&#160;</a></span>Green</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Green</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5918cff243c93442ce4eb0400be6eae" name="aa5918cff243c93442ce4eb0400be6eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5918cff243c93442ce4eb0400be6eae">&#9670;&#160;</a></span>LightGray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::LightGray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc6238670a0e42d696f27eebe9e07935" name="acc6238670a0e42d696f27eebe9e07935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6238670a0e42d696f27eebe9e07935">&#9670;&#160;</a></span>Lime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Lime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8de37055b1ea3a4294c14c12f9be62bd" name="a8de37055b1ea3a4294c14c12f9be62bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de37055b1ea3a4294c14c12f9be62bd">&#9670;&#160;</a></span>Magenta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Magenta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78fdb693fad4e70eb68e2b6fd55bc7be" name="a78fdb693fad4e70eb68e2b6fd55bc7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78fdb693fad4e70eb68e2b6fd55bc7be">&#9670;&#160;</a></span>Maroon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Maroon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fc1458cef7231c28af8dc0b3d7ed329" name="a5fc1458cef7231c28af8dc0b3d7ed329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc1458cef7231c28af8dc0b3d7ed329">&#9670;&#160;</a></span>Orange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Orange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bef06795473bd48e91e9bd17c19ac9a" name="a5bef06795473bd48e91e9bd17c19ac9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bef06795473bd48e91e9bd17c19ac9a">&#9670;&#160;</a></span>Pink</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Pink</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64a8fb9c583cedc4262a3134027b4399" name="a64a8fb9c583cedc4262a3134027b4399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a8fb9c583cedc4262a3134027b4399">&#9670;&#160;</a></span>Purple</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Purple</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf42814c0cc2216339ff402bf3fcb992" name="adf42814c0cc2216339ff402bf3fcb992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf42814c0cc2216339ff402bf3fcb992">&#9670;&#160;</a></span>R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F_Color::R</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe009439379940bdcfba8b8d25a4ec50" name="afe009439379940bdcfba8b8d25a4ec50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe009439379940bdcfba8b8d25a4ec50">&#9670;&#160;</a></span>RayWhite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::RayWhite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a389d3403a6a470e132ac421150d48c42" name="a389d3403a6a470e132ac421150d48c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389d3403a6a470e132ac421150d48c42">&#9670;&#160;</a></span>Red</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Red</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19c11106e95fac542d0481ce540f9748" name="a19c11106e95fac542d0481ce540f9748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c11106e95fac542d0481ce540f9748">&#9670;&#160;</a></span>SkyBlue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::SkyBlue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bf67662e0c7fe7b4f1d24a1f4007435" name="a6bf67662e0c7fe7b4f1d24a1f4007435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf67662e0c7fe7b4f1d24a1f4007435">&#9670;&#160;</a></span>Violet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Violet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f0a5943cc441586b82c4d728f53847d" name="a5f0a5943cc441586b82c4d728f53847d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0a5943cc441586b82c4d728f53847d">&#9670;&#160;</a></span>White</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::White</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a177d96f612304a134926a38230d5377c" name="a177d96f612304a134926a38230d5377c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177d96f612304a134926a38230d5377c">&#9670;&#160;</a></span>Yellow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color F_Color::Yellow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_float_api_8h_source.html">FloatApi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

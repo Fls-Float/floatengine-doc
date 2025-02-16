@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Ini类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_f___ini-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Ini类 参考<div class="ingroups"><a class="el" href="group___float_api.html">浮动引擎模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供INI文件处理功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_float_api_8h_source.html">FloatApi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1ab1b399d6b0a815c9615703efd83662" id="r_a1ab1b399d6b0a815c9615703efd83662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab1b399d6b0a815c9615703efd83662">F_Ini</a> (const std::string &amp;filename=&quot;&quot;)</td></tr>
+<tr class="separator:a1ab1b399d6b0a815c9615703efd83662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05403a5a766cc3bf25e8ec6e742c7e3" id="r_ae05403a5a766cc3bf25e8ec6e742c7e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae05403a5a766cc3bf25e8ec6e742c7e3">Load</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:ae05403a5a766cc3bf25e8ec6e742c7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae605bd50b0f5070f6af1377be17ccd1" id="r_aae605bd50b0f5070f6af1377be17ccd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae605bd50b0f5070f6af1377be17ccd1">Save</a> (const std::string &amp;filename=&quot;&quot;)</td></tr>
+<tr class="separator:aae605bd50b0f5070f6af1377be17ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef7dee27e6f3cc12863646e60609386" id="r_aeef7dee27e6f3cc12863646e60609386"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeef7dee27e6f3cc12863646e60609386">Get_Int_Value_From_Name</a> (const std::string &amp;Class, const std::string &amp;name)</td></tr>
+<tr class="memdesc:aeef7dee27e6f3cc12863646e60609386"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取整数值  <br /></td></tr>
+<tr class="separator:aeef7dee27e6f3cc12863646e60609386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728dc2fb7aedeacb6ca062acc61a23b5" id="r_a728dc2fb7aedeacb6ca062acc61a23b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a728dc2fb7aedeacb6ca062acc61a23b5">Get_String_Value_From_Name</a> (const std::string &amp;Class, const std::string &amp;name)</td></tr>
+<tr class="memdesc:a728dc2fb7aedeacb6ca062acc61a23b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字符串值  <br /></td></tr>
+<tr class="separator:a728dc2fb7aedeacb6ca062acc61a23b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022c79f58e60c7177172f0b87e8019d8" id="r_a022c79f58e60c7177172f0b87e8019d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022c79f58e60c7177172f0b87e8019d8">Get_Double_Value_From_Name</a> (const std::string &amp;Class, const std::string &amp;name)</td></tr>
+<tr class="memdesc:a022c79f58e60c7177172f0b87e8019d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取双精度值  <br /></td></tr>
+<tr class="separator:a022c79f58e60c7177172f0b87e8019d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e818c5bdd6a4d0b32f6e044a691567" id="r_a92e818c5bdd6a4d0b32f6e044a691567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92e818c5bdd6a4d0b32f6e044a691567">Write_Int_Value</a> (const std::string &amp;Class, const std::string &amp;name, int value)</td></tr>
+<tr class="memdesc:a92e818c5bdd6a4d0b32f6e044a691567"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入整数值  <br /></td></tr>
+<tr class="separator:a92e818c5bdd6a4d0b32f6e044a691567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8c1484715330379a6db5509ab8d698" id="r_a8d8c1484715330379a6db5509ab8d698"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d8c1484715330379a6db5509ab8d698">Write_String_Value</a> (const std::string &amp;Class, const std::string &amp;name, const std::string &amp;value)</td></tr>
+<tr class="memdesc:a8d8c1484715330379a6db5509ab8d698"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入字符串值  <br /></td></tr>
+<tr class="separator:a8d8c1484715330379a6db5509ab8d698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2cb1413b542a2af4b0f6e2f4795863" id="r_aeb2cb1413b542a2af4b0f6e2f4795863"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2cb1413b542a2af4b0f6e2f4795863">Write_Double_Value</a> (const std::string &amp;Class, const std::string &amp;name, double value)</td></tr>
+<tr class="memdesc:aeb2cb1413b542a2af4b0f6e2f4795863"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入双精度浮点数值  <br /></td></tr>
+<tr class="separator:aeb2cb1413b542a2af4b0f6e2f4795863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供INI文件处理功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a1ab1b399d6b0a815c9615703efd83662">F_Ini</a> ini;</div>
+<div class="line"><span class="keywordtype">int</span> value = ini.<a class="code hl_function" href="#aeef7dee27e6f3cc12863646e60609386">Get_Int_Value_From_Name</a>(<span class="stringliteral">&quot;Settings&quot;</span>, <span class="stringliteral">&quot;Volume&quot;</span>);</div>
+<div class="ttc" id="aclass_f___ini_html_a1ab1b399d6b0a815c9615703efd83662"><div class="ttname"><a href="#a1ab1b399d6b0a815c9615703efd83662">F_Ini::F_Ini</a></div><div class="ttdeci">F_Ini(const std::string &amp;filename=&quot;&quot;)</div></div>
+<div class="ttc" id="aclass_f___ini_html_aeef7dee27e6f3cc12863646e60609386"><div class="ttname"><a href="#aeef7dee27e6f3cc12863646e60609386">F_Ini::Get_Int_Value_From_Name</a></div><div class="ttdeci">int Get_Int_Value_From_Name(const std::string &amp;Class, const std::string &amp;name)</div><div class="ttdoc">获取整数值</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1ab1b399d6b0a815c9615703efd83662" name="a1ab1b399d6b0a815c9615703efd83662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab1b399d6b0a815c9615703efd83662">&#9670;&#160;</a></span>F_Ini()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Ini::F_Ini </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a022c79f58e60c7177172f0b87e8019d8" name="a022c79f58e60c7177172f0b87e8019d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022c79f58e60c7177172f0b87e8019d8">&#9670;&#160;</a></span>Get_Double_Value_From_Name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double F_Ini::Get_Double_Value_From_Name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取双精度值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>双精度值 </dd></dl>
+
+</div>
+</div>
+<a id="aeef7dee27e6f3cc12863646e60609386" name="aeef7dee27e6f3cc12863646e60609386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef7dee27e6f3cc12863646e60609386">&#9670;&#160;</a></span>Get_Int_Value_From_Name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F_Ini::Get_Int_Value_From_Name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取整数值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>整数值 </dd></dl>
+
+</div>
+</div>
+<a id="a728dc2fb7aedeacb6ca062acc61a23b5" name="a728dc2fb7aedeacb6ca062acc61a23b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728dc2fb7aedeacb6ca062acc61a23b5">&#9670;&#160;</a></span>Get_String_Value_From_Name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string F_Ini::Get_String_Value_From_Name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字符串值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>字符串值 </dd></dl>
+
+</div>
+</div>
+<a id="ae05403a5a766cc3bf25e8ec6e742c7e3" name="ae05403a5a766cc3bf25e8ec6e742c7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05403a5a766cc3bf25e8ec6e742c7e3">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Ini::Load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae605bd50b0f5070f6af1377be17ccd1" name="aae605bd50b0f5070f6af1377be17ccd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae605bd50b0f5070f6af1377be17ccd1">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Ini::Save </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb2cb1413b542a2af4b0f6e2f4795863" name="aeb2cb1413b542a2af4b0f6e2f4795863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2cb1413b542a2af4b0f6e2f4795863">&#9670;&#160;</a></span>Write_Double_Value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Ini::Write_Double_Value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入双精度浮点数值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+    <tr><td class="paramname">value</td><td>字符串值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a92e818c5bdd6a4d0b32f6e044a691567" name="a92e818c5bdd6a4d0b32f6e044a691567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e818c5bdd6a4d0b32f6e044a691567">&#9670;&#160;</a></span>Write_Int_Value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Ini::Write_Int_Value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入整数值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+    <tr><td class="paramname">value</td><td>整数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a8d8c1484715330379a6db5509ab8d698" name="a8d8c1484715330379a6db5509ab8d698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8c1484715330379a6db5509ab8d698">&#9670;&#160;</a></span>Write_String_Value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool F_Ini::Write_String_Value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Class</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入字符串值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Class</td><td>类名 </td></tr>
+    <tr><td class="paramname">name</td><td>名称 </td></tr>
+    <tr><td class="paramname">value</td><td>字符串值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_float_api_8h_source.html">FloatApi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

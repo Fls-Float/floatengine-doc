@@ -1,0 +1,1401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: Object类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="class_object-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Object类 参考<div class="ingroups"><a class="el" href="group___object.html">对象模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供游戏对象的创建、管理和事件处理功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object_8h_source.html">Object.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Object 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object__inherit__graph.png" border="0" usemap="#a_object_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb" id="r_a40860402e64d8008fb42329df7097cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7a1bc847bc5d1dc031cdec32243838" id="r_aec7a1bc847bc5d1dc031cdec32243838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec7a1bc847bc5d1dc031cdec32243838">Object</a> (const char *name, int ins_id, int pro=OBJPRO.Normal)</td></tr>
+<tr class="memdesc:aec7a1bc847bc5d1dc031cdec32243838"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:aec7a1bc847bc5d1dc031cdec32243838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f5483f459e46687bd01e6f9977afd3" id="r_ae8f5483f459e46687bd01e6f9977afd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f5483f459e46687bd01e6f9977afd3">~Object</a> ()</td></tr>
+<tr class="memdesc:ae8f5483f459e46687bd01e6f9977afd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:ae8f5483f459e46687bd01e6f9977afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d27512ec0b5c9ad531f1b81d0f4e8b9" id="r_a9d27512ec0b5c9ad531f1b81d0f4e8b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d27512ec0b5c9ad531f1b81d0f4e8b9">setObjName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a9d27512ec0b5c9ad531f1b81d0f4e8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对象名称  <br /></td></tr>
+<tr class="separator:a9d27512ec0b5c9ad531f1b81d0f4e8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87897378d71c679fb0aab2cbc4287d62" id="r_a87897378d71c679fb0aab2cbc4287d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87897378d71c679fb0aab2cbc4287d62">setObjPro</a> (const int &amp;pro)</td></tr>
+<tr class="memdesc:a87897378d71c679fb0aab2cbc4287d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对象属性  <br /></td></tr>
+<tr class="separator:a87897378d71c679fb0aab2cbc4287d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190ae6ce8c3c3dc2adba5e8c5d81b927" id="r_a190ae6ce8c3c3dc2adba5e8c5d81b927"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190ae6ce8c3c3dc2adba5e8c5d81b927">getObjName</a> () const</td></tr>
+<tr class="memdesc:a190ae6ce8c3c3dc2adba5e8c5d81b927"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对象名称  <br /></td></tr>
+<tr class="separator:a190ae6ce8c3c3dc2adba5e8c5d81b927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd498feeb52d36ae3cd12fcef888393" id="r_a7fd498feeb52d36ae3cd12fcef888393"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fd498feeb52d36ae3cd12fcef888393">getObjPro</a> () const</td></tr>
+<tr class="memdesc:a7fd498feeb52d36ae3cd12fcef888393"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对象属性  <br /></td></tr>
+<tr class="separator:a7fd498feeb52d36ae3cd12fcef888393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d7adebdce56a27dcc54f9903ac6a7d" id="r_a31d7adebdce56a27dcc54f9903ac6a7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d7adebdce56a27dcc54f9903ac6a7d">onEvent_User</a> (int index)</td></tr>
+<tr class="memdesc:a31d7adebdce56a27dcc54f9903ac6a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户事件处理  <br /></td></tr>
+<tr class="separator:a31d7adebdce56a27dcc54f9903ac6a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94e8b39605e259431f78a48b05bca7c" id="r_ac94e8b39605e259431f78a48b05bca7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac94e8b39605e259431f78a48b05bca7c">onEnter</a> ()</td></tr>
+<tr class="memdesc:ac94e8b39605e259431f78a48b05bca7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">进入事件处理  <br /></td></tr>
+<tr class="separator:ac94e8b39605e259431f78a48b05bca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee4245d4a233d4ad2a2db45bfc01a17" id="r_a1ee4245d4a233d4ad2a2db45bfc01a17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee4245d4a233d4ad2a2db45bfc01a17">onUpdate</a> ()</td></tr>
+<tr class="memdesc:a1ee4245d4a233d4ad2a2db45bfc01a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新事件处理  <br /></td></tr>
+<tr class="separator:a1ee4245d4a233d4ad2a2db45bfc01a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a66b10edcb4f906e820f5551b92bece" id="r_a8a66b10edcb4f906e820f5551b92bece"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a66b10edcb4f906e820f5551b92bece">onRenderBefore</a> ()</td></tr>
+<tr class="memdesc:a8a66b10edcb4f906e820f5551b92bece"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染前事件处理  <br /></td></tr>
+<tr class="separator:a8a66b10edcb4f906e820f5551b92bece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ea5499ffd1e5bec96e0d0fc30ea32d" id="r_a81ea5499ffd1e5bec96e0d0fc30ea32d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81ea5499ffd1e5bec96e0d0fc30ea32d">onRender</a> ()</td></tr>
+<tr class="memdesc:a81ea5499ffd1e5bec96e0d0fc30ea32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染事件处理  <br /></td></tr>
+<tr class="separator:a81ea5499ffd1e5bec96e0d0fc30ea32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae46bc3013a4a2648111b7b39f91fa3" id="r_a7ae46bc3013a4a2648111b7b39f91fa3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae46bc3013a4a2648111b7b39f91fa3">onRenderNext</a> ()</td></tr>
+<tr class="memdesc:a7ae46bc3013a4a2648111b7b39f91fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染后事件处理  <br /></td></tr>
+<tr class="separator:a7ae46bc3013a4a2648111b7b39f91fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e81cb0c6afc54b89c78cc81cca4b46" id="r_a58e81cb0c6afc54b89c78cc81cca4b46"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58e81cb0c6afc54b89c78cc81cca4b46">onBeginCamera</a> ()</td></tr>
+<tr class="memdesc:a58e81cb0c6afc54b89c78cc81cca4b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像机开始事件处理  <br /></td></tr>
+<tr class="separator:a58e81cb0c6afc54b89c78cc81cca4b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e707115b02375ac7718509c5c4ca4c" id="r_a93e707115b02375ac7718509c5c4ca4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93e707115b02375ac7718509c5c4ca4c">onEndCamera</a> ()</td></tr>
+<tr class="memdesc:a93e707115b02375ac7718509c5c4ca4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像机结束事件处理  <br /></td></tr>
+<tr class="separator:a93e707115b02375ac7718509c5c4ca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521cb2dc42140ec0f98ea07414f5938a" id="r_a521cb2dc42140ec0f98ea07414f5938a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a521cb2dc42140ec0f98ea07414f5938a">getAlarmCount</a> () const</td></tr>
+<tr class="memdesc:a521cb2dc42140ec0f98ea07414f5938a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取计时器事件数量  <br /></td></tr>
+<tr class="separator:a521cb2dc42140ec0f98ea07414f5938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db452dab3277f4162d3a80cc75858bd" id="r_a3db452dab3277f4162d3a80cc75858bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3db452dab3277f4162d3a80cc75858bd">onAlarmEvent</a> ()</td></tr>
+<tr class="memdesc:a3db452dab3277f4162d3a80cc75858bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件处理  <br /></td></tr>
+<tr class="separator:a3db452dab3277f4162d3a80cc75858bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03ba70570d39b92ee8e9c2a0cb72dd9" id="r_af03ba70570d39b92ee8e9c2a0cb72dd9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af03ba70570d39b92ee8e9c2a0cb72dd9">onAlarmEvent0</a> ()</td></tr>
+<tr class="memdesc:af03ba70570d39b92ee8e9c2a0cb72dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件0处理  <br /></td></tr>
+<tr class="separator:af03ba70570d39b92ee8e9c2a0cb72dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff78b6f3372cbc2f47ec17424bca914b" id="r_aff78b6f3372cbc2f47ec17424bca914b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff78b6f3372cbc2f47ec17424bca914b">onAlarmEvent1</a> ()</td></tr>
+<tr class="memdesc:aff78b6f3372cbc2f47ec17424bca914b"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件1处理  <br /></td></tr>
+<tr class="separator:aff78b6f3372cbc2f47ec17424bca914b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6210d5aed058e22c9230a6e0c5a812" id="r_a1f6210d5aed058e22c9230a6e0c5a812"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f6210d5aed058e22c9230a6e0c5a812">onAlarmEvent2</a> ()</td></tr>
+<tr class="memdesc:a1f6210d5aed058e22c9230a6e0c5a812"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件2处理  <br /></td></tr>
+<tr class="separator:a1f6210d5aed058e22c9230a6e0c5a812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb9bb366f8dacbc95efd8a929401e21" id="r_a3fb9bb366f8dacbc95efd8a929401e21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fb9bb366f8dacbc95efd8a929401e21">onAlarmEvent3</a> ()</td></tr>
+<tr class="memdesc:a3fb9bb366f8dacbc95efd8a929401e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件3处理  <br /></td></tr>
+<tr class="separator:a3fb9bb366f8dacbc95efd8a929401e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bf159ce8ab8d9e411a06d5adc4d69f" id="r_a90bf159ce8ab8d9e411a06d5adc4d69f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90bf159ce8ab8d9e411a06d5adc4d69f">onAlarmEvent4</a> ()</td></tr>
+<tr class="memdesc:a90bf159ce8ab8d9e411a06d5adc4d69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件4处理  <br /></td></tr>
+<tr class="separator:a90bf159ce8ab8d9e411a06d5adc4d69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d6364c015ec6e1b0eb90e2eef1e03c" id="r_a72d6364c015ec6e1b0eb90e2eef1e03c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72d6364c015ec6e1b0eb90e2eef1e03c">onAlarmEvent5</a> ()</td></tr>
+<tr class="memdesc:a72d6364c015ec6e1b0eb90e2eef1e03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件5处理  <br /></td></tr>
+<tr class="separator:a72d6364c015ec6e1b0eb90e2eef1e03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13294c08eb3d9239a4c442a195a3f705" id="r_a13294c08eb3d9239a4c442a195a3f705"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13294c08eb3d9239a4c442a195a3f705">onAlarmEvent6</a> ()</td></tr>
+<tr class="memdesc:a13294c08eb3d9239a4c442a195a3f705"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件6处理  <br /></td></tr>
+<tr class="separator:a13294c08eb3d9239a4c442a195a3f705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79727c53d849c1332a7b19d49cfac151" id="r_a79727c53d849c1332a7b19d49cfac151"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79727c53d849c1332a7b19d49cfac151">onAlarmEvent7</a> ()</td></tr>
+<tr class="memdesc:a79727c53d849c1332a7b19d49cfac151"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件7处理  <br /></td></tr>
+<tr class="separator:a79727c53d849c1332a7b19d49cfac151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f194b425b4a389ef74fa92e4fd98d7" id="r_a80f194b425b4a389ef74fa92e4fd98d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80f194b425b4a389ef74fa92e4fd98d7">onAlarmEvent8</a> ()</td></tr>
+<tr class="memdesc:a80f194b425b4a389ef74fa92e4fd98d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件8处理  <br /></td></tr>
+<tr class="separator:a80f194b425b4a389ef74fa92e4fd98d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2ac11711a7740ce69b910316187eef" id="r_abd2ac11711a7740ce69b910316187eef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd2ac11711a7740ce69b910316187eef">onAlarmEvent9</a> ()</td></tr>
+<tr class="memdesc:abd2ac11711a7740ce69b910316187eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件9处理  <br /></td></tr>
+<tr class="separator:abd2ac11711a7740ce69b910316187eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7759d87c1a829162f4c2b9b25fe42916" id="r_a7759d87c1a829162f4c2b9b25fe42916"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7759d87c1a829162f4c2b9b25fe42916">onAlarmEvent10</a> ()</td></tr>
+<tr class="memdesc:a7759d87c1a829162f4c2b9b25fe42916"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件10处理  <br /></td></tr>
+<tr class="separator:a7759d87c1a829162f4c2b9b25fe42916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025a40d6781ec653faf174567249a3ac" id="r_a025a40d6781ec653faf174567249a3ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a025a40d6781ec653faf174567249a3ac">onDestroy</a> ()</td></tr>
+<tr class="memdesc:a025a40d6781ec653faf174567249a3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁事件处理  <br /></td></tr>
+<tr class="separator:a025a40d6781ec653faf174567249a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:adf64e15314a904a865fb8b5ff5eedc2c" id="r_adf64e15314a904a865fb8b5ff5eedc2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf64e15314a904a865fb8b5ff5eedc2c">_ins_id</a></td></tr>
+<tr class="memdesc:adf64e15314a904a865fb8b5ff5eedc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">实例ID  <br /></td></tr>
+<tr class="separator:adf64e15314a904a865fb8b5ff5eedc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a9b7ae686f37ff472155adda2401af691" id="r_a9b7ae686f37ff472155adda2401af691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b7ae686f37ff472155adda2401af691">reset_alarm_clock</a> ()</td></tr>
+<tr class="memdesc:a9b7ae686f37ff472155adda2401af691"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置计时器  <br /></td></tr>
+<tr class="separator:a9b7ae686f37ff472155adda2401af691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35081ddeba2660af646738d73f615fe1" id="r_a35081ddeba2660af646738d73f615fe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35081ddeba2660af646738d73f615fe1">show_object_alarm_clock_timer</a> (Font font, float x, float y, Color col)</td></tr>
+<tr class="memdesc:a35081ddeba2660af646738d73f615fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示对象计时器  <br /></td></tr>
+<tr class="separator:a35081ddeba2660af646738d73f615fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa692bf52cba6c7488281426288043bc6" id="r_aa692bf52cba6c7488281426288043bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa692bf52cba6c7488281426288043bc6">change_name</a> (const char *name)</td></tr>
+<tr class="memdesc:aa692bf52cba6c7488281426288043bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变对象名称  <br /></td></tr>
+<tr class="separator:aa692bf52cba6c7488281426288043bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667e8fa68117c8ad5fada6a42218b847" id="r_a667e8fa68117c8ad5fada6a42218b847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a667e8fa68117c8ad5fada6a42218b847">change_pro</a> (int pro)</td></tr>
+<tr class="memdesc:a667e8fa68117c8ad5fada6a42218b847"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变对象属性  <br /></td></tr>
+<tr class="separator:a667e8fa68117c8ad5fada6a42218b847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575876c56635ca6b4033a2357def57ec" id="r_a575876c56635ca6b4033a2357def57ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575876c56635ca6b4033a2357def57ec">Draw_Block</a> (Color col)</td></tr>
+<tr class="memdesc:a575876c56635ca6b4033a2357def57ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制对象块  <br /></td></tr>
+<tr class="separator:a575876c56635ca6b4033a2357def57ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4d8093a1b5ae59e7bee65b67a44485" id="r_a4d4d8093a1b5ae59e7bee65b67a44485"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d4d8093a1b5ae59e7bee65b67a44485">Is_Meeting</a> (float _x, float _y, const <a class="el" href="class_object.html">Object</a> *other)</td></tr>
+<tr class="memdesc:a4d4d8093a1b5ae59e7bee65b67a44485"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断对象是否相遇  <br /></td></tr>
+<tr class="separator:a4d4d8093a1b5ae59e7bee65b67a44485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a7064cbee56697148106d1e7ae8f26734" id="r_a7064cbee56697148106d1e7ae8f26734"><td class="memItemLeft" align="right" valign="top">std::array&lt; void(Object::*)(), <a class="el" href="#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7064cbee56697148106d1e7ae8f26734">alarmEvents</a></td></tr>
+<tr class="memdesc:a7064cbee56697148106d1e7ae8f26734"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件数组  <br /></td></tr>
+<tr class="separator:a7064cbee56697148106d1e7ae8f26734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f02b7818b84dfcab18ffabc45db894f" id="r_a0f02b7818b84dfcab18ffabc45db894f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f02b7818b84dfcab18ffabc45db894f">alarm_time_node</a> [<a class="el" href="#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>]</td></tr>
+<tr class="memdesc:a0f02b7818b84dfcab18ffabc45db894f"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器节点数组  <br /></td></tr>
+<tr class="separator:a0f02b7818b84dfcab18ffabc45db894f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:abb6e14dec4564873671fcbb5e70a48a7" id="r_abb6e14dec4564873671fcbb5e70a48a7"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a> = 11</td></tr>
+<tr class="memdesc:abb6e14dec4564873671fcbb5e70a48a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件数量  <br /></td></tr>
+<tr class="separator:abb6e14dec4564873671fcbb5e70a48a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供游戏对象的创建、管理和事件处理功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a40860402e64d8008fb42329df7097cdb">Object</a> obj(<span class="stringliteral">&quot;Player&quot;</span>, 1);</div>
+<div class="line">obj.onUpdate();</div>
+<div class="line">obj.onRender();</div>
+<div class="ttc" id="aclass_object_html_a40860402e64d8008fb42329df7097cdb"><div class="ttname"><a href="#a40860402e64d8008fb42329df7097cdb">Object::Object</a></div><div class="ttdeci">Object()</div><div class="ttdoc">构造函数</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a40860402e64d8008fb42329df7097cdb" name="a40860402e64d8008fb42329df7097cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40860402e64d8008fb42329df7097cdb">&#9670;&#160;</a></span>Object() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object::Object </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_a40860402e64d8008fb42329df7097cdb_cgraph.png" border="0" usemap="#aclass_object_a40860402e64d8008fb42329df7097cdb_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_a40860402e64d8008fb42329df7097cdb_icgraph.png" border="0" usemap="#aclass_object_a40860402e64d8008fb42329df7097cdb_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aec7a1bc847bc5d1dc031cdec32243838" name="aec7a1bc847bc5d1dc031cdec32243838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7a1bc847bc5d1dc031cdec32243838">&#9670;&#160;</a></span>Object() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object::Object </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ins_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pro</em></span><span class="paramdefsep"> = </span><span class="paramdefval">OBJPRO.Normal</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>对象名称 </td></tr>
+    <tr><td class="paramname">ins_id</td><td>实例ID </td></tr>
+    <tr><td class="paramname">pro</td><td>对象属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_aec7a1bc847bc5d1dc031cdec32243838_cgraph.png" border="0" usemap="#aclass_object_aec7a1bc847bc5d1dc031cdec32243838_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae8f5483f459e46687bd01e6f9977afd3" name="ae8f5483f459e46687bd01e6f9977afd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f5483f459e46687bd01e6f9977afd3">&#9670;&#160;</a></span>~Object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object::~Object </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_ae8f5483f459e46687bd01e6f9977afd3_cgraph.png" border="0" usemap="#aclass_object_ae8f5483f459e46687bd01e6f9977afd3_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa692bf52cba6c7488281426288043bc6" name="aa692bf52cba6c7488281426288043bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa692bf52cba6c7488281426288043bc6">&#9670;&#160;</a></span>change_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::change_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变对象名称 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>新名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a667e8fa68117c8ad5fada6a42218b847" name="a667e8fa68117c8ad5fada6a42218b847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667e8fa68117c8ad5fada6a42218b847">&#9670;&#160;</a></span>change_pro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::change_pro </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pro</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变对象属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pro</td><td>新属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a575876c56635ca6b4033a2357def57ec" name="a575876c56635ca6b4033a2357def57ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575876c56635ca6b4033a2357def57ec">&#9670;&#160;</a></span>Draw_Block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::Draw_Block </td>
+          <td>(</td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制对象块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a521cb2dc42140ec0f98ea07414f5938a" name="a521cb2dc42140ec0f98ea07414f5938a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521cb2dc42140ec0f98ea07414f5938a">&#9670;&#160;</a></span>getAlarmCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Object::getAlarmCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取计时器事件数量 </p>
+<dl class="section return"><dt>返回</dt><dd>计时器事件数量 </dd></dl>
+
+</div>
+</div>
+<a id="a190ae6ce8c3c3dc2adba5e8c5d81b927" name="a190ae6ce8c3c3dc2adba5e8c5d81b927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190ae6ce8c3c3dc2adba5e8c5d81b927">&#9670;&#160;</a></span>getObjName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Object::getObjName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取对象名称 </p>
+<dl class="section return"><dt>返回</dt><dd>对象名称 </dd></dl>
+
+</div>
+</div>
+<a id="a7fd498feeb52d36ae3cd12fcef888393" name="a7fd498feeb52d36ae3cd12fcef888393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd498feeb52d36ae3cd12fcef888393">&#9670;&#160;</a></span>getObjPro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; Object::getObjPro </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取对象属性 </p>
+<dl class="section return"><dt>返回</dt><dd>对象属性 </dd></dl>
+
+</div>
+</div>
+<a id="a4d4d8093a1b5ae59e7bee65b67a44485" name="a4d4d8093a1b5ae59e7bee65b67a44485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4d8093a1b5ae59e7bee65b67a44485">&#9670;&#160;</a></span>Is_Meeting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Object::Is_Meeting </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>other</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断对象是否相遇 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">_y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">other</td><td>另一个对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果相遇返回true，否则返回false </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_a4d4d8093a1b5ae59e7bee65b67a44485_cgraph.png" border="0" usemap="#aclass_object_a4d4d8093a1b5ae59e7bee65b67a44485_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a3db452dab3277f4162d3a80cc75858bd" name="a3db452dab3277f4162d3a80cc75858bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db452dab3277f4162d3a80cc75858bd">&#9670;&#160;</a></span>onAlarmEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::onAlarmEvent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计时器事件处理 </p>
+
+</div>
+</div>
+<a id="af03ba70570d39b92ee8e9c2a0cb72dd9" name="af03ba70570d39b92ee8e9c2a0cb72dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03ba70570d39b92ee8e9c2a0cb72dd9">&#9670;&#160;</a></span>onAlarmEvent0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent0 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件0处理 </p>
+
+</div>
+</div>
+<a id="aff78b6f3372cbc2f47ec17424bca914b" name="aff78b6f3372cbc2f47ec17424bca914b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff78b6f3372cbc2f47ec17424bca914b">&#9670;&#160;</a></span>onAlarmEvent1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件1处理 </p>
+
+</div>
+</div>
+<a id="a7759d87c1a829162f4c2b9b25fe42916" name="a7759d87c1a829162f4c2b9b25fe42916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7759d87c1a829162f4c2b9b25fe42916">&#9670;&#160;</a></span>onAlarmEvent10()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent10 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件10处理 </p>
+
+</div>
+</div>
+<a id="a1f6210d5aed058e22c9230a6e0c5a812" name="a1f6210d5aed058e22c9230a6e0c5a812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6210d5aed058e22c9230a6e0c5a812">&#9670;&#160;</a></span>onAlarmEvent2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件2处理 </p>
+
+</div>
+</div>
+<a id="a3fb9bb366f8dacbc95efd8a929401e21" name="a3fb9bb366f8dacbc95efd8a929401e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb9bb366f8dacbc95efd8a929401e21">&#9670;&#160;</a></span>onAlarmEvent3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent3 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件3处理 </p>
+
+</div>
+</div>
+<a id="a90bf159ce8ab8d9e411a06d5adc4d69f" name="a90bf159ce8ab8d9e411a06d5adc4d69f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bf159ce8ab8d9e411a06d5adc4d69f">&#9670;&#160;</a></span>onAlarmEvent4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent4 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件4处理 </p>
+
+</div>
+</div>
+<a id="a72d6364c015ec6e1b0eb90e2eef1e03c" name="a72d6364c015ec6e1b0eb90e2eef1e03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d6364c015ec6e1b0eb90e2eef1e03c">&#9670;&#160;</a></span>onAlarmEvent5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent5 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件5处理 </p>
+
+</div>
+</div>
+<a id="a13294c08eb3d9239a4c442a195a3f705" name="a13294c08eb3d9239a4c442a195a3f705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13294c08eb3d9239a4c442a195a3f705">&#9670;&#160;</a></span>onAlarmEvent6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent6 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件6处理 </p>
+
+</div>
+</div>
+<a id="a79727c53d849c1332a7b19d49cfac151" name="a79727c53d849c1332a7b19d49cfac151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79727c53d849c1332a7b19d49cfac151">&#9670;&#160;</a></span>onAlarmEvent7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent7 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件7处理 </p>
+
+</div>
+</div>
+<a id="a80f194b425b4a389ef74fa92e4fd98d7" name="a80f194b425b4a389ef74fa92e4fd98d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f194b425b4a389ef74fa92e4fd98d7">&#9670;&#160;</a></span>onAlarmEvent8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent8 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件8处理 </p>
+
+</div>
+</div>
+<a id="abd2ac11711a7740ce69b910316187eef" name="abd2ac11711a7740ce69b910316187eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2ac11711a7740ce69b910316187eef">&#9670;&#160;</a></span>onAlarmEvent9()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onAlarmEvent9 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件9处理 </p>
+
+</div>
+</div>
+<a id="a58e81cb0c6afc54b89c78cc81cca4b46" name="a58e81cb0c6afc54b89c78cc81cca4b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e81cb0c6afc54b89c78cc81cca4b46">&#9670;&#160;</a></span>onBeginCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onBeginCamera </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>摄像机开始事件处理 </p>
+
+</div>
+</div>
+<a id="a025a40d6781ec653faf174567249a3ac" name="a025a40d6781ec653faf174567249a3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025a40d6781ec653faf174567249a3ac">&#9670;&#160;</a></span>onDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onDestroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>销毁事件处理 </p>
+
+</div>
+</div>
+<a id="a93e707115b02375ac7718509c5c4ca4c" name="a93e707115b02375ac7718509c5c4ca4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e707115b02375ac7718509c5c4ca4c">&#9670;&#160;</a></span>onEndCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onEndCamera </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>摄像机结束事件处理 </p>
+
+</div>
+</div>
+<a id="ac94e8b39605e259431f78a48b05bca7c" name="ac94e8b39605e259431f78a48b05bca7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94e8b39605e259431f78a48b05bca7c">&#9670;&#160;</a></span>onEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onEnter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>进入事件处理 </p>
+
+</div>
+</div>
+<a id="a31d7adebdce56a27dcc54f9903ac6a7d" name="a31d7adebdce56a27dcc54f9903ac6a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d7adebdce56a27dcc54f9903ac6a7d">&#9670;&#160;</a></span>onEvent_User()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onEvent_User </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用户事件处理 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>事件索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_block.html#a796493f4a45a5e2708bf4836addc49e7">Block</a> 重载.</p>
+
+</div>
+</div>
+<a id="a81ea5499ffd1e5bec96e0d0fc30ea32d" name="a81ea5499ffd1e5bec96e0d0fc30ea32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ea5499ffd1e5bec96e0d0fc30ea32d">&#9670;&#160;</a></span>onRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onRender </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染事件处理 </p>
+
+</div>
+</div>
+<a id="a8a66b10edcb4f906e820f5551b92bece" name="a8a66b10edcb4f906e820f5551b92bece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a66b10edcb4f906e820f5551b92bece">&#9670;&#160;</a></span>onRenderBefore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onRenderBefore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染前事件处理 </p>
+
+</div>
+</div>
+<a id="a7ae46bc3013a4a2648111b7b39f91fa3" name="a7ae46bc3013a4a2648111b7b39f91fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae46bc3013a4a2648111b7b39f91fa3">&#9670;&#160;</a></span>onRenderNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onRenderNext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染后事件处理 </p>
+
+</div>
+</div>
+<a id="a1ee4245d4a233d4ad2a2db45bfc01a17" name="a1ee4245d4a233d4ad2a2db45bfc01a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee4245d4a233d4ad2a2db45bfc01a17">&#9670;&#160;</a></span>onUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Object::onUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新事件处理 </p>
+
+</div>
+</div>
+<a id="a9b7ae686f37ff472155adda2401af691" name="a9b7ae686f37ff472155adda2401af691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7ae686f37ff472155adda2401af691">&#9670;&#160;</a></span>reset_alarm_clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::reset_alarm_clock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置计时器 </p>
+
+</div>
+</div>
+<a id="a9d27512ec0b5c9ad531f1b81d0f4e8b9" name="a9d27512ec0b5c9ad531f1b81d0f4e8b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d27512ec0b5c9ad531f1b81d0f4e8b9">&#9670;&#160;</a></span>setObjName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::setObjName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置对象名称 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>对象名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_a9d27512ec0b5c9ad531f1b81d0f4e8b9_cgraph.png" border="0" usemap="#aclass_object_a9d27512ec0b5c9ad531f1b81d0f4e8b9_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_object_a9d27512ec0b5c9ad531f1b81d0f4e8b9_icgraph.png" border="0" usemap="#aclass_object_a9d27512ec0b5c9ad531f1b81d0f4e8b9_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a87897378d71c679fb0aab2cbc4287d62" name="a87897378d71c679fb0aab2cbc4287d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87897378d71c679fb0aab2cbc4287d62">&#9670;&#160;</a></span>setObjPro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::setObjPro </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>pro</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置对象属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pro</td><td>对象属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35081ddeba2660af646738d73f615fe1" name="a35081ddeba2660af646738d73f615fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35081ddeba2660af646738d73f615fe1">&#9670;&#160;</a></span>show_object_alarm_clock_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::show_object_alarm_clock_timer </td>
+          <td>(</td>
+          <td class="paramtype">Font</td>          <td class="paramname"><span class="paramname"><em>font</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>显示对象计时器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>字体 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="adf64e15314a904a865fb8b5ff5eedc2c" name="adf64e15314a904a865fb8b5ff5eedc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf64e15314a904a865fb8b5ff5eedc2c">&#9670;&#160;</a></span>_ins_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Object::_ins_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实例ID </p>
+
+</div>
+</div>
+<a id="abb6e14dec4564873671fcbb5e70a48a7" name="abb6e14dec4564873671fcbb5e70a48a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6e14dec4564873671fcbb5e70a48a7">&#9670;&#160;</a></span>ALARM_EVENT_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Object::ALARM_EVENT_COUNT = 11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件数量 </p>
+
+</div>
+</div>
+<a id="a0f02b7818b84dfcab18ffabc45db894f" name="a0f02b7818b84dfcab18ffabc45db894f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f02b7818b84dfcab18ffabc45db894f">&#9670;&#160;</a></span>alarm_time_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Object::alarm_time_node[<a class="el" href="#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器节点数组 </p>
+
+</div>
+</div>
+<a id="a7064cbee56697148106d1e7ae8f26734" name="a7064cbee56697148106d1e7ae8f26734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7064cbee56697148106d1e7ae8f26734">&#9670;&#160;</a></span>alarmEvents</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;void (Object::*)(), <a class="el" href="#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>&gt; Object::alarmEvents</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器事件数组 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_object_8h_source.html">Object.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

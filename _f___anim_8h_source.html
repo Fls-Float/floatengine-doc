@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/F_Anim.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">F_Anim.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_f___anim_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_f_math_8h.html">FMath.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_f___easings_8h.html">F_Easings.h</a>&quot;</span></div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_a_n_i_m___t_w_e_e_n.html">ANIM_TWEEN</a>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a484b56e11359882b8ba351460c5a592b">    7</a></span>    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a484b56e11359882b8ba351460c5a592b">LINEAR</a> = 0,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#adfa4e329a09dbd0c1aa9188861c42eb8">    8</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#adfa4e329a09dbd0c1aa9188861c42eb8">SINE</a> = 1,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a56e3922a635e6430ebcb5f570c6d23f5">    9</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a56e3922a635e6430ebcb5f570c6d23f5">QUAD</a> = 2,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#aa6f488d790d91a9565e8cfd54af9530c">   10</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#aa6f488d790d91a9565e8cfd54af9530c">CUBIC</a> = 3,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#afdf7ef78fa1812fb674bccc7b91e5be9">   11</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#afdf7ef78fa1812fb674bccc7b91e5be9">QUART</a> = 4,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a727684ec87909a8a5d5005a98366a002">   12</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a727684ec87909a8a5d5005a98366a002">QUINT</a> = 5,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a3d6c024571fea1a7400bf3f0f3abe631">   13</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a3d6c024571fea1a7400bf3f0f3abe631">EXPO</a> = 6,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a47f9a716bba609cb51accc2eac671004">   14</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a47f9a716bba609cb51accc2eac671004">CIRC</a> = 7,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#abc9a447ff17437b7d61cb0af73c2b0ed">   15</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#abc9a447ff17437b7d61cb0af73c2b0ed">BACK</a> = 8,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#ad74ef5ba5fee29fddaedcc86df22bb19">   16</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#ad74ef5ba5fee29fddaedcc86df22bb19">ELASTIC</a> = 9,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a8fdfd18a8057a3d80b1b7eba967c406b">   17</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a8fdfd18a8057a3d80b1b7eba967c406b">BOUNCE</a> = 10,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a95d4b0137e49c4bd248adaba799727e8">   18</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a95d4b0137e49c4bd248adaba799727e8">IN</a> = 11,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#a1716663d9dd46e4a851ade182f86be86">   19</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#a1716663d9dd46e4a851ade182f86be86">OUT</a> = 12,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_a_n_i_m___t_w_e_e_n.html#ad1f23e04b12e045afc5c2cabcb04a771">   20</a></span>        <a class="code hl_variable" href="class_a_n_i_m___t_w_e_e_n.html#ad1f23e04b12e045afc5c2cabcb04a771">IN_OUT</a> = 13;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_a_n_i_m___e_a_s_e.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_a_n_i_m___e_a_s_e.html">ANIM_EASE</a>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_a_n_i_m___e_a_s_e.html#ab1ca9339c61010da4f9b32c6e11e6fc5">   25</a></span>    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_a_n_i_m___e_a_s_e.html#ab1ca9339c61010da4f9b32c6e11e6fc5">IN</a> = 0,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_a_n_i_m___e_a_s_e.html#a5590e19bab9808ce4fab74f54b5665a5">   26</a></span>        <a class="code hl_variable" href="class_a_n_i_m___e_a_s_e.html#a5590e19bab9808ce4fab74f54b5665a5">OUT</a> = 1,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_a_n_i_m___e_a_s_e.html#ab2439756807b565ff04a2179105e2fe8">   27</a></span>        <a class="code hl_variable" href="class_a_n_i_m___e_a_s_e.html#ab2439756807b565ff04a2179105e2fe8">IN_OUT</a> = 2;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_f___anim.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_f___anim.html">F_Anim</a>{ </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> _tween;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">int</span> _ease;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> _time;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">int</span> _duration;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">float</span> _start;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">float</span> _change;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> _delay;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">float</span> _arg1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">float</span> _arg2;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">float</span>* ft_value=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> _event();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> _id;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> is_end = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::string _anim_name;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_f___anim.html#aeb5f8c0404466c6253ce9965ddf5f1db">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___anim.html#aeb5f8c0404466c6253ce9965ddf5f1db">Init</a>(<span class="keywordtype">float</span>* _val, <span class="keywordtype">int</span> tween, <span class="keywordtype">int</span> ease, <span class="keywordtype">float</span> start, <span class="keywordtype">float</span> change, <span class="keywordtype">int</span> duration, <span class="keywordtype">int</span> delay = 0, <span class="keywordtype">float</span> arg1 = 0, <span class="keywordtype">float</span> arg2 = 0);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_f___anim.html#afc38fa64cc3416a146525a8fbb7d1684">   47</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___anim.html#afc38fa64cc3416a146525a8fbb7d1684">Start</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_f___anim.html#a3bcea002616a2e00213f4fcc03c34c42">   48</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_f___anim.html#a3bcea002616a2e00213f4fcc03c34c42">Get_ID</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_f___anim.html#aa833feeb01e1f2531f2add9ac2607c38">   49</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___anim.html#aa833feeb01e1f2531f2add9ac2607c38">Set_ID</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_f___anim.html#a3feee003335d79da9600d9490f6fcaf8">   50</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___anim.html#a3feee003335d79da9600d9490f6fcaf8">Is_End</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_f___anim.html#ad7b2af78adb6ee6587fff9f7c40a0d25">   51</a></span>    std::string <a class="code hl_function" href="class_f___anim.html#ad7b2af78adb6ee6587fff9f7c40a0d25">Get_Name</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_f___anim.html#a77d91cc9c614e5d58516c7bbfa37c11a">   52</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___anim.html#a77d91cc9c614e5d58516c7bbfa37c11a">Set_Name</a>(std::string name);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a45c90328da9c3f171761854238914f66">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#a45c90328da9c3f171761854238914f66">F_Anim_Create</a>(<span class="keywordtype">float</span>* _val, <a class="code hl_class" href="class_f___anim.html">F_Anim</a> anim);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#aa908b71916bb0d3a2a1e32af905f8181">   55</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#a45c90328da9c3f171761854238914f66">F_Anim_Create</a>(<span class="keywordtype">float</span>* _val, <span class="keywordtype">int</span> tween, <span class="keywordtype">int</span> ease, <span class="keywordtype">float</span> start, <span class="keywordtype">float</span> change, <span class="keywordtype">int</span> duration, <span class="keywordtype">int</span> delay = 0, <span class="keywordtype">float</span> arg1 = 0, <span class="keywordtype">float</span> arg2 = 0);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#ad962b7a8e0eebdd17a1a972968b7fcac">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#ad962b7a8e0eebdd17a1a972968b7fcac">F_Anim_Update</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#aaa3121b9da08cf643b79219f8313f1a8">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#aaa3121b9da08cf643b79219f8313f1a8">F_Anim_Delete</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a99324e854c12c44feb058d5d2174e747">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#aaa3121b9da08cf643b79219f8313f1a8">F_Anim_Delete</a>(std::string name);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//filter=0表示全部清除，filter=1表示清除结束的动画</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a37ec1b93763c0f66acf0687a005ae9f7">   60</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_f___anim_8h.html#a37ec1b93763c0f66acf0687a005ae9f7">F_Anim_Clear</a>(<span class="keywordtype">int</span> filter=0);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a02443e7773eeb809e1ac3b132055a70b">   61</a></span><a class="code hl_class" href="class_f___anim.html">F_Anim</a>* <a class="code hl_function" href="_f___anim_8h.html#a02443e7773eeb809e1ac3b132055a70b">F_Anim_Get</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a57ac23779da41eb8b33ef26b1a4b742f">   62</a></span><a class="code hl_class" href="class_f___anim.html">F_Anim</a>* <a class="code hl_function" href="_f___anim_8h.html#a02443e7773eeb809e1ac3b132055a70b">F_Anim_Get</a>(std::string name);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//-1表示不存在</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a423bed535a86a5cd1aba97fb411a6715">   64</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="_f___anim_8h.html#a423bed535a86a5cd1aba97fb411a6715">F_Anim_Find</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//-1表示不存在</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#a8a9786e080d8fa8c828cc675740e9235">   66</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="_f___anim_8h.html#a423bed535a86a5cd1aba97fb411a6715">F_Anim_Find</a>(std::string name);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//返回动画数量,filter=0表示全部，filter=1表示没结束动画</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="_f___anim_8h.html#abdae65a51e22c5bb06de7bc0d573e251">   69</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="_f___anim_8h.html#abdae65a51e22c5bb06de7bc0d573e251">F_Anim_Count</a>(<span class="keywordtype">bool</span> filter);</div>
+<div class="ttc" id="a_f___anim_8h_html_a02443e7773eeb809e1ac3b132055a70b"><div class="ttname"><a href="_f___anim_8h.html#a02443e7773eeb809e1ac3b132055a70b">F_Anim_Get</a></div><div class="ttdeci">F_Anim * F_Anim_Get(int id)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_a37ec1b93763c0f66acf0687a005ae9f7"><div class="ttname"><a href="_f___anim_8h.html#a37ec1b93763c0f66acf0687a005ae9f7">F_Anim_Clear</a></div><div class="ttdeci">void F_Anim_Clear(int filter=0)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_a423bed535a86a5cd1aba97fb411a6715"><div class="ttname"><a href="_f___anim_8h.html#a423bed535a86a5cd1aba97fb411a6715">F_Anim_Find</a></div><div class="ttdeci">int F_Anim_Find(int id)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_a45c90328da9c3f171761854238914f66"><div class="ttname"><a href="_f___anim_8h.html#a45c90328da9c3f171761854238914f66">F_Anim_Create</a></div><div class="ttdeci">void F_Anim_Create(float *_val, F_Anim anim)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_aaa3121b9da08cf643b79219f8313f1a8"><div class="ttname"><a href="_f___anim_8h.html#aaa3121b9da08cf643b79219f8313f1a8">F_Anim_Delete</a></div><div class="ttdeci">void F_Anim_Delete(int id)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_abdae65a51e22c5bb06de7bc0d573e251"><div class="ttname"><a href="_f___anim_8h.html#abdae65a51e22c5bb06de7bc0d573e251">F_Anim_Count</a></div><div class="ttdeci">int F_Anim_Count(bool filter)</div></div>
+<div class="ttc" id="a_f___anim_8h_html_ad962b7a8e0eebdd17a1a972968b7fcac"><div class="ttname"><a href="_f___anim_8h.html#ad962b7a8e0eebdd17a1a972968b7fcac">F_Anim_Update</a></div><div class="ttdeci">void F_Anim_Update()</div></div>
+<div class="ttc" id="a_f___easings_8h_html"><div class="ttname"><a href="_f___easings_8h.html">F_Easings.h</a></div><div class="ttdoc">缓动函数</div></div>
+<div class="ttc" id="a_f_math_8h_html"><div class="ttname"><a href="_f_math_8h.html">FMath.h</a></div><div class="ttdoc">数学工具类</div></div>
+<div class="ttc" id="aclass_a_n_i_m___e_a_s_e_html"><div class="ttname"><a href="class_a_n_i_m___e_a_s_e.html">ANIM_EASE</a></div><div class="ttdef"><b>定义</b> F_Anim.h:23</div></div>
+<div class="ttc" id="aclass_a_n_i_m___e_a_s_e_html_a5590e19bab9808ce4fab74f54b5665a5"><div class="ttname"><a href="class_a_n_i_m___e_a_s_e.html#a5590e19bab9808ce4fab74f54b5665a5">ANIM_EASE::OUT</a></div><div class="ttdeci">static const int OUT</div><div class="ttdef"><b>定义</b> F_Anim.h:26</div></div>
+<div class="ttc" id="aclass_a_n_i_m___e_a_s_e_html_ab1ca9339c61010da4f9b32c6e11e6fc5"><div class="ttname"><a href="class_a_n_i_m___e_a_s_e.html#ab1ca9339c61010da4f9b32c6e11e6fc5">ANIM_EASE::IN</a></div><div class="ttdeci">static const int IN</div><div class="ttdef"><b>定义</b> F_Anim.h:25</div></div>
+<div class="ttc" id="aclass_a_n_i_m___e_a_s_e_html_ab2439756807b565ff04a2179105e2fe8"><div class="ttname"><a href="class_a_n_i_m___e_a_s_e.html#ab2439756807b565ff04a2179105e2fe8">ANIM_EASE::IN_OUT</a></div><div class="ttdeci">static const int IN_OUT</div><div class="ttdef"><b>定义</b> F_Anim.h:27</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html">ANIM_TWEEN</a></div><div class="ttdef"><b>定义</b> F_Anim.h:5</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a1716663d9dd46e4a851ade182f86be86"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a1716663d9dd46e4a851ade182f86be86">ANIM_TWEEN::OUT</a></div><div class="ttdeci">static const int OUT</div><div class="ttdef"><b>定义</b> F_Anim.h:19</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a3d6c024571fea1a7400bf3f0f3abe631"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a3d6c024571fea1a7400bf3f0f3abe631">ANIM_TWEEN::EXPO</a></div><div class="ttdeci">static const int EXPO</div><div class="ttdef"><b>定义</b> F_Anim.h:13</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a47f9a716bba609cb51accc2eac671004"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a47f9a716bba609cb51accc2eac671004">ANIM_TWEEN::CIRC</a></div><div class="ttdeci">static const int CIRC</div><div class="ttdef"><b>定义</b> F_Anim.h:14</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a484b56e11359882b8ba351460c5a592b"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a484b56e11359882b8ba351460c5a592b">ANIM_TWEEN::LINEAR</a></div><div class="ttdeci">static const int LINEAR</div><div class="ttdef"><b>定义</b> F_Anim.h:7</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a56e3922a635e6430ebcb5f570c6d23f5"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a56e3922a635e6430ebcb5f570c6d23f5">ANIM_TWEEN::QUAD</a></div><div class="ttdeci">static const int QUAD</div><div class="ttdef"><b>定义</b> F_Anim.h:9</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a727684ec87909a8a5d5005a98366a002"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a727684ec87909a8a5d5005a98366a002">ANIM_TWEEN::QUINT</a></div><div class="ttdeci">static const int QUINT</div><div class="ttdef"><b>定义</b> F_Anim.h:12</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a8fdfd18a8057a3d80b1b7eba967c406b"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a8fdfd18a8057a3d80b1b7eba967c406b">ANIM_TWEEN::BOUNCE</a></div><div class="ttdeci">static const int BOUNCE</div><div class="ttdef"><b>定义</b> F_Anim.h:17</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_a95d4b0137e49c4bd248adaba799727e8"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#a95d4b0137e49c4bd248adaba799727e8">ANIM_TWEEN::IN</a></div><div class="ttdeci">static const int IN</div><div class="ttdef"><b>定义</b> F_Anim.h:18</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_aa6f488d790d91a9565e8cfd54af9530c"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#aa6f488d790d91a9565e8cfd54af9530c">ANIM_TWEEN::CUBIC</a></div><div class="ttdeci">static const int CUBIC</div><div class="ttdef"><b>定义</b> F_Anim.h:10</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_abc9a447ff17437b7d61cb0af73c2b0ed"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#abc9a447ff17437b7d61cb0af73c2b0ed">ANIM_TWEEN::BACK</a></div><div class="ttdeci">static const int BACK</div><div class="ttdef"><b>定义</b> F_Anim.h:15</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_ad1f23e04b12e045afc5c2cabcb04a771"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#ad1f23e04b12e045afc5c2cabcb04a771">ANIM_TWEEN::IN_OUT</a></div><div class="ttdeci">static const int IN_OUT</div><div class="ttdef"><b>定义</b> F_Anim.h:20</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_ad74ef5ba5fee29fddaedcc86df22bb19"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#ad74ef5ba5fee29fddaedcc86df22bb19">ANIM_TWEEN::ELASTIC</a></div><div class="ttdeci">static const int ELASTIC</div><div class="ttdef"><b>定义</b> F_Anim.h:16</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_adfa4e329a09dbd0c1aa9188861c42eb8"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#adfa4e329a09dbd0c1aa9188861c42eb8">ANIM_TWEEN::SINE</a></div><div class="ttdeci">static const int SINE</div><div class="ttdef"><b>定义</b> F_Anim.h:8</div></div>
+<div class="ttc" id="aclass_a_n_i_m___t_w_e_e_n_html_afdf7ef78fa1812fb674bccc7b91e5be9"><div class="ttname"><a href="class_a_n_i_m___t_w_e_e_n.html#afdf7ef78fa1812fb674bccc7b91e5be9">ANIM_TWEEN::QUART</a></div><div class="ttdeci">static const int QUART</div><div class="ttdef"><b>定义</b> F_Anim.h:11</div></div>
+<div class="ttc" id="aclass_f___anim_html"><div class="ttname"><a href="class_f___anim.html">F_Anim</a></div><div class="ttdef"><b>定义</b> F_Anim.h:30</div></div>
+<div class="ttc" id="aclass_f___anim_html_a3bcea002616a2e00213f4fcc03c34c42"><div class="ttname"><a href="class_f___anim.html#a3bcea002616a2e00213f4fcc03c34c42">F_Anim::Get_ID</a></div><div class="ttdeci">int Get_ID()</div></div>
+<div class="ttc" id="aclass_f___anim_html_a3feee003335d79da9600d9490f6fcaf8"><div class="ttname"><a href="class_f___anim.html#a3feee003335d79da9600d9490f6fcaf8">F_Anim::Is_End</a></div><div class="ttdeci">bool Is_End()</div></div>
+<div class="ttc" id="aclass_f___anim_html_a77d91cc9c614e5d58516c7bbfa37c11a"><div class="ttname"><a href="class_f___anim.html#a77d91cc9c614e5d58516c7bbfa37c11a">F_Anim::Set_Name</a></div><div class="ttdeci">void Set_Name(std::string name)</div></div>
+<div class="ttc" id="aclass_f___anim_html_aa833feeb01e1f2531f2add9ac2607c38"><div class="ttname"><a href="class_f___anim.html#aa833feeb01e1f2531f2add9ac2607c38">F_Anim::Set_ID</a></div><div class="ttdeci">void Set_ID(int id)</div></div>
+<div class="ttc" id="aclass_f___anim_html_ad7b2af78adb6ee6587fff9f7c40a0d25"><div class="ttname"><a href="class_f___anim.html#ad7b2af78adb6ee6587fff9f7c40a0d25">F_Anim::Get_Name</a></div><div class="ttdeci">std::string Get_Name()</div></div>
+<div class="ttc" id="aclass_f___anim_html_aeb5f8c0404466c6253ce9965ddf5f1db"><div class="ttname"><a href="class_f___anim.html#aeb5f8c0404466c6253ce9965ddf5f1db">F_Anim::Init</a></div><div class="ttdeci">void Init(float *_val, int tween, int ease, float start, float change, int duration, int delay=0, float arg1=0, float arg2=0)</div></div>
+<div class="ttc" id="aclass_f___anim_html_afc38fa64cc3416a146525a8fbb7d1684"><div class="ttname"><a href="class_f___anim.html#afc38fa64cc3416a146525a8fbb7d1684">F_Anim::Start</a></div><div class="ttdeci">void Start()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

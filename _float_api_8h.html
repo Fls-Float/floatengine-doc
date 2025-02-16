@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/FloatApi.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">FloatApi.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>浮动引擎API  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;raylib.hpp&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="_f___resource_8h_source.html">F_Resource.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f_math_8h_source.html">FMath.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f___audio_8h_source.html">F_Audio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="winfuns_8h_source.html">winfuns.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f___shader_8h_source.html">F_Shader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f___font_8h_source.html">F_Font.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_f___anim_8h_source.html">F_Anim.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enum_8h_source.html">Enum.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+FloatApi.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_float_api_8h__incl.png" border="0" usemap="#afloatengine_2_float_api_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_float_api_8h__dep__incl.png" border="0" usemap="#afloatengine_2_float_api_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="_float_api_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___debug.html">F_Debug</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供调试功能  <a href="class_f___debug.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___input.html">F_Input</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供输入处理功能  <a href="class_f___input.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___color.html">F_Color</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供颜色处理功能  <a href="class_f___color.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___render.html">F_Render</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供渲染功能  <a href="class_f___render.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___camera.html">F_Camera</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供摄像机管理功能  <a href="class_f___camera.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___file.html">F_File</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供文件处理功能  <a href="class_f___file.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___ini.html">F_Ini</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供INI文件处理功能  <a href="class_f___ini.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a349734c91b354847537eeef1a4ae7f4b" id="r_a349734c91b354847537eeef1a4ae7f4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a349734c91b354847537eeef1a4ae7f4b">FLOAT_API_VERSION</a>&#160;&#160;&#160;&quot;1.4.1&quot;</td></tr>
+<tr class="separator:a349734c91b354847537eeef1a4ae7f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08ec37a8c99d747fb60fa15bc28678b" id="r_af08ec37a8c99d747fb60fa15bc28678b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af08ec37a8c99d747fb60fa15bc28678b">_CRT_SECURE_NO_WARNINGS</a></td></tr>
+<tr class="separator:af08ec37a8c99d747fb60fa15bc28678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88603163e452f95068ff4fb2cb9766fc" id="r_a88603163e452f95068ff4fb2cb9766fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88603163e452f95068ff4fb2cb9766fc">LINK_WINFUNS</a></td></tr>
+<tr class="separator:a88603163e452f95068ff4fb2cb9766fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef3d1d5271374dd1ca94b5bc44e6788" id="r_a8ef3d1d5271374dd1ca94b5bc44e6788"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ef3d1d5271374dd1ca94b5bc44e6788">repeat</a>(n)</td></tr>
+<tr class="separator:a8ef3d1d5271374dd1ca94b5bc44e6788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac543c96cd20556067609cc7c927fae27" id="r_ac543c96cd20556067609cc7c927fae27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac543c96cd20556067609cc7c927fae27">ARR_SIZE</a>(a)</td></tr>
+<tr class="separator:ac543c96cd20556067609cc7c927fae27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a07afd7094cb489cbd514c76e6f55d34f" id="r_a07afd7094cb489cbd514c76e6f55d34f"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07afd7094cb489cbd514c76e6f55d34f">Float</a></td></tr>
+<tr class="separator:a07afd7094cb489cbd514c76e6f55d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5c9509fa763577e56d5f0c604d3462a0" id="r_a5c9509fa763577e56d5f0c604d3462a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c9509fa763577e56d5f0c604d3462a0">DEBUG_LOG</a> (int lv, const char *text, bool english=1, bool auto_enter=1)</td></tr>
+<tr class="memdesc:a5c9509fa763577e56d5f0c604d3462a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">打印调试日志  <br /></td></tr>
+<tr class="separator:a5c9509fa763577e56d5f0c604d3462a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9c8a91e9454e33b7def70a952413c9" id="r_a1b9c8a91e9454e33b7def70a952413c9"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a1b9c8a91e9454e33b7def70a952413c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1b9c8a91e9454e33b7def70a952413c9">Array_Has</a> (T a[], T b)</td></tr>
+<tr class="memdesc:a1b9c8a91e9454e33b7def70a952413c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断数组中是否含有某数据  <br /></td></tr>
+<tr class="separator:a1b9c8a91e9454e33b7def70a952413c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a4c98fa0d8c74d063b3327e4b81469" id="r_a37a4c98fa0d8c74d063b3327e4b81469"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37a4c98fa0d8c74d063b3327e4b81469">Load_Font</a> (const char *filePath, int size, const char *m_CodePoint)</td></tr>
+<tr class="memdesc:a37a4c98fa0d8c74d063b3327e4b81469"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件加载字体  <br /></td></tr>
+<tr class="separator:a37a4c98fa0d8c74d063b3327e4b81469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a39d9f107422b9b6648a5219e6bb64" id="r_ad4a39d9f107422b9b6648a5219e6bb64"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4a39d9f107422b9b6648a5219e6bb64">Load_Font_File_Codepoints</a> (const char *filePath, int size, const char *codePoints_File)</td></tr>
+<tr class="memdesc:ad4a39d9f107422b9b6648a5219e6bb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件加载字体（使用码点文件）  <br /></td></tr>
+<tr class="separator:ad4a39d9f107422b9b6648a5219e6bb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f196c216f01e80de8cde692f0a9a91b" id="r_a8f196c216f01e80de8cde692f0a9a91b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f196c216f01e80de8cde692f0a9a91b">letter_to_kv</a> (char letter)</td></tr>
+<tr class="memdesc:a8f196c216f01e80de8cde692f0a9a91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">字母转换为键值  <br /></td></tr>
+<tr class="separator:a8f196c216f01e80de8cde692f0a9a91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e925b7baad6a0450d2d5048f6ae082" id="r_ae1e925b7baad6a0450d2d5048f6ae082"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e925b7baad6a0450d2d5048f6ae082">number_to_kv</a> (int number)</td></tr>
+<tr class="memdesc:ae1e925b7baad6a0450d2d5048f6ae082"><td class="mdescLeft">&#160;</td><td class="mdescRight">数字转换为键值  <br /></td></tr>
+<tr class="separator:ae1e925b7baad6a0450d2d5048f6ae082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b0bad273adb1991833e3d2de613dc6" id="r_a24b0bad273adb1991833e3d2de613dc6"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24b0bad273adb1991833e3d2de613dc6">Make_Color_RGB</a> (int r, int g, int b, float a=1.0f)</td></tr>
+<tr class="memdesc:a24b0bad273adb1991833e3d2de613dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建RGB颜色  <br /></td></tr>
+<tr class="separator:a24b0bad273adb1991833e3d2de613dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637e97d4af2b3554444f9581ed4d6c3c" id="r_a637e97d4af2b3554444f9581ed4d6c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f___color.html">F_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a637e97d4af2b3554444f9581ed4d6c3c">Make_FColor_RGB</a> (int r, int g, int b, float a=1.0f)</td></tr>
+<tr class="memdesc:a637e97d4af2b3554444f9581ed4d6c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建FColor对象  <br /></td></tr>
+<tr class="separator:a637e97d4af2b3554444f9581ed4d6c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac8884dbf0ed90203b51248f8880fb8" id="r_a0ac8884dbf0ed90203b51248f8880fb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ac8884dbf0ed90203b51248f8880fb8">Load_FCamera</a> (float w, float h, <a class="el" href="class_f___camera.html">F_Camera</a> *camera)</td></tr>
+<tr class="memdesc:a0ac8884dbf0ed90203b51248f8880fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载摄像机  <br /></td></tr>
+<tr class="separator:a0ac8884dbf0ed90203b51248f8880fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1734bd1c8cea7135da08be2329c5bbe8" id="r_a1734bd1c8cea7135da08be2329c5bbe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1734bd1c8cea7135da08be2329c5bbe8">Unload_FCamera</a> (<a class="el" href="class_f___camera.html">F_Camera</a> *camera)</td></tr>
+<tr class="memdesc:a1734bd1c8cea7135da08be2329c5bbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载摄像机  <br /></td></tr>
+<tr class="separator:a1734bd1c8cea7135da08be2329c5bbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629ec759943a45e89d9bc0054dcf0a32" id="r_a629ec759943a45e89d9bc0054dcf0a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a629ec759943a45e89d9bc0054dcf0a32">Begin_Mode_FCamera</a> (<a class="el" href="class_f___camera.html">F_Camera</a> &amp;_camera, Color Background_Color)</td></tr>
+<tr class="memdesc:a629ec759943a45e89d9bc0054dcf0a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始摄像机模式  <br /></td></tr>
+<tr class="separator:a629ec759943a45e89d9bc0054dcf0a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11d09b6f5769cb076232f7d01d985a2" id="r_aa11d09b6f5769cb076232f7d01d985a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa11d09b6f5769cb076232f7d01d985a2">End_Mode_FCamera</a> (<a class="el" href="class_f___camera.html">F_Camera</a> &amp;_camera, Color Background_Color, int reverse=0)</td></tr>
+<tr class="memdesc:aa11d09b6f5769cb076232f7d01d985a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束摄像机模式  <br /></td></tr>
+<tr class="separator:aa11d09b6f5769cb076232f7d01d985a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293767abcd791e4d94c9dcb62af4905a" id="r_a293767abcd791e4d94c9dcb62af4905a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a293767abcd791e4d94c9dcb62af4905a">Begin_Mode_FCamera</a> (<a class="el" href="class_f___camera.html">F_Camera</a> *_camera, Color Background_Color)</td></tr>
+<tr class="memdesc:a293767abcd791e4d94c9dcb62af4905a"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始摄像机模式  <br /></td></tr>
+<tr class="separator:a293767abcd791e4d94c9dcb62af4905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a49478c68d73ffdda32563c315b65be" id="r_a5a49478c68d73ffdda32563c315b65be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a49478c68d73ffdda32563c315b65be">End_Mode_FCamera</a> (<a class="el" href="class_f___camera.html">F_Camera</a> *_camera, Color Background_Color, int reverse=0)</td></tr>
+<tr class="memdesc:a5a49478c68d73ffdda32563c315b65be"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束摄像机模式  <br /></td></tr>
+<tr class="separator:a5a49478c68d73ffdda32563c315b65be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12d4f10ad665b349dbfa2f411825443" id="r_af12d4f10ad665b349dbfa2f411825443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af12d4f10ad665b349dbfa2f411825443">Audio_Play</a> (<a class="el" href="class_f___audio.html">F_Audio</a> audio)</td></tr>
+<tr class="memdesc:af12d4f10ad665b349dbfa2f411825443"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放音频  <br /></td></tr>
+<tr class="separator:af12d4f10ad665b349dbfa2f411825443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9855dc96486fde388b501219088814cd" id="r_a9855dc96486fde388b501219088814cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9855dc96486fde388b501219088814cd">Audio_Stop</a> (<a class="el" href="class_f___audio.html">F_Audio</a> audio)</td></tr>
+<tr class="memdesc:a9855dc96486fde388b501219088814cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止音频  <br /></td></tr>
+<tr class="separator:a9855dc96486fde388b501219088814cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb84899b7a809aa9554fa7eba30cf40" id="r_aedb84899b7a809aa9554fa7eba30cf40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb84899b7a809aa9554fa7eba30cf40">Audio_Music_Update</a> (<a class="el" href="class_f___audio.html">F_Audio</a> audio)</td></tr>
+<tr class="memdesc:aedb84899b7a809aa9554fa7eba30cf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新音乐  <br /></td></tr>
+<tr class="separator:aedb84899b7a809aa9554fa7eba30cf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>浮动引擎API </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="af08ec37a8c99d747fb60fa15bc28678b" name="af08ec37a8c99d747fb60fa15bc28678b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08ec37a8c99d747fb60fa15bc28678b">&#9670;&#160;</a></span>_CRT_SECURE_NO_WARNINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CRT_SECURE_NO_WARNINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac543c96cd20556067609cc7c927fae27" name="ac543c96cd20556067609cc7c927fae27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac543c96cd20556067609cc7c927fae27">&#9670;&#160;</a></span>ARR_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARR_SIZE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">( <span class="keyword">sizeof</span>( (a) ) / <span class="keyword">sizeof</span>( (a[0]) ) )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a349734c91b354847537eeef1a4ae7f4b" name="a349734c91b354847537eeef1a4ae7f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349734c91b354847537eeef1a4ae7f4b">&#9670;&#160;</a></span>FLOAT_API_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLOAT_API_VERSION&#160;&#160;&#160;&quot;1.4.1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88603163e452f95068ff4fb2cb9766fc" name="a88603163e452f95068ff4fb2cb9766fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88603163e452f95068ff4fb2cb9766fc">&#9670;&#160;</a></span>LINK_WINFUNS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_WINFUNS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ef3d1d5271374dd1ca94b5bc44e6788" name="a8ef3d1d5271374dd1ca94b5bc44e6788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef3d1d5271374dd1ca94b5bc44e6788">&#9670;&#160;</a></span>repeat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define repeat</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> __r_i__=0;__r_i__&lt;int(n);__r_i__++)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a07afd7094cb489cbd514c76e6f55d34f" name="a07afd7094cb489cbd514c76e6f55d34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07afd7094cb489cbd514c76e6f55d34f">&#9670;&#160;</a></span>Float</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="#a07afd7094cb489cbd514c76e6f55d34f">Float</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a1b9c8a91e9454e33b7def70a952413c9" name="a1b9c8a91e9454e33b7def70a952413c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9c8a91e9454e33b7def70a952413c9">&#9670;&#160;</a></span>Array_Has()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Array_Has </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>a</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断数组中是否含有某数据 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>数组类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>数组 </td></tr>
+    <tr><td class="paramname">b</td><td>要查找的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果包含返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="aedb84899b7a809aa9554fa7eba30cf40" name="aedb84899b7a809aa9554fa7eba30cf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb84899b7a809aa9554fa7eba30cf40">&#9670;&#160;</a></span>Audio_Music_Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio_Music_Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___audio.html">F_Audio</a></td>          <td class="paramname"><span class="paramname"><em>audio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新音乐 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio</td><td>音频对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af12d4f10ad665b349dbfa2f411825443" name="af12d4f10ad665b349dbfa2f411825443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12d4f10ad665b349dbfa2f411825443">&#9670;&#160;</a></span>Audio_Play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio_Play </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___audio.html">F_Audio</a></td>          <td class="paramname"><span class="paramname"><em>audio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>播放音频 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio</td><td>音频对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9855dc96486fde388b501219088814cd" name="a9855dc96486fde388b501219088814cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9855dc96486fde388b501219088814cd">&#9670;&#160;</a></span>Audio_Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio_Stop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___audio.html">F_Audio</a></td>          <td class="paramname"><span class="paramname"><em>audio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止音频 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audio</td><td>音频对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a629ec759943a45e89d9bc0054dcf0a32" name="a629ec759943a45e89d9bc0054dcf0a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a629ec759943a45e89d9bc0054dcf0a32">&#9670;&#160;</a></span>Begin_Mode_FCamera() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Begin_Mode_FCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>Background_Color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始摄像机模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_camera</td><td>摄像机对象 </td></tr>
+    <tr><td class="paramname">Background_Color</td><td>背景颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a293767abcd791e4d94c9dcb62af4905a" name="a293767abcd791e4d94c9dcb62af4905a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293767abcd791e4d94c9dcb62af4905a">&#9670;&#160;</a></span>Begin_Mode_FCamera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Begin_Mode_FCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>_camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>Background_Color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始摄像机模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_camera</td><td>摄像机对象 </td></tr>
+    <tr><td class="paramname">Background_Color</td><td>背景颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c9509fa763577e56d5f0c604d3462a0" name="a5c9509fa763577e56d5f0c604d3462a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9509fa763577e56d5f0c604d3462a0">&#9670;&#160;</a></span>DEBUG_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEBUG_LOG </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>english</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>auto_enter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>打印调试日志 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lv</td><td>日志级别 </td></tr>
+    <tr><td class="paramname">text</td><td>日志内容 </td></tr>
+    <tr><td class="paramname">english</td><td>是否使用英文 </td></tr>
+    <tr><td class="paramname">auto_enter</td><td>是否自动换行 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa11d09b6f5769cb076232f7d01d985a2" name="aa11d09b6f5769cb076232f7d01d985a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11d09b6f5769cb076232f7d01d985a2">&#9670;&#160;</a></span>End_Mode_FCamera() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void End_Mode_FCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>Background_Color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束摄像机模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_camera</td><td>摄像机对象 </td></tr>
+    <tr><td class="paramname">Background_Color</td><td>背景颜色 </td></tr>
+    <tr><td class="paramname">reverse</td><td>是否反转 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a49478c68d73ffdda32563c315b65be" name="a5a49478c68d73ffdda32563c315b65be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a49478c68d73ffdda32563c315b65be">&#9670;&#160;</a></span>End_Mode_FCamera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void End_Mode_FCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>_camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>Background_Color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束摄像机模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_camera</td><td>摄像机对象 </td></tr>
+    <tr><td class="paramname">Background_Color</td><td>背景颜色 </td></tr>
+    <tr><td class="paramname">reverse</td><td>是否反转 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f196c216f01e80de8cde692f0a9a91b" name="a8f196c216f01e80de8cde692f0a9a91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f196c216f01e80de8cde692f0a9a91b">&#9670;&#160;</a></span>letter_to_kv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int letter_to_kv </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>letter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>字母转换为键值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">letter</td><td>字母 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>键值 </dd></dl>
+
+</div>
+</div>
+<a id="a0ac8884dbf0ed90203b51248f8880fb8" name="a0ac8884dbf0ed90203b51248f8880fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac8884dbf0ed90203b51248f8880fb8">&#9670;&#160;</a></span>Load_FCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Load_FCamera </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载摄像机 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>宽度 </td></tr>
+    <tr><td class="paramname">h</td><td>高度 </td></tr>
+    <tr><td class="paramname">camera</td><td>摄像机对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37a4c98fa0d8c74d063b3327e4b81469" name="a37a4c98fa0d8c74d063b3327e4b81469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a4c98fa0d8c74d063b3327e4b81469">&#9670;&#160;</a></span>Load_Font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font Load_Font </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>m_CodePoint</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从文件加载字体 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>文件路径 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">m_CodePoint</td><td>码点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载的字体 </dd></dl>
+
+</div>
+</div>
+<a id="ad4a39d9f107422b9b6648a5219e6bb64" name="ad4a39d9f107422b9b6648a5219e6bb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a39d9f107422b9b6648a5219e6bb64">&#9670;&#160;</a></span>Load_Font_File_Codepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font Load_Font_File_Codepoints </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>codePoints_File</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从文件加载字体（使用码点文件） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>文件路径 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">codePoints_File</td><td>码点文件 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载的字体 </dd></dl>
+
+</div>
+</div>
+<a id="a24b0bad273adb1991833e3d2de613dc6" name="a24b0bad273adb1991833e3d2de613dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b0bad273adb1991833e3d2de613dc6">&#9670;&#160;</a></span>Make_Color_RGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Make_Color_RGB </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建RGB颜色 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>红色分量 </td></tr>
+    <tr><td class="paramname">g</td><td>绿色分量 </td></tr>
+    <tr><td class="paramname">b</td><td>蓝色分量 </td></tr>
+    <tr><td class="paramname">a</td><td>透明度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>颜色对象 </dd></dl>
+
+</div>
+</div>
+<a id="a637e97d4af2b3554444f9581ed4d6c3c" name="a637e97d4af2b3554444f9581ed4d6c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637e97d4af2b3554444f9581ed4d6c3c">&#9670;&#160;</a></span>Make_FColor_RGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f___color.html">F_Color</a> Make_FColor_RGB </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建FColor对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>红色分量 </td></tr>
+    <tr><td class="paramname">g</td><td>绿色分量 </td></tr>
+    <tr><td class="paramname">b</td><td>蓝色分量 </td></tr>
+    <tr><td class="paramname">a</td><td>透明度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>FColor对象 </dd></dl>
+
+</div>
+</div>
+<a id="ae1e925b7baad6a0450d2d5048f6ae082" name="ae1e925b7baad6a0450d2d5048f6ae082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e925b7baad6a0450d2d5048f6ae082">&#9670;&#160;</a></span>number_to_kv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int number_to_kv </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>number</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>数字转换为键值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>数字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>键值 </dd></dl>
+
+</div>
+</div>
+<a id="a1734bd1c8cea7135da08be2329c5bbe8" name="a1734bd1c8cea7135da08be2329c5bbe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1734bd1c8cea7135da08be2329c5bbe8">&#9670;&#160;</a></span>Unload_FCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unload_FCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___camera.html">F_Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>camera</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>卸载摄像机 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>摄像机对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

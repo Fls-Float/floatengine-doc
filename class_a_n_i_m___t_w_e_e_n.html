@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: ANIM_TWEEN类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_a_n_i_m___t_w_e_e_n-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">ANIM_TWEEN类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_f___anim_8h_source.html">F_Anim.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a484b56e11359882b8ba351460c5a592b" id="r_a484b56e11359882b8ba351460c5a592b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a484b56e11359882b8ba351460c5a592b">LINEAR</a> = 0</td></tr>
+<tr class="separator:a484b56e11359882b8ba351460c5a592b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa4e329a09dbd0c1aa9188861c42eb8" id="r_adfa4e329a09dbd0c1aa9188861c42eb8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfa4e329a09dbd0c1aa9188861c42eb8">SINE</a> = 1</td></tr>
+<tr class="separator:adfa4e329a09dbd0c1aa9188861c42eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e3922a635e6430ebcb5f570c6d23f5" id="r_a56e3922a635e6430ebcb5f570c6d23f5"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56e3922a635e6430ebcb5f570c6d23f5">QUAD</a> = 2</td></tr>
+<tr class="separator:a56e3922a635e6430ebcb5f570c6d23f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f488d790d91a9565e8cfd54af9530c" id="r_aa6f488d790d91a9565e8cfd54af9530c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6f488d790d91a9565e8cfd54af9530c">CUBIC</a> = 3</td></tr>
+<tr class="separator:aa6f488d790d91a9565e8cfd54af9530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf7ef78fa1812fb674bccc7b91e5be9" id="r_afdf7ef78fa1812fb674bccc7b91e5be9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdf7ef78fa1812fb674bccc7b91e5be9">QUART</a> = 4</td></tr>
+<tr class="separator:afdf7ef78fa1812fb674bccc7b91e5be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727684ec87909a8a5d5005a98366a002" id="r_a727684ec87909a8a5d5005a98366a002"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a727684ec87909a8a5d5005a98366a002">QUINT</a> = 5</td></tr>
+<tr class="separator:a727684ec87909a8a5d5005a98366a002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6c024571fea1a7400bf3f0f3abe631" id="r_a3d6c024571fea1a7400bf3f0f3abe631"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d6c024571fea1a7400bf3f0f3abe631">EXPO</a> = 6</td></tr>
+<tr class="separator:a3d6c024571fea1a7400bf3f0f3abe631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f9a716bba609cb51accc2eac671004" id="r_a47f9a716bba609cb51accc2eac671004"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47f9a716bba609cb51accc2eac671004">CIRC</a> = 7</td></tr>
+<tr class="separator:a47f9a716bba609cb51accc2eac671004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9a447ff17437b7d61cb0af73c2b0ed" id="r_abc9a447ff17437b7d61cb0af73c2b0ed"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc9a447ff17437b7d61cb0af73c2b0ed">BACK</a> = 8</td></tr>
+<tr class="separator:abc9a447ff17437b7d61cb0af73c2b0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74ef5ba5fee29fddaedcc86df22bb19" id="r_ad74ef5ba5fee29fddaedcc86df22bb19"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad74ef5ba5fee29fddaedcc86df22bb19">ELASTIC</a> = 9</td></tr>
+<tr class="separator:ad74ef5ba5fee29fddaedcc86df22bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdfd18a8057a3d80b1b7eba967c406b" id="r_a8fdfd18a8057a3d80b1b7eba967c406b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fdfd18a8057a3d80b1b7eba967c406b">BOUNCE</a> = 10</td></tr>
+<tr class="separator:a8fdfd18a8057a3d80b1b7eba967c406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d4b0137e49c4bd248adaba799727e8" id="r_a95d4b0137e49c4bd248adaba799727e8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95d4b0137e49c4bd248adaba799727e8">IN</a> = 11</td></tr>
+<tr class="separator:a95d4b0137e49c4bd248adaba799727e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1716663d9dd46e4a851ade182f86be86" id="r_a1716663d9dd46e4a851ade182f86be86"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1716663d9dd46e4a851ade182f86be86">OUT</a> = 12</td></tr>
+<tr class="separator:a1716663d9dd46e4a851ade182f86be86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f23e04b12e045afc5c2cabcb04a771" id="r_ad1f23e04b12e045afc5c2cabcb04a771"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1f23e04b12e045afc5c2cabcb04a771">IN_OUT</a> = 13</td></tr>
+<tr class="separator:ad1f23e04b12e045afc5c2cabcb04a771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="abc9a447ff17437b7d61cb0af73c2b0ed" name="abc9a447ff17437b7d61cb0af73c2b0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9a447ff17437b7d61cb0af73c2b0ed">&#9670;&#160;</a></span>BACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::BACK = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fdfd18a8057a3d80b1b7eba967c406b" name="a8fdfd18a8057a3d80b1b7eba967c406b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fdfd18a8057a3d80b1b7eba967c406b">&#9670;&#160;</a></span>BOUNCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::BOUNCE = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47f9a716bba609cb51accc2eac671004" name="a47f9a716bba609cb51accc2eac671004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f9a716bba609cb51accc2eac671004">&#9670;&#160;</a></span>CIRC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::CIRC = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6f488d790d91a9565e8cfd54af9530c" name="aa6f488d790d91a9565e8cfd54af9530c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f488d790d91a9565e8cfd54af9530c">&#9670;&#160;</a></span>CUBIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::CUBIC = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad74ef5ba5fee29fddaedcc86df22bb19" name="ad74ef5ba5fee29fddaedcc86df22bb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74ef5ba5fee29fddaedcc86df22bb19">&#9670;&#160;</a></span>ELASTIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::ELASTIC = 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d6c024571fea1a7400bf3f0f3abe631" name="a3d6c024571fea1a7400bf3f0f3abe631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6c024571fea1a7400bf3f0f3abe631">&#9670;&#160;</a></span>EXPO</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::EXPO = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95d4b0137e49c4bd248adaba799727e8" name="a95d4b0137e49c4bd248adaba799727e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d4b0137e49c4bd248adaba799727e8">&#9670;&#160;</a></span>IN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::IN = 11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1f23e04b12e045afc5c2cabcb04a771" name="ad1f23e04b12e045afc5c2cabcb04a771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f23e04b12e045afc5c2cabcb04a771">&#9670;&#160;</a></span>IN_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::IN_OUT = 13</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a484b56e11359882b8ba351460c5a592b" name="a484b56e11359882b8ba351460c5a592b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484b56e11359882b8ba351460c5a592b">&#9670;&#160;</a></span>LINEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::LINEAR = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1716663d9dd46e4a851ade182f86be86" name="a1716663d9dd46e4a851ade182f86be86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1716663d9dd46e4a851ade182f86be86">&#9670;&#160;</a></span>OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::OUT = 12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56e3922a635e6430ebcb5f570c6d23f5" name="a56e3922a635e6430ebcb5f570c6d23f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e3922a635e6430ebcb5f570c6d23f5">&#9670;&#160;</a></span>QUAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::QUAD = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdf7ef78fa1812fb674bccc7b91e5be9" name="afdf7ef78fa1812fb674bccc7b91e5be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf7ef78fa1812fb674bccc7b91e5be9">&#9670;&#160;</a></span>QUART</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::QUART = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a727684ec87909a8a5d5005a98366a002" name="a727684ec87909a8a5d5005a98366a002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727684ec87909a8a5d5005a98366a002">&#9670;&#160;</a></span>QUINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::QUINT = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfa4e329a09dbd0c1aa9188861c42eb8" name="adfa4e329a09dbd0c1aa9188861c42eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa4e329a09dbd0c1aa9188861c42eb8">&#9670;&#160;</a></span>SINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ANIM_TWEEN::SINE = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_f___anim_8h_source.html">F_Anim.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

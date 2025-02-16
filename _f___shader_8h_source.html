@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/F_Shader.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">F_Shader.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_f___shader_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_f___shader.html">   29</a></span><span class="keyword">class </span><a class="code hl_function" href="class_f___shader.html#a049da29b492e52a44d5872a5ff78b925">F_Shader</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    Shader m_shader;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_f___shader.html#a049da29b492e52a44d5872a5ff78b925">   36</a></span>    <a class="code hl_function" href="class_f___shader.html#a049da29b492e52a44d5872a5ff78b925">F_Shader</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_f___shader.html#a6ed979d75e979ed7943edab59d584379">   42</a></span>    <a class="code hl_function" href="class_f___shader.html#a6ed979d75e979ed7943edab59d584379">F_Shader</a>(<span class="keyword">const</span> Shader&amp; shader);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_f___shader.html#af90da8ac33b85f6474d5e7e4fc3dc646">   49</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#af90da8ac33b85f6474d5e7e4fc3dc646">LoadFromFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* vs, <span class="keyword">const</span> <span class="keywordtype">char</span>* fs);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_f___shader.html#a601bae80738093a6c1395d9f7db8b94e">   56</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#a601bae80738093a6c1395d9f7db8b94e">LoadFromCode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* vs, <span class="keyword">const</span> <span class="keywordtype">char</span>* fs);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_f___shader.html#a3508ce0a58f799e822b9eea427ae168f">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#a3508ce0a58f799e822b9eea427ae168f">SetValue</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">void</span>* value, <span class="keywordtype">int</span> type);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_f___shader.html#ac7da4ea10d53eaa457aa5741b044914f">   71</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#ac7da4ea10d53eaa457aa5741b044914f">SetValueTexture</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, Texture texture);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_f___shader.html#ad59fca97692b3da99b6fd2005156f34a">   78</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#ad59fca97692b3da99b6fd2005156f34a">SetrValueMatrix</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, Matrix mat);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_f___shader.html#a63dcb611844796250a47f3db82c06603">   85</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_f___shader.html#a63dcb611844796250a47f3db82c06603">GetLoc</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_f___shader.html#af60e94b0c8df668d4c0d9f386963b9c5">   90</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#af60e94b0c8df668d4c0d9f386963b9c5">Unload</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_f___shader.html#ad1a4221d932ecfd1d79d7d484bc32271">   95</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#ad1a4221d932ecfd1d79d7d484bc32271">Begin</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_f___shader.html#adc07fa764e429f2ff250cb113e35f2de">  100</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___shader.html#adc07fa764e429f2ff250cb113e35f2de">End</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+</div>
+<div class="ttc" id="aclass_f___shader_html_a049da29b492e52a44d5872a5ff78b925"><div class="ttname"><a href="class_f___shader.html#a049da29b492e52a44d5872a5ff78b925">F_Shader::F_Shader</a></div><div class="ttdeci">F_Shader()</div><div class="ttdoc">默认构造函数</div></div>
+<div class="ttc" id="aclass_f___shader_html_a3508ce0a58f799e822b9eea427ae168f"><div class="ttname"><a href="class_f___shader.html#a3508ce0a58f799e822b9eea427ae168f">F_Shader::SetValue</a></div><div class="ttdeci">void SetValue(const char *name, const void *value, int type)</div><div class="ttdoc">设置着色器参数</div></div>
+<div class="ttc" id="aclass_f___shader_html_a601bae80738093a6c1395d9f7db8b94e"><div class="ttname"><a href="class_f___shader.html#a601bae80738093a6c1395d9f7db8b94e">F_Shader::LoadFromCode</a></div><div class="ttdeci">void LoadFromCode(const char *vs, const char *fs)</div><div class="ttdoc">从代码加载着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_a63dcb611844796250a47f3db82c06603"><div class="ttname"><a href="class_f___shader.html#a63dcb611844796250a47f3db82c06603">F_Shader::GetLoc</a></div><div class="ttdeci">int GetLoc(const char *name)</div><div class="ttdoc">获取参数位置</div></div>
+<div class="ttc" id="aclass_f___shader_html_a6ed979d75e979ed7943edab59d584379"><div class="ttname"><a href="class_f___shader.html#a6ed979d75e979ed7943edab59d584379">F_Shader::F_Shader</a></div><div class="ttdeci">F_Shader(const Shader &amp;shader)</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_f___shader_html_ac7da4ea10d53eaa457aa5741b044914f"><div class="ttname"><a href="class_f___shader.html#ac7da4ea10d53eaa457aa5741b044914f">F_Shader::SetValueTexture</a></div><div class="ttdeci">void SetValueTexture(const char *name, Texture texture)</div><div class="ttdoc">设置纹理参数</div></div>
+<div class="ttc" id="aclass_f___shader_html_ad1a4221d932ecfd1d79d7d484bc32271"><div class="ttname"><a href="class_f___shader.html#ad1a4221d932ecfd1d79d7d484bc32271">F_Shader::Begin</a></div><div class="ttdeci">void Begin()</div><div class="ttdoc">开始使用着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_ad59fca97692b3da99b6fd2005156f34a"><div class="ttname"><a href="class_f___shader.html#ad59fca97692b3da99b6fd2005156f34a">F_Shader::SetrValueMatrix</a></div><div class="ttdeci">void SetrValueMatrix(const char *name, Matrix mat)</div><div class="ttdoc">设置矩阵参数</div></div>
+<div class="ttc" id="aclass_f___shader_html_adc07fa764e429f2ff250cb113e35f2de"><div class="ttname"><a href="class_f___shader.html#adc07fa764e429f2ff250cb113e35f2de">F_Shader::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">结束使用着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_af60e94b0c8df668d4c0d9f386963b9c5"><div class="ttname"><a href="class_f___shader.html#af60e94b0c8df668d4c0d9f386963b9c5">F_Shader::Unload</a></div><div class="ttdeci">void Unload()</div><div class="ttdoc">卸载着色器</div></div>
+<div class="ttc" id="aclass_f___shader_html_af90da8ac33b85f6474d5e7e4fc3dc646"><div class="ttname"><a href="class_f___shader.html#af90da8ac33b85f6474d5e7e4fc3dc646">F_Shader::LoadFromFile</a></div><div class="ttdeci">void LoadFromFile(const char *vs, const char *fs)</div><div class="ttdoc">从文件加载着色器</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

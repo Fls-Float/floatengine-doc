@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: Actor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_actor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Actor类 参考<div class="ingroups"><a class="el" href="group___actor.html">角色模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供角色的基本属性和行为  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_actor_8h_source.html">Actor.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Actor 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_actor__inherit__graph.png" border="0" usemap="#a_actor_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Actor 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_actor__coll__graph.png" border="0" usemap="#a_actor_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2a0ff4335a1ee9096df90f288c026c8b" id="r_a2a0ff4335a1ee9096df90f288c026c8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a0ff4335a1ee9096df90f288c026c8b">Actor</a> ()</td></tr>
+<tr class="memdesc:a2a0ff4335a1ee9096df90f288c026c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a2a0ff4335a1ee9096df90f288c026c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad807fe8f85e72ab263a0c05e3231cb39" id="r_ad807fe8f85e72ab263a0c05e3231cb39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad807fe8f85e72ab263a0c05e3231cb39">~Actor</a> ()</td></tr>
+<tr class="memdesc:ad807fe8f85e72ab263a0c05e3231cb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:ad807fe8f85e72ab263a0c05e3231cb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object" id="r_a40860402e64d8008fb42329df7097cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7a1bc847bc5d1dc031cdec32243838 inherit pub_methods_class_object" id="r_aec7a1bc847bc5d1dc031cdec32243838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aec7a1bc847bc5d1dc031cdec32243838">Object</a> (const char *name, int ins_id, int pro=OBJPRO.Normal)</td></tr>
+<tr class="memdesc:aec7a1bc847bc5d1dc031cdec32243838 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:aec7a1bc847bc5d1dc031cdec32243838 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object" id="r_ae8f5483f459e46687bd01e6f9977afd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ae8f5483f459e46687bd01e6f9977afd3">~Object</a> ()</td></tr>
+<tr class="memdesc:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d27512ec0b5c9ad531f1b81d0f4e8b9 inherit pub_methods_class_object" id="r_a9d27512ec0b5c9ad531f1b81d0f4e8b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a9d27512ec0b5c9ad531f1b81d0f4e8b9">setObjName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a9d27512ec0b5c9ad531f1b81d0f4e8b9 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对象名称  <br /></td></tr>
+<tr class="separator:a9d27512ec0b5c9ad531f1b81d0f4e8b9 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87897378d71c679fb0aab2cbc4287d62 inherit pub_methods_class_object" id="r_a87897378d71c679fb0aab2cbc4287d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a87897378d71c679fb0aab2cbc4287d62">setObjPro</a> (const int &amp;pro)</td></tr>
+<tr class="memdesc:a87897378d71c679fb0aab2cbc4287d62 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置对象属性  <br /></td></tr>
+<tr class="separator:a87897378d71c679fb0aab2cbc4287d62 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190ae6ce8c3c3dc2adba5e8c5d81b927 inherit pub_methods_class_object" id="r_a190ae6ce8c3c3dc2adba5e8c5d81b927"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a190ae6ce8c3c3dc2adba5e8c5d81b927">getObjName</a> () const</td></tr>
+<tr class="memdesc:a190ae6ce8c3c3dc2adba5e8c5d81b927 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对象名称  <br /></td></tr>
+<tr class="separator:a190ae6ce8c3c3dc2adba5e8c5d81b927 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd498feeb52d36ae3cd12fcef888393 inherit pub_methods_class_object" id="r_a7fd498feeb52d36ae3cd12fcef888393"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7fd498feeb52d36ae3cd12fcef888393">getObjPro</a> () const</td></tr>
+<tr class="memdesc:a7fd498feeb52d36ae3cd12fcef888393 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对象属性  <br /></td></tr>
+<tr class="separator:a7fd498feeb52d36ae3cd12fcef888393 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d7adebdce56a27dcc54f9903ac6a7d inherit pub_methods_class_object" id="r_a31d7adebdce56a27dcc54f9903ac6a7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a31d7adebdce56a27dcc54f9903ac6a7d">onEvent_User</a> (int index)</td></tr>
+<tr class="memdesc:a31d7adebdce56a27dcc54f9903ac6a7d inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户事件处理  <br /></td></tr>
+<tr class="separator:a31d7adebdce56a27dcc54f9903ac6a7d inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94e8b39605e259431f78a48b05bca7c inherit pub_methods_class_object" id="r_ac94e8b39605e259431f78a48b05bca7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ac94e8b39605e259431f78a48b05bca7c">onEnter</a> ()</td></tr>
+<tr class="memdesc:ac94e8b39605e259431f78a48b05bca7c inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">进入事件处理  <br /></td></tr>
+<tr class="separator:ac94e8b39605e259431f78a48b05bca7c inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee4245d4a233d4ad2a2db45bfc01a17 inherit pub_methods_class_object" id="r_a1ee4245d4a233d4ad2a2db45bfc01a17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a1ee4245d4a233d4ad2a2db45bfc01a17">onUpdate</a> ()</td></tr>
+<tr class="memdesc:a1ee4245d4a233d4ad2a2db45bfc01a17 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新事件处理  <br /></td></tr>
+<tr class="separator:a1ee4245d4a233d4ad2a2db45bfc01a17 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a66b10edcb4f906e820f5551b92bece inherit pub_methods_class_object" id="r_a8a66b10edcb4f906e820f5551b92bece"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a8a66b10edcb4f906e820f5551b92bece">onRenderBefore</a> ()</td></tr>
+<tr class="memdesc:a8a66b10edcb4f906e820f5551b92bece inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染前事件处理  <br /></td></tr>
+<tr class="separator:a8a66b10edcb4f906e820f5551b92bece inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ea5499ffd1e5bec96e0d0fc30ea32d inherit pub_methods_class_object" id="r_a81ea5499ffd1e5bec96e0d0fc30ea32d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a81ea5499ffd1e5bec96e0d0fc30ea32d">onRender</a> ()</td></tr>
+<tr class="memdesc:a81ea5499ffd1e5bec96e0d0fc30ea32d inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染事件处理  <br /></td></tr>
+<tr class="separator:a81ea5499ffd1e5bec96e0d0fc30ea32d inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae46bc3013a4a2648111b7b39f91fa3 inherit pub_methods_class_object" id="r_a7ae46bc3013a4a2648111b7b39f91fa3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7ae46bc3013a4a2648111b7b39f91fa3">onRenderNext</a> ()</td></tr>
+<tr class="memdesc:a7ae46bc3013a4a2648111b7b39f91fa3 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染后事件处理  <br /></td></tr>
+<tr class="separator:a7ae46bc3013a4a2648111b7b39f91fa3 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e81cb0c6afc54b89c78cc81cca4b46 inherit pub_methods_class_object" id="r_a58e81cb0c6afc54b89c78cc81cca4b46"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a58e81cb0c6afc54b89c78cc81cca4b46">onBeginCamera</a> ()</td></tr>
+<tr class="memdesc:a58e81cb0c6afc54b89c78cc81cca4b46 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像机开始事件处理  <br /></td></tr>
+<tr class="separator:a58e81cb0c6afc54b89c78cc81cca4b46 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e707115b02375ac7718509c5c4ca4c inherit pub_methods_class_object" id="r_a93e707115b02375ac7718509c5c4ca4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a93e707115b02375ac7718509c5c4ca4c">onEndCamera</a> ()</td></tr>
+<tr class="memdesc:a93e707115b02375ac7718509c5c4ca4c inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像机结束事件处理  <br /></td></tr>
+<tr class="separator:a93e707115b02375ac7718509c5c4ca4c inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521cb2dc42140ec0f98ea07414f5938a inherit pub_methods_class_object" id="r_a521cb2dc42140ec0f98ea07414f5938a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a521cb2dc42140ec0f98ea07414f5938a">getAlarmCount</a> () const</td></tr>
+<tr class="memdesc:a521cb2dc42140ec0f98ea07414f5938a inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取计时器事件数量  <br /></td></tr>
+<tr class="separator:a521cb2dc42140ec0f98ea07414f5938a inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db452dab3277f4162d3a80cc75858bd inherit pub_methods_class_object" id="r_a3db452dab3277f4162d3a80cc75858bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a3db452dab3277f4162d3a80cc75858bd">onAlarmEvent</a> ()</td></tr>
+<tr class="memdesc:a3db452dab3277f4162d3a80cc75858bd inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件处理  <br /></td></tr>
+<tr class="separator:a3db452dab3277f4162d3a80cc75858bd inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03ba70570d39b92ee8e9c2a0cb72dd9 inherit pub_methods_class_object" id="r_af03ba70570d39b92ee8e9c2a0cb72dd9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#af03ba70570d39b92ee8e9c2a0cb72dd9">onAlarmEvent0</a> ()</td></tr>
+<tr class="memdesc:af03ba70570d39b92ee8e9c2a0cb72dd9 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件0处理  <br /></td></tr>
+<tr class="separator:af03ba70570d39b92ee8e9c2a0cb72dd9 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff78b6f3372cbc2f47ec17424bca914b inherit pub_methods_class_object" id="r_aff78b6f3372cbc2f47ec17424bca914b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aff78b6f3372cbc2f47ec17424bca914b">onAlarmEvent1</a> ()</td></tr>
+<tr class="memdesc:aff78b6f3372cbc2f47ec17424bca914b inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件1处理  <br /></td></tr>
+<tr class="separator:aff78b6f3372cbc2f47ec17424bca914b inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6210d5aed058e22c9230a6e0c5a812 inherit pub_methods_class_object" id="r_a1f6210d5aed058e22c9230a6e0c5a812"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a1f6210d5aed058e22c9230a6e0c5a812">onAlarmEvent2</a> ()</td></tr>
+<tr class="memdesc:a1f6210d5aed058e22c9230a6e0c5a812 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件2处理  <br /></td></tr>
+<tr class="separator:a1f6210d5aed058e22c9230a6e0c5a812 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb9bb366f8dacbc95efd8a929401e21 inherit pub_methods_class_object" id="r_a3fb9bb366f8dacbc95efd8a929401e21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a3fb9bb366f8dacbc95efd8a929401e21">onAlarmEvent3</a> ()</td></tr>
+<tr class="memdesc:a3fb9bb366f8dacbc95efd8a929401e21 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件3处理  <br /></td></tr>
+<tr class="separator:a3fb9bb366f8dacbc95efd8a929401e21 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bf159ce8ab8d9e411a06d5adc4d69f inherit pub_methods_class_object" id="r_a90bf159ce8ab8d9e411a06d5adc4d69f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a90bf159ce8ab8d9e411a06d5adc4d69f">onAlarmEvent4</a> ()</td></tr>
+<tr class="memdesc:a90bf159ce8ab8d9e411a06d5adc4d69f inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件4处理  <br /></td></tr>
+<tr class="separator:a90bf159ce8ab8d9e411a06d5adc4d69f inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d6364c015ec6e1b0eb90e2eef1e03c inherit pub_methods_class_object" id="r_a72d6364c015ec6e1b0eb90e2eef1e03c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a72d6364c015ec6e1b0eb90e2eef1e03c">onAlarmEvent5</a> ()</td></tr>
+<tr class="memdesc:a72d6364c015ec6e1b0eb90e2eef1e03c inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件5处理  <br /></td></tr>
+<tr class="separator:a72d6364c015ec6e1b0eb90e2eef1e03c inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13294c08eb3d9239a4c442a195a3f705 inherit pub_methods_class_object" id="r_a13294c08eb3d9239a4c442a195a3f705"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a13294c08eb3d9239a4c442a195a3f705">onAlarmEvent6</a> ()</td></tr>
+<tr class="memdesc:a13294c08eb3d9239a4c442a195a3f705 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件6处理  <br /></td></tr>
+<tr class="separator:a13294c08eb3d9239a4c442a195a3f705 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79727c53d849c1332a7b19d49cfac151 inherit pub_methods_class_object" id="r_a79727c53d849c1332a7b19d49cfac151"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a79727c53d849c1332a7b19d49cfac151">onAlarmEvent7</a> ()</td></tr>
+<tr class="memdesc:a79727c53d849c1332a7b19d49cfac151 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件7处理  <br /></td></tr>
+<tr class="separator:a79727c53d849c1332a7b19d49cfac151 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f194b425b4a389ef74fa92e4fd98d7 inherit pub_methods_class_object" id="r_a80f194b425b4a389ef74fa92e4fd98d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a80f194b425b4a389ef74fa92e4fd98d7">onAlarmEvent8</a> ()</td></tr>
+<tr class="memdesc:a80f194b425b4a389ef74fa92e4fd98d7 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件8处理  <br /></td></tr>
+<tr class="separator:a80f194b425b4a389ef74fa92e4fd98d7 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2ac11711a7740ce69b910316187eef inherit pub_methods_class_object" id="r_abd2ac11711a7740ce69b910316187eef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#abd2ac11711a7740ce69b910316187eef">onAlarmEvent9</a> ()</td></tr>
+<tr class="memdesc:abd2ac11711a7740ce69b910316187eef inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件9处理  <br /></td></tr>
+<tr class="separator:abd2ac11711a7740ce69b910316187eef inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7759d87c1a829162f4c2b9b25fe42916 inherit pub_methods_class_object" id="r_a7759d87c1a829162f4c2b9b25fe42916"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7759d87c1a829162f4c2b9b25fe42916">onAlarmEvent10</a> ()</td></tr>
+<tr class="memdesc:a7759d87c1a829162f4c2b9b25fe42916 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件10处理  <br /></td></tr>
+<tr class="separator:a7759d87c1a829162f4c2b9b25fe42916 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025a40d6781ec653faf174567249a3ac inherit pub_methods_class_object" id="r_a025a40d6781ec653faf174567249a3ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a025a40d6781ec653faf174567249a3ac">onDestroy</a> ()</td></tr>
+<tr class="memdesc:a025a40d6781ec653faf174567249a3ac inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁事件处理  <br /></td></tr>
+<tr class="separator:a025a40d6781ec653faf174567249a3ac inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acf0a5801a56edbc02c0e99919a4b5b1b" id="r_acf0a5801a56edbc02c0e99919a4b5b1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0a5801a56edbc02c0e99919a4b5b1b">active</a></td></tr>
+<tr class="memdesc:acf0a5801a56edbc02c0e99919a4b5b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">角色是否激活  <br /></td></tr>
+<tr class="separator:acf0a5801a56edbc02c0e99919a4b5b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7460aa157bdfe0c2101500307858cd8b" id="r_a7460aa157bdfe0c2101500307858cd8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7460aa157bdfe0c2101500307858cd8b">moveable</a></td></tr>
+<tr class="memdesc:a7460aa157bdfe0c2101500307858cd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">角色是否可移动  <br /></td></tr>
+<tr class="separator:a7460aa157bdfe0c2101500307858cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b39a623f4d9a32e2048f9d948667bf3" id="r_a5b39a623f4d9a32e2048f9d948667bf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b39a623f4d9a32e2048f9d948667bf3">jumpable</a></td></tr>
+<tr class="memdesc:a5b39a623f4d9a32e2048f9d948667bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">角色是否可跳跃  <br /></td></tr>
+<tr class="separator:a5b39a623f4d9a32e2048f9d948667bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eae241224ff06bc885c2910851e2fc9" id="r_a8eae241224ff06bc885c2910851e2fc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eae241224ff06bc885c2910851e2fc9">isJump</a></td></tr>
+<tr class="memdesc:a8eae241224ff06bc885c2910851e2fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">角色是否在跳跃中  <br /></td></tr>
+<tr class="separator:a8eae241224ff06bc885c2910851e2fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d721e1ce89871da1a914bd9722dc17" id="r_af1d721e1ce89871da1a914bd9722dc17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d721e1ce89871da1a914bd9722dc17">gravity</a></td></tr>
+<tr class="memdesc:af1d721e1ce89871da1a914bd9722dc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">角色的重力  <br /></td></tr>
+<tr class="separator:af1d721e1ce89871da1a914bd9722dc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_object')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:adf64e15314a904a865fb8b5ff5eedc2c inherit pub_attribs_class_object" id="r_adf64e15314a904a865fb8b5ff5eedc2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#adf64e15314a904a865fb8b5ff5eedc2c">_ins_id</a></td></tr>
+<tr class="memdesc:adf64e15314a904a865fb8b5ff5eedc2c inherit pub_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">实例ID  <br /></td></tr>
+<tr class="separator:adf64e15314a904a865fb8b5ff5eedc2c inherit pub_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:a9b7ae686f37ff472155adda2401af691 inherit pro_methods_class_object" id="r_a9b7ae686f37ff472155adda2401af691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a9b7ae686f37ff472155adda2401af691">reset_alarm_clock</a> ()</td></tr>
+<tr class="memdesc:a9b7ae686f37ff472155adda2401af691 inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置计时器  <br /></td></tr>
+<tr class="separator:a9b7ae686f37ff472155adda2401af691 inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35081ddeba2660af646738d73f615fe1 inherit pro_methods_class_object" id="r_a35081ddeba2660af646738d73f615fe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a35081ddeba2660af646738d73f615fe1">show_object_alarm_clock_timer</a> (Font font, float x, float y, Color col)</td></tr>
+<tr class="memdesc:a35081ddeba2660af646738d73f615fe1 inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示对象计时器  <br /></td></tr>
+<tr class="separator:a35081ddeba2660af646738d73f615fe1 inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa692bf52cba6c7488281426288043bc6 inherit pro_methods_class_object" id="r_aa692bf52cba6c7488281426288043bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aa692bf52cba6c7488281426288043bc6">change_name</a> (const char *name)</td></tr>
+<tr class="memdesc:aa692bf52cba6c7488281426288043bc6 inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变对象名称  <br /></td></tr>
+<tr class="separator:aa692bf52cba6c7488281426288043bc6 inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667e8fa68117c8ad5fada6a42218b847 inherit pro_methods_class_object" id="r_a667e8fa68117c8ad5fada6a42218b847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a667e8fa68117c8ad5fada6a42218b847">change_pro</a> (int pro)</td></tr>
+<tr class="memdesc:a667e8fa68117c8ad5fada6a42218b847 inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变对象属性  <br /></td></tr>
+<tr class="separator:a667e8fa68117c8ad5fada6a42218b847 inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575876c56635ca6b4033a2357def57ec inherit pro_methods_class_object" id="r_a575876c56635ca6b4033a2357def57ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a575876c56635ca6b4033a2357def57ec">Draw_Block</a> (Color col)</td></tr>
+<tr class="memdesc:a575876c56635ca6b4033a2357def57ec inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制对象块  <br /></td></tr>
+<tr class="separator:a575876c56635ca6b4033a2357def57ec inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4d8093a1b5ae59e7bee65b67a44485 inherit pro_methods_class_object" id="r_a4d4d8093a1b5ae59e7bee65b67a44485"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a4d4d8093a1b5ae59e7bee65b67a44485">Is_Meeting</a> (float _x, float _y, const <a class="el" href="class_object.html">Object</a> *other)</td></tr>
+<tr class="memdesc:a4d4d8093a1b5ae59e7bee65b67a44485 inherit pro_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断对象是否相遇  <br /></td></tr>
+<tr class="separator:a4d4d8093a1b5ae59e7bee65b67a44485 inherit pro_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:a7064cbee56697148106d1e7ae8f26734 inherit pro_attribs_class_object" id="r_a7064cbee56697148106d1e7ae8f26734"><td class="memItemLeft" align="right" valign="top">std::array&lt; void(Object::*)(), <a class="el" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7064cbee56697148106d1e7ae8f26734">alarmEvents</a></td></tr>
+<tr class="memdesc:a7064cbee56697148106d1e7ae8f26734 inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件数组  <br /></td></tr>
+<tr class="separator:a7064cbee56697148106d1e7ae8f26734 inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f02b7818b84dfcab18ffabc45db894f inherit pro_attribs_class_object" id="r_a0f02b7818b84dfcab18ffabc45db894f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a0f02b7818b84dfcab18ffabc45db894f">alarm_time_node</a> [<a class="el" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>]</td></tr>
+<tr class="memdesc:a0f02b7818b84dfcab18ffabc45db894f inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器节点数组  <br /></td></tr>
+<tr class="separator:a0f02b7818b84dfcab18ffabc45db894f inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_attribs_class_object')"><img src="closed.png" alt="-"/>&#160;静态 Protected 属性 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:abb6e14dec4564873671fcbb5e70a48a7 inherit pro_static_attribs_class_object" id="r_abb6e14dec4564873671fcbb5e70a48a7"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a> = 11</td></tr>
+<tr class="memdesc:abb6e14dec4564873671fcbb5e70a48a7 inherit pro_static_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器事件数量  <br /></td></tr>
+<tr class="separator:abb6e14dec4564873671fcbb5e70a48a7 inherit pro_static_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供角色的基本属性和行为 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a2a0ff4335a1ee9096df90f288c026c8b">Actor</a> actor;</div>
+<div class="line">actor.<a class="code hl_variable" href="#acf0a5801a56edbc02c0e99919a4b5b1b">active</a> = <span class="keyword">true</span>;</div>
+<div class="line">actor.<a class="code hl_variable" href="#af1d721e1ce89871da1a914bd9722dc17">gravity</a> = <a class="code hl_class" href="class_f_vec2.html">FVec2</a>(0, 9.8);</div>
+<div class="ttc" id="aclass_actor_html_a2a0ff4335a1ee9096df90f288c026c8b"><div class="ttname"><a href="#a2a0ff4335a1ee9096df90f288c026c8b">Actor::Actor</a></div><div class="ttdeci">Actor()</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_actor_html_acf0a5801a56edbc02c0e99919a4b5b1b"><div class="ttname"><a href="#acf0a5801a56edbc02c0e99919a4b5b1b">Actor::active</a></div><div class="ttdeci">bool active</div><div class="ttdoc">角色是否激活</div><div class="ttdef"><b>定义</b> Actor.h:42</div></div>
+<div class="ttc" id="aclass_actor_html_af1d721e1ce89871da1a914bd9722dc17"><div class="ttname"><a href="#af1d721e1ce89871da1a914bd9722dc17">Actor::gravity</a></div><div class="ttdeci">FVec2 gravity</div><div class="ttdoc">角色的重力</div><div class="ttdef"><b>定义</b> Actor.h:47</div></div>
+<div class="ttc" id="aclass_f_vec2_html"><div class="ttname"><a href="class_f_vec2.html">FVec2</a></div><div class="ttdoc">自定义二维向量类</div><div class="ttdef"><b>定义</b> FMath.h:44</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2a0ff4335a1ee9096df90f288c026c8b" name="a2a0ff4335a1ee9096df90f288c026c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0ff4335a1ee9096df90f288c026c8b">&#9670;&#160;</a></span>Actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Actor::Actor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="ad807fe8f85e72ab263a0c05e3231cb39" name="ad807fe8f85e72ab263a0c05e3231cb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad807fe8f85e72ab263a0c05e3231cb39">&#9670;&#160;</a></span>~Actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Actor::~Actor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="acf0a5801a56edbc02c0e99919a4b5b1b" name="acf0a5801a56edbc02c0e99919a4b5b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0a5801a56edbc02c0e99919a4b5b1b">&#9670;&#160;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角色是否激活 </p>
+
+</div>
+</div>
+<a id="af1d721e1ce89871da1a914bd9722dc17" name="af1d721e1ce89871da1a914bd9722dc17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d721e1ce89871da1a914bd9722dc17">&#9670;&#160;</a></span>gravity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_vec2.html">FVec2</a> Actor::gravity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角色的重力 </p>
+
+</div>
+</div>
+<a id="a8eae241224ff06bc885c2910851e2fc9" name="a8eae241224ff06bc885c2910851e2fc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eae241224ff06bc885c2910851e2fc9">&#9670;&#160;</a></span>isJump</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::isJump</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角色是否在跳跃中 </p>
+
+</div>
+</div>
+<a id="a5b39a623f4d9a32e2048f9d948667bf3" name="a5b39a623f4d9a32e2048f9d948667bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b39a623f4d9a32e2048f9d948667bf3">&#9670;&#160;</a></span>jumpable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::jumpable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角色是否可跳跃 </p>
+
+</div>
+</div>
+<a id="a7460aa157bdfe0c2101500307858cd8b" name="a7460aa157bdfe0c2101500307858cd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7460aa157bdfe0c2101500307858cd8b">&#9670;&#160;</a></span>moveable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::moveable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角色是否可移动 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_actor_8h_source.html">Actor.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

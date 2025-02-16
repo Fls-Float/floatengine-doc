@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/F_Font.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">F_Font.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>字体管理类  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;raylib.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+F_Font.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_f___font_8h__incl.png" border="0" usemap="#afloatengine_2_f___font_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_f___font_8h__dep__incl.png" border="0" usemap="#afloatengine_2_f___font_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="_f___font_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___font.html">F_Font</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供字体的加载和管理功能  <a href="class_f___font.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html">floatapi_font</a></td></tr>
+<tr class="memdesc:namespacefloatapi__font"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供字体相关的辅助函数 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a38888bfd353be10efbad8fbf23b3ce78" id="r_a38888bfd353be10efbad8fbf23b3ce78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a38888bfd353be10efbad8fbf23b3ce78">floatapi_font::InitDefaultFont</a> ()</td></tr>
+<tr class="memdesc:a38888bfd353be10efbad8fbf23b3ce78"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化默认字体  <br /></td></tr>
+<tr class="separator:a38888bfd353be10efbad8fbf23b3ce78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22b02c14d43492605458018f0cc995e" id="r_ab22b02c14d43492605458018f0cc995e"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#ab22b02c14d43492605458018f0cc995e">floatapi_font::LoadFontRaylib</a> (const char *filename, const char *type, int font_size, int *codepoints, int codepoints_count)</td></tr>
+<tr class="memdesc:ab22b02c14d43492605458018f0cc995e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件加载raylib字体  <br /></td></tr>
+<tr class="separator:ab22b02c14d43492605458018f0cc995e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b2e59b3a0323ea567b1fbd2ca2cfbe" id="r_a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a32b2e59b3a0323ea567b1fbd2ca2cfbe">floatapi_font::LoadFontRaylibFromData</a> (const unsigned char *data, int data_size, const char *type, int font_size, int *codepoints, int codepoints_count)</td></tr>
+<tr class="memdesc:a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">从数据中加载raylib字体  <br /></td></tr>
+<tr class="separator:a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8f1f0ee0c964ef1fc3eb2785303e0" id="r_abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#abee8f1f0ee0c964ef1fc3eb2785303e0">floatapi_font::LoadChineseFontDefault</a> ()</td></tr>
+<tr class="memdesc:abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载默认中文字体  <br /></td></tr>
+<tr class="separator:abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a8953e5bddf23ac3e3f02cc906c82" id="r_a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a0e6a8953e5bddf23ac3e3f02cc906c82">floatapi_font::LoadCommonCodepoints</a> (int &amp;count, std::string other=&quot;&quot;)</td></tr>
+<tr class="memdesc:a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载常用字符码点  <br /></td></tr>
+<tr class="separator:a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab762804bdb2811bf130031f5973d134" id="r_aab762804bdb2811bf130031f5973d134"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#aab762804bdb2811bf130031f5973d134">floatapi_font::LoadCodepointsFromRange</a> (int start, int end, int &amp;count)</td></tr>
+<tr class="memdesc:aab762804bdb2811bf130031f5973d134"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据范围加载码点  <br /></td></tr>
+<tr class="separator:aab762804bdb2811bf130031f5973d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1940e8c7dbf62e21b48434a051b0a826" id="r_a1940e8c7dbf62e21b48434a051b0a826"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a1940e8c7dbf62e21b48434a051b0a826">floatapi_font::LoadChineseCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a1940e8c7dbf62e21b48434a051b0a826"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载中文字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a1940e8c7dbf62e21b48434a051b0a826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27765d88361bb0ffc42b3095699e69d2" id="r_a27765d88361bb0ffc42b3095699e69d2"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a27765d88361bb0ffc42b3095699e69d2">floatapi_font::LoadJapaneseCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a27765d88361bb0ffc42b3095699e69d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载日文字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a27765d88361bb0ffc42b3095699e69d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b775afcec352b4b06b883f1f9c50809" id="r_a4b775afcec352b4b06b883f1f9c50809"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a4b775afcec352b4b06b883f1f9c50809">floatapi_font::LoadFrenchCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a4b775afcec352b4b06b883f1f9c50809"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载法语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a4b775afcec352b4b06b883f1f9c50809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa94bb5dc467a5c2b679bf4971558d0" id="r_affa94bb5dc467a5c2b679bf4971558d0"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#affa94bb5dc467a5c2b679bf4971558d0">floatapi_font::LoadGermanCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:affa94bb5dc467a5c2b679bf4971558d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载德语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:affa94bb5dc467a5c2b679bf4971558d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320793d2e2d6e8c9681b801f637e9c98" id="r_a320793d2e2d6e8c9681b801f637e9c98"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a320793d2e2d6e8c9681b801f637e9c98">floatapi_font::LoadSpanishCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a320793d2e2d6e8c9681b801f637e9c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载西班牙语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a320793d2e2d6e8c9681b801f637e9c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3dac51042ccaa3920901692c90e15b" id="r_a1c3dac51042ccaa3920901692c90e15b"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a1c3dac51042ccaa3920901692c90e15b">floatapi_font::LoadAsciiCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a1c3dac51042ccaa3920901692c90e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载ASCII字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a1c3dac51042ccaa3920901692c90e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828744a8030f33555fe5f998fe73de1d" id="r_a828744a8030f33555fe5f998fe73de1d"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a828744a8030f33555fe5f998fe73de1d">floatapi_font::LoadEmojiCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a828744a8030f33555fe5f998fe73de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载Emoji字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a828744a8030f33555fe5f998fe73de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cef9fde95e06a7abd1a452f77ab510" id="r_ab9cef9fde95e06a7abd1a452f77ab510"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#ab9cef9fde95e06a7abd1a452f77ab510">floatapi_font::IsValidUnicodeCodepoint</a> (int codepoint)</td></tr>
+<tr class="memdesc:ab9cef9fde95e06a7abd1a452f77ab510"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否是有效的Unicode字符  <br /></td></tr>
+<tr class="separator:ab9cef9fde95e06a7abd1a452f77ab510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ce86dc8c8dc9f707899793acffd101" id="r_a82ce86dc8c8dc9f707899793acffd101"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#a82ce86dc8c8dc9f707899793acffd101">floatapi_font::LoadUnicodeCodepoints</a> (int &amp;count, bool filter=true)</td></tr>
+<tr class="memdesc:a82ce86dc8c8dc9f707899793acffd101"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载0到0xFFFF范围内所有有效的Unicode码点  <br /></td></tr>
+<tr class="separator:a82ce86dc8c8dc9f707899793acffd101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40128d1885c09b528f2eb5d7460762b" id="r_ae40128d1885c09b528f2eb5d7460762b"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__font.html#ae40128d1885c09b528f2eb5d7460762b">floatapi_font::ConcatenateCodepoints</a> (int *codepoints1, int count1, int *codepoints2, int count2, int &amp;count)</td></tr>
+<tr class="memdesc:ae40128d1885c09b528f2eb5d7460762b"><td class="mdescLeft">&#160;</td><td class="mdescRight">拼接多个codepoints数组  <br /></td></tr>
+<tr class="separator:ae40128d1885c09b528f2eb5d7460762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>字体管理类 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

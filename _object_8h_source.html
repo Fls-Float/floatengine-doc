@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/Object.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Object.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_object_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_float_api_8h.html">FloatApi.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_enum_8h.html">Enum.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_object_8h.html#a19c4f2a34b782f13bda05bbd3ff3f30c">   19</a></span><span class="preprocessor">#define FOBJECT_BODY() float x, y; float image_index; Texture* sprite_index; int depth; Size m_block; float m_angle; Vector2 m_origin;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_object.html">   34</a></span><span class="keyword">class </span><a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">int</span> _m_obj_pro; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    std::string _m_obj_name; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> __object_alarm_clock_timer_; </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">   40</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a> = 11; </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_object.html#a9b7ae686f37ff472155adda2401af691">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a9b7ae686f37ff472155adda2401af691">reset_alarm_clock</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_object.html#a7064cbee56697148106d1e7ae8f26734">   47</a></span>    std::array&lt;void (<a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a>::*)(), <a class="code hl_variable" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>&gt; <a class="code hl_variable" href="class_object.html#a7064cbee56697148106d1e7ae8f26734">alarmEvents</a>; </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_object.html#a35081ddeba2660af646738d73f615fe1">   56</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a35081ddeba2660af646738d73f615fe1">show_object_alarm_clock_timer</a>(Font font, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, Color col);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_object.html#a0f02b7818b84dfcab18ffabc45db894f">   58</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_object.html#a0f02b7818b84dfcab18ffabc45db894f">alarm_time_node</a>[<a class="code hl_variable" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>]; </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_object.html#aa692bf52cba6c7488281426288043bc6">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#aa692bf52cba6c7488281426288043bc6">change_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        _m_obj_name = name;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_object.html#a667e8fa68117c8ad5fada6a42218b847">   72</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a667e8fa68117c8ad5fada6a42218b847">change_pro</a>(<span class="keywordtype">int</span> pro) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        _m_obj_pro = pro;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_object.html#a575876c56635ca6b4033a2357def57ec">   80</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a575876c56635ca6b4033a2357def57ec">Draw_Block</a>(Color col);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_object.html#a4d4d8093a1b5ae59e7bee65b67a44485">   89</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_object.html#a4d4d8093a1b5ae59e7bee65b67a44485">Is_Meeting</a>(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keyword">const</span> <a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a>* other);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_object.html#adf64e15314a904a865fb8b5ff5eedc2c">   92</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_object.html#adf64e15314a904a865fb8b5ff5eedc2c">_ins_id</a>; </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_define" href="_object_8h.html#a19c4f2a34b782f13bda05bbd3ff3f30c">FOBJECT_BODY</a>()</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_object.html#a40860402e64d8008fb42329df7097cdb">   98</a></span>        <a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_object.html#aec7a1bc847bc5d1dc031cdec32243838">  106</a></span>    <a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a>(const <span class="keywordtype">char</span>* name, <span class="keywordtype">int</span> ins_id, <span class="keywordtype">int</span> pro = <a class="code hl_struct" href="struct_o_b_j_p_r_o.html">OBJPRO</a>.Normal);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_object.html#ae8f5483f459e46687bd01e6f9977afd3">  111</a></span>    ~<a class="code hl_function" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_object.html#a9d27512ec0b5c9ad531f1b81d0f4e8b9">  117</a></span>    inline <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a9d27512ec0b5c9ad531f1b81d0f4e8b9">setObjName</a>(const std::<span class="keywordtype">string</span>&amp; name) { _m_obj_name = name; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_object.html#a87897378d71c679fb0aab2cbc4287d62">  123</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a87897378d71c679fb0aab2cbc4287d62">setObjPro</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; pro) { _m_obj_pro = pro; }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_object.html#a190ae6ce8c3c3dc2adba5e8c5d81b927">  129</a></span>    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_object.html#a190ae6ce8c3c3dc2adba5e8c5d81b927">getObjName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _m_obj_name.c_str(); }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_object.html#a7fd498feeb52d36ae3cd12fcef888393">  135</a></span>    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code hl_function" href="class_object.html#a7fd498feeb52d36ae3cd12fcef888393">getObjPro</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _m_obj_pro; }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_object.html#a31d7adebdce56a27dcc54f9903ac6a7d">  141</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a31d7adebdce56a27dcc54f9903ac6a7d">onEvent_User</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_object.html#ac94e8b39605e259431f78a48b05bca7c">  146</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#ac94e8b39605e259431f78a48b05bca7c">onEnter</a>();</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_object.html#a1ee4245d4a233d4ad2a2db45bfc01a17">  151</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a1ee4245d4a233d4ad2a2db45bfc01a17">onUpdate</a>();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_object.html#a8a66b10edcb4f906e820f5551b92bece">  156</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a8a66b10edcb4f906e820f5551b92bece">onRenderBefore</a>();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_object.html#a81ea5499ffd1e5bec96e0d0fc30ea32d">  161</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a81ea5499ffd1e5bec96e0d0fc30ea32d">onRender</a>();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_object.html#a7ae46bc3013a4a2648111b7b39f91fa3">  166</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a7ae46bc3013a4a2648111b7b39f91fa3">onRenderNext</a>();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="class_object.html#a58e81cb0c6afc54b89c78cc81cca4b46">  171</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a58e81cb0c6afc54b89c78cc81cca4b46">onBeginCamera</a>();</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_object.html#a93e707115b02375ac7718509c5c4ca4c">  176</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a93e707115b02375ac7718509c5c4ca4c">onEndCamera</a>();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span></div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_object.html#a521cb2dc42140ec0f98ea07414f5938a">  182</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_object.html#a521cb2dc42140ec0f98ea07414f5938a">getAlarmCount</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">ALARM_EVENT_COUNT</a>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="class_object.html#a3db452dab3277f4162d3a80cc75858bd">  189</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a3db452dab3277f4162d3a80cc75858bd">onAlarmEvent</a>();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="class_object.html#af03ba70570d39b92ee8e9c2a0cb72dd9">  194</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#af03ba70570d39b92ee8e9c2a0cb72dd9">onAlarmEvent0</a>();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_object.html#aff78b6f3372cbc2f47ec17424bca914b">  199</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#aff78b6f3372cbc2f47ec17424bca914b">onAlarmEvent1</a>();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="class_object.html#a1f6210d5aed058e22c9230a6e0c5a812">  204</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a1f6210d5aed058e22c9230a6e0c5a812">onAlarmEvent2</a>();</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="class_object.html#a3fb9bb366f8dacbc95efd8a929401e21">  209</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a3fb9bb366f8dacbc95efd8a929401e21">onAlarmEvent3</a>();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="class_object.html#a90bf159ce8ab8d9e411a06d5adc4d69f">  214</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a90bf159ce8ab8d9e411a06d5adc4d69f">onAlarmEvent4</a>();</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="class_object.html#a72d6364c015ec6e1b0eb90e2eef1e03c">  219</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a72d6364c015ec6e1b0eb90e2eef1e03c">onAlarmEvent5</a>();</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="class_object.html#a13294c08eb3d9239a4c442a195a3f705">  224</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a13294c08eb3d9239a4c442a195a3f705">onAlarmEvent6</a>();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="class_object.html#a79727c53d849c1332a7b19d49cfac151">  229</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a79727c53d849c1332a7b19d49cfac151">onAlarmEvent7</a>();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="class_object.html#a80f194b425b4a389ef74fa92e4fd98d7">  234</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a80f194b425b4a389ef74fa92e4fd98d7">onAlarmEvent8</a>();</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="class_object.html#abd2ac11711a7740ce69b910316187eef">  239</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#abd2ac11711a7740ce69b910316187eef">onAlarmEvent9</a>();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="class_object.html#a7759d87c1a829162f4c2b9b25fe42916">  244</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a7759d87c1a829162f4c2b9b25fe42916">onAlarmEvent10</a>();</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="class_object.html#a025a40d6781ec653faf174567249a3ac">  249</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a025a40d6781ec653faf174567249a3ac">onDestroy</a>();</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>};</div>
+</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="ttc" id="a_enum_8h_html"><div class="ttname"><a href="_enum_8h.html">Enum.h</a></div><div class="ttdoc">枚举和常量定义</div></div>
+<div class="ttc" id="a_float_api_8h_html"><div class="ttname"><a href="_float_api_8h.html">FloatApi.h</a></div><div class="ttdoc">浮动引擎API</div></div>
+<div class="ttc" id="a_object_8h_html_a19c4f2a34b782f13bda05bbd3ff3f30c"><div class="ttname"><a href="_object_8h.html#a19c4f2a34b782f13bda05bbd3ff3f30c">FOBJECT_BODY</a></div><div class="ttdeci">#define FOBJECT_BODY()</div><div class="ttdef"><b>定义</b> Object.h:19</div></div>
+<div class="ttc" id="aclass_object_html_a025a40d6781ec653faf174567249a3ac"><div class="ttname"><a href="class_object.html#a025a40d6781ec653faf174567249a3ac">Object::onDestroy</a></div><div class="ttdeci">virtual void onDestroy()</div><div class="ttdoc">销毁事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a0f02b7818b84dfcab18ffabc45db894f"><div class="ttname"><a href="class_object.html#a0f02b7818b84dfcab18ffabc45db894f">Object::alarm_time_node</a></div><div class="ttdeci">int alarm_time_node[ALARM_EVENT_COUNT]</div><div class="ttdoc">计时器节点数组</div><div class="ttdef"><b>定义</b> Object.h:58</div></div>
+<div class="ttc" id="aclass_object_html_a13294c08eb3d9239a4c442a195a3f705"><div class="ttname"><a href="class_object.html#a13294c08eb3d9239a4c442a195a3f705">Object::onAlarmEvent6</a></div><div class="ttdeci">virtual void onAlarmEvent6()</div><div class="ttdoc">计时器事件6处理</div></div>
+<div class="ttc" id="aclass_object_html_a190ae6ce8c3c3dc2adba5e8c5d81b927"><div class="ttname"><a href="class_object.html#a190ae6ce8c3c3dc2adba5e8c5d81b927">Object::getObjName</a></div><div class="ttdeci">const char * getObjName() const</div><div class="ttdoc">获取对象名称</div><div class="ttdef"><b>定义</b> Object.h:129</div></div>
+<div class="ttc" id="aclass_object_html_a1ee4245d4a233d4ad2a2db45bfc01a17"><div class="ttname"><a href="class_object.html#a1ee4245d4a233d4ad2a2db45bfc01a17">Object::onUpdate</a></div><div class="ttdeci">virtual void onUpdate()</div><div class="ttdoc">更新事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a1f6210d5aed058e22c9230a6e0c5a812"><div class="ttname"><a href="class_object.html#a1f6210d5aed058e22c9230a6e0c5a812">Object::onAlarmEvent2</a></div><div class="ttdeci">virtual void onAlarmEvent2()</div><div class="ttdoc">计时器事件2处理</div></div>
+<div class="ttc" id="aclass_object_html_a31d7adebdce56a27dcc54f9903ac6a7d"><div class="ttname"><a href="class_object.html#a31d7adebdce56a27dcc54f9903ac6a7d">Object::onEvent_User</a></div><div class="ttdeci">virtual void onEvent_User(int index)</div><div class="ttdoc">用户事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a35081ddeba2660af646738d73f615fe1"><div class="ttname"><a href="class_object.html#a35081ddeba2660af646738d73f615fe1">Object::show_object_alarm_clock_timer</a></div><div class="ttdeci">void show_object_alarm_clock_timer(Font font, float x, float y, Color col)</div><div class="ttdoc">显示对象计时器</div></div>
+<div class="ttc" id="aclass_object_html_a3db452dab3277f4162d3a80cc75858bd"><div class="ttname"><a href="class_object.html#a3db452dab3277f4162d3a80cc75858bd">Object::onAlarmEvent</a></div><div class="ttdeci">void onAlarmEvent()</div><div class="ttdoc">计时器事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a3fb9bb366f8dacbc95efd8a929401e21"><div class="ttname"><a href="class_object.html#a3fb9bb366f8dacbc95efd8a929401e21">Object::onAlarmEvent3</a></div><div class="ttdeci">virtual void onAlarmEvent3()</div><div class="ttdoc">计时器事件3处理</div></div>
+<div class="ttc" id="aclass_object_html_a40860402e64d8008fb42329df7097cdb"><div class="ttname"><a href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object::Object</a></div><div class="ttdeci">Object()</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_object_html_a4d4d8093a1b5ae59e7bee65b67a44485"><div class="ttname"><a href="class_object.html#a4d4d8093a1b5ae59e7bee65b67a44485">Object::Is_Meeting</a></div><div class="ttdeci">bool Is_Meeting(float _x, float _y, const Object *other)</div><div class="ttdoc">判断对象是否相遇</div></div>
+<div class="ttc" id="aclass_object_html_a521cb2dc42140ec0f98ea07414f5938a"><div class="ttname"><a href="class_object.html#a521cb2dc42140ec0f98ea07414f5938a">Object::getAlarmCount</a></div><div class="ttdeci">int getAlarmCount() const</div><div class="ttdoc">获取计时器事件数量</div><div class="ttdef"><b>定义</b> Object.h:182</div></div>
+<div class="ttc" id="aclass_object_html_a575876c56635ca6b4033a2357def57ec"><div class="ttname"><a href="class_object.html#a575876c56635ca6b4033a2357def57ec">Object::Draw_Block</a></div><div class="ttdeci">void Draw_Block(Color col)</div><div class="ttdoc">绘制对象块</div></div>
+<div class="ttc" id="aclass_object_html_a58e81cb0c6afc54b89c78cc81cca4b46"><div class="ttname"><a href="class_object.html#a58e81cb0c6afc54b89c78cc81cca4b46">Object::onBeginCamera</a></div><div class="ttdeci">virtual void onBeginCamera()</div><div class="ttdoc">摄像机开始事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a667e8fa68117c8ad5fada6a42218b847"><div class="ttname"><a href="class_object.html#a667e8fa68117c8ad5fada6a42218b847">Object::change_pro</a></div><div class="ttdeci">void change_pro(int pro)</div><div class="ttdoc">改变对象属性</div><div class="ttdef"><b>定义</b> Object.h:72</div></div>
+<div class="ttc" id="aclass_object_html_a7064cbee56697148106d1e7ae8f26734"><div class="ttname"><a href="class_object.html#a7064cbee56697148106d1e7ae8f26734">Object::alarmEvents</a></div><div class="ttdeci">std::array&lt; void(Object::*)(), ALARM_EVENT_COUNT &gt; alarmEvents</div><div class="ttdoc">计时器事件数组</div><div class="ttdef"><b>定义</b> Object.h:47</div></div>
+<div class="ttc" id="aclass_object_html_a72d6364c015ec6e1b0eb90e2eef1e03c"><div class="ttname"><a href="class_object.html#a72d6364c015ec6e1b0eb90e2eef1e03c">Object::onAlarmEvent5</a></div><div class="ttdeci">virtual void onAlarmEvent5()</div><div class="ttdoc">计时器事件5处理</div></div>
+<div class="ttc" id="aclass_object_html_a7759d87c1a829162f4c2b9b25fe42916"><div class="ttname"><a href="class_object.html#a7759d87c1a829162f4c2b9b25fe42916">Object::onAlarmEvent10</a></div><div class="ttdeci">virtual void onAlarmEvent10()</div><div class="ttdoc">计时器事件10处理</div></div>
+<div class="ttc" id="aclass_object_html_a79727c53d849c1332a7b19d49cfac151"><div class="ttname"><a href="class_object.html#a79727c53d849c1332a7b19d49cfac151">Object::onAlarmEvent7</a></div><div class="ttdeci">virtual void onAlarmEvent7()</div><div class="ttdoc">计时器事件7处理</div></div>
+<div class="ttc" id="aclass_object_html_a7ae46bc3013a4a2648111b7b39f91fa3"><div class="ttname"><a href="class_object.html#a7ae46bc3013a4a2648111b7b39f91fa3">Object::onRenderNext</a></div><div class="ttdeci">virtual void onRenderNext()</div><div class="ttdoc">渲染后事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a7fd498feeb52d36ae3cd12fcef888393"><div class="ttname"><a href="class_object.html#a7fd498feeb52d36ae3cd12fcef888393">Object::getObjPro</a></div><div class="ttdeci">const int &amp; getObjPro() const</div><div class="ttdoc">获取对象属性</div><div class="ttdef"><b>定义</b> Object.h:135</div></div>
+<div class="ttc" id="aclass_object_html_a80f194b425b4a389ef74fa92e4fd98d7"><div class="ttname"><a href="class_object.html#a80f194b425b4a389ef74fa92e4fd98d7">Object::onAlarmEvent8</a></div><div class="ttdeci">virtual void onAlarmEvent8()</div><div class="ttdoc">计时器事件8处理</div></div>
+<div class="ttc" id="aclass_object_html_a81ea5499ffd1e5bec96e0d0fc30ea32d"><div class="ttname"><a href="class_object.html#a81ea5499ffd1e5bec96e0d0fc30ea32d">Object::onRender</a></div><div class="ttdeci">virtual void onRender()</div><div class="ttdoc">渲染事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a87897378d71c679fb0aab2cbc4287d62"><div class="ttname"><a href="class_object.html#a87897378d71c679fb0aab2cbc4287d62">Object::setObjPro</a></div><div class="ttdeci">void setObjPro(const int &amp;pro)</div><div class="ttdoc">设置对象属性</div><div class="ttdef"><b>定义</b> Object.h:123</div></div>
+<div class="ttc" id="aclass_object_html_a8a66b10edcb4f906e820f5551b92bece"><div class="ttname"><a href="class_object.html#a8a66b10edcb4f906e820f5551b92bece">Object::onRenderBefore</a></div><div class="ttdeci">virtual void onRenderBefore()</div><div class="ttdoc">渲染前事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a90bf159ce8ab8d9e411a06d5adc4d69f"><div class="ttname"><a href="class_object.html#a90bf159ce8ab8d9e411a06d5adc4d69f">Object::onAlarmEvent4</a></div><div class="ttdeci">virtual void onAlarmEvent4()</div><div class="ttdoc">计时器事件4处理</div></div>
+<div class="ttc" id="aclass_object_html_a93e707115b02375ac7718509c5c4ca4c"><div class="ttname"><a href="class_object.html#a93e707115b02375ac7718509c5c4ca4c">Object::onEndCamera</a></div><div class="ttdeci">virtual void onEndCamera()</div><div class="ttdoc">摄像机结束事件处理</div></div>
+<div class="ttc" id="aclass_object_html_a9b7ae686f37ff472155adda2401af691"><div class="ttname"><a href="class_object.html#a9b7ae686f37ff472155adda2401af691">Object::reset_alarm_clock</a></div><div class="ttdeci">void reset_alarm_clock()</div><div class="ttdoc">重置计时器</div></div>
+<div class="ttc" id="aclass_object_html_a9d27512ec0b5c9ad531f1b81d0f4e8b9"><div class="ttname"><a href="class_object.html#a9d27512ec0b5c9ad531f1b81d0f4e8b9">Object::setObjName</a></div><div class="ttdeci">void setObjName(const std::string &amp;name)</div><div class="ttdoc">设置对象名称</div><div class="ttdef"><b>定义</b> Object.h:117</div></div>
+<div class="ttc" id="aclass_object_html_aa692bf52cba6c7488281426288043bc6"><div class="ttname"><a href="class_object.html#aa692bf52cba6c7488281426288043bc6">Object::change_name</a></div><div class="ttdeci">void change_name(const char *name)</div><div class="ttdoc">改变对象名称</div><div class="ttdef"><b>定义</b> Object.h:64</div></div>
+<div class="ttc" id="aclass_object_html_abb6e14dec4564873671fcbb5e70a48a7"><div class="ttname"><a href="class_object.html#abb6e14dec4564873671fcbb5e70a48a7">Object::ALARM_EVENT_COUNT</a></div><div class="ttdeci">static const int ALARM_EVENT_COUNT</div><div class="ttdoc">计时器事件数量</div><div class="ttdef"><b>定义</b> Object.h:40</div></div>
+<div class="ttc" id="aclass_object_html_abd2ac11711a7740ce69b910316187eef"><div class="ttname"><a href="class_object.html#abd2ac11711a7740ce69b910316187eef">Object::onAlarmEvent9</a></div><div class="ttdeci">virtual void onAlarmEvent9()</div><div class="ttdoc">计时器事件9处理</div></div>
+<div class="ttc" id="aclass_object_html_ac94e8b39605e259431f78a48b05bca7c"><div class="ttname"><a href="class_object.html#ac94e8b39605e259431f78a48b05bca7c">Object::onEnter</a></div><div class="ttdeci">virtual void onEnter()</div><div class="ttdoc">进入事件处理</div></div>
+<div class="ttc" id="aclass_object_html_adf64e15314a904a865fb8b5ff5eedc2c"><div class="ttname"><a href="class_object.html#adf64e15314a904a865fb8b5ff5eedc2c">Object::_ins_id</a></div><div class="ttdeci">int _ins_id</div><div class="ttdoc">实例ID</div><div class="ttdef"><b>定义</b> Object.h:92</div></div>
+<div class="ttc" id="aclass_object_html_af03ba70570d39b92ee8e9c2a0cb72dd9"><div class="ttname"><a href="class_object.html#af03ba70570d39b92ee8e9c2a0cb72dd9">Object::onAlarmEvent0</a></div><div class="ttdeci">virtual void onAlarmEvent0()</div><div class="ttdoc">计时器事件0处理</div></div>
+<div class="ttc" id="aclass_object_html_aff78b6f3372cbc2f47ec17424bca914b"><div class="ttname"><a href="class_object.html#aff78b6f3372cbc2f47ec17424bca914b">Object::onAlarmEvent1</a></div><div class="ttdeci">virtual void onAlarmEvent1()</div><div class="ttdoc">计时器事件1处理</div></div>
+<div class="ttc" id="astruct_o_b_j_p_r_o_html"><div class="ttname"><a href="struct_o_b_j_p_r_o.html">OBJPRO</a></div><div class="ttdoc">对象属性常量</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

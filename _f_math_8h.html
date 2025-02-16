@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/FMath.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">FMath.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>数学工具类  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;raylib.hpp&gt;</code><br />
+<code>#include &lt;raymath.hpp&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+FMath.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_f_math_8h__incl.png" border="0" usemap="#afloatengine_2_f_math_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_f_math_8h__dep__incl.png" border="0" usemap="#afloatengine_2_f_math_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="_f_math_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_size.html">Size</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸结构体  <a href="struct_size.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_vec2.html">FVec2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">自定义二维向量类  <a href="class_f_vec2.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___line.html">F_Line</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线段类  <a href="class_f___line.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html">F_Shape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基础形状类  <a href="class_f___shape.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___polygon.html">F_Polygon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">多边形类  <a href="class_f___polygon.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___rectangle.html">F_Rectangle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩形类  <a href="class_f___rectangle.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___circle.html">F_Circle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">圆形类  <a href="class_f___circle.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___ellipse.html">F_Ellipse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆类  <a href="class_f___ellipse.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___triangle.html">F_Triangle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">三角形类  <a href="class_f___triangle.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html">floatapi_math</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac84f6979dffc0055a41b1e3eeec48c81" id="r_ac84f6979dffc0055a41b1e3eeec48c81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ac84f6979dffc0055a41b1e3eeec48c81">floatapi_math::Sign</a> (float _x)</td></tr>
+<tr class="memdesc:ac84f6979dffc0055a41b1e3eeec48c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回数字正负  <br /></td></tr>
+<tr class="separator:ac84f6979dffc0055a41b1e3eeec48c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91e70b40b52d2f01d73e81451523016" id="r_ac91e70b40b52d2f01d73e81451523016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ac91e70b40b52d2f01d73e81451523016">floatapi_math::Point_In_Rectangle</a> (<a class="el" href="class_f_vec2.html">FVec2</a> p, <a class="el" href="class_f___rectangle.html">F_Rectangle</a> r)</td></tr>
+<tr class="memdesc:ac91e70b40b52d2f01d73e81451523016"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定点在矩形内  <br /></td></tr>
+<tr class="separator:ac91e70b40b52d2f01d73e81451523016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecdbbe68a0b697b0b9786e2e9f763f2" id="r_acecdbbe68a0b697b0b9786e2e9f763f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#acecdbbe68a0b697b0b9786e2e9f763f2">floatapi_math::FVec2Unit</a> (<a class="el" href="class_f_vec2.html">FVec2</a> v)</td></tr>
+<tr class="memdesc:acecdbbe68a0b697b0b9786e2e9f763f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回单位向量  <br /></td></tr>
+<tr class="separator:acecdbbe68a0b697b0b9786e2e9f763f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9c79d5e512ff697dfa5e5cb51a8a5b" id="r_aee9c79d5e512ff697dfa5e5cb51a8a5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#aee9c79d5e512ff697dfa5e5cb51a8a5b">floatapi_math::Line_Segment_Collision</a> (<a class="el" href="class_f_vec2.html">FVec2</a> a, <a class="el" href="class_f_vec2.html">FVec2</a> b, <a class="el" href="class_f_vec2.html">FVec2</a> c, <a class="el" href="class_f_vec2.html">FVec2</a> d)</td></tr>
+<tr class="memdesc:aee9c79d5e512ff697dfa5e5cb51a8a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定两线段是否相交  <br /></td></tr>
+<tr class="separator:aee9c79d5e512ff697dfa5e5cb51a8a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d55380ebfe934823c414ff7b0f3bc15" id="r_a9d55380ebfe934823c414ff7b0f3bc15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a9d55380ebfe934823c414ff7b0f3bc15">floatapi_math::Rotate_Point</a> (<a class="el" href="class_f_vec2.html">FVec2</a> point, <a class="el" href="class_f_vec2.html">FVec2</a> origin, float rot)</td></tr>
+<tr class="memdesc:a9d55380ebfe934823c414ff7b0f3bc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">旋转点  <br /></td></tr>
+<tr class="separator:a9d55380ebfe934823c414ff7b0f3bc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95285dd65b08ccd67fb9ffd1d6f9ee01" id="r_a95285dd65b08ccd67fb9ffd1d6f9ee01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a95285dd65b08ccd67fb9ffd1d6f9ee01">floatapi_math::Rectangle_Collision_AABB</a> (const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;a, const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;b)</td></tr>
+<tr class="memdesc:a95285dd65b08ccd67fb9ffd1d6f9ee01"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用AABB判定矩形碰撞（对F_Shape::angle无效）  <br /></td></tr>
+<tr class="separator:a95285dd65b08ccd67fb9ffd1d6f9ee01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae044f0b82ff3b9d35b01b0accad63980" id="r_ae044f0b82ff3b9d35b01b0accad63980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f___rectangle.html">F_Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ae044f0b82ff3b9d35b01b0accad63980">floatapi_math::Get_Rectangle_AABB</a> (const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;a, const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;b)</td></tr>
+<tr class="memdesc:ae044f0b82ff3b9d35b01b0accad63980"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取两个矩形的AABB  <br /></td></tr>
+<tr class="separator:ae044f0b82ff3b9d35b01b0accad63980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ee215ff9e10c581f5353b5c0632015" id="r_a41ee215ff9e10c581f5353b5c0632015"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a41ee215ff9e10c581f5353b5c0632015">floatapi_math::Circle_Collision</a> (const <a class="el" href="class_f___circle.html">F_Circle</a> &amp;a, const <a class="el" href="class_f___circle.html">F_Circle</a> &amp;b)</td></tr>
+<tr class="memdesc:a41ee215ff9e10c581f5353b5c0632015"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定两个圆是否碰撞  <br /></td></tr>
+<tr class="separator:a41ee215ff9e10c581f5353b5c0632015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93b4edb7209276077edced532443327" id="r_ab93b4edb7209276077edced532443327"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ab93b4edb7209276077edced532443327">floatapi_math::Circle_Collision_Rectangle</a> (const <a class="el" href="class_f___circle.html">F_Circle</a> &amp;a, const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;b)</td></tr>
+<tr class="memdesc:ab93b4edb7209276077edced532443327"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定圆和矩形是否碰撞（对F_Shape::angle无效）  <br /></td></tr>
+<tr class="separator:ab93b4edb7209276077edced532443327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb609fe84cdc233ea4c29d33c41ce53" id="r_a9cb609fe84cdc233ea4c29d33c41ce53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a9cb609fe84cdc233ea4c29d33c41ce53">floatapi_math::Circle_Collision_RectangleEx</a> (const <a class="el" href="class_f___circle.html">F_Circle</a> &amp;a, const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;b)</td></tr>
+<tr class="memdesc:a9cb609fe84cdc233ea4c29d33c41ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定圆和矩形是否碰撞（带角度）  <br /></td></tr>
+<tr class="separator:a9cb609fe84cdc233ea4c29d33c41ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506ff10b101de84cbb8d82ff9ff594ca" id="r_a506ff10b101de84cbb8d82ff9ff594ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a506ff10b101de84cbb8d82ff9ff594ca">floatapi_math::TripleProduct</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;a, const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;b, const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;c)</td></tr>
+<tr class="memdesc:a506ff10b101de84cbb8d82ff9ff594ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算三重积  <br /></td></tr>
+<tr class="separator:a506ff10b101de84cbb8d82ff9ff594ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c44a59729b64c87fd17300b8cf550b" id="r_ad1c44a59729b64c87fd17300b8cf550b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ad1c44a59729b64c87fd17300b8cf550b">floatapi_math::Vector2Dot</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;a, const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;b)</td></tr>
+<tr class="memdesc:ad1c44a59729b64c87fd17300b8cf550b"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量点积  <br /></td></tr>
+<tr class="separator:ad1c44a59729b64c87fd17300b8cf550b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bbac37c57f0082394aceaca49fc0f4" id="r_ac2bbac37c57f0082394aceaca49fc0f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#ac2bbac37c57f0082394aceaca49fc0f4">floatapi_math::Vector2Perpendicular</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;v)</td></tr>
+<tr class="memdesc:ac2bbac37c57f0082394aceaca49fc0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量的垂直向量  <br /></td></tr>
+<tr class="separator:ac2bbac37c57f0082394aceaca49fc0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c927db1204b88e47ad8996c2b3d2a9" id="r_a84c927db1204b88e47ad8996c2b3d2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a84c927db1204b88e47ad8996c2b3d2a9">floatapi_math::MinkowskiSupport</a> (const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape1, const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape2, const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;direction)</td></tr>
+<tr class="memdesc:a84c927db1204b88e47ad8996c2b3d2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算Minkowski差集的支持点  <br /></td></tr>
+<tr class="separator:a84c927db1204b88e47ad8996c2b3d2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa939a5d8a187f7434561e32ccd592e29" id="r_aa939a5d8a187f7434561e32ccd592e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#aa939a5d8a187f7434561e32ccd592e29">floatapi_math::ContainsOrigin</a> (std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; &amp;simplex, <a class="el" href="class_f_vec2.html">FVec2</a> &amp;direction)</td></tr>
+<tr class="memdesc:aa939a5d8a187f7434561e32ccd592e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断单纯形是否包含原点  <br /></td></tr>
+<tr class="separator:aa939a5d8a187f7434561e32ccd592e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889c9f2ef0dfb4d2afb49c0376dc63eb" id="r_a889c9f2ef0dfb4d2afb49c0376dc63eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a889c9f2ef0dfb4d2afb49c0376dc63eb">floatapi_math::GJK_Collision</a> (const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape1, const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape2)</td></tr>
+<tr class="memdesc:a889c9f2ef0dfb4d2afb49c0376dc63eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用GJK算法判定形状碰撞  <br /></td></tr>
+<tr class="separator:a889c9f2ef0dfb4d2afb49c0376dc63eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e3f3786a45b2617d14b4d0e72efcd4" id="r_a45e3f3786a45b2617d14b4d0e72efcd4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a45e3f3786a45b2617d14b4d0e72efcd4">floatapi_math::PolygonArea</a> (const std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:a45e3f3786a45b2617d14b4d0e72efcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算多边形面积  <br /></td></tr>
+<tr class="separator:a45e3f3786a45b2617d14b4d0e72efcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79598a9bbac5ff3c778e9c995dde82e" id="r_af79598a9bbac5ff3c778e9c995dde82e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#af79598a9bbac5ff3c778e9c995dde82e">floatapi_math::PointInPolygon</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;p, const std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:af79598a9bbac5ff3c778e9c995dde82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断点是否在多边形内  <br /></td></tr>
+<tr class="separator:af79598a9bbac5ff3c778e9c995dde82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa256277c5860c7afa74bf986de186bbe" id="r_aa256277c5860c7afa74bf986de186bbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#aa256277c5860c7afa74bf986de186bbe">floatapi_math::IsConvexPolygon</a> (const std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:aa256277c5860c7afa74bf986de186bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断多边形是否为凸多边形  <br /></td></tr>
+<tr class="separator:aa256277c5860c7afa74bf986de186bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d20c683723f5e7dfe5f21ab89080752" id="r_a7d20c683723f5e7dfe5f21ab89080752"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_f___shape.html">F_Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a7d20c683723f5e7dfe5f21ab89080752">floatapi_math::DecomposeConcavePolygon</a> (const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;concavePolygon)</td></tr>
+<tr class="memdesc:a7d20c683723f5e7dfe5f21ab89080752"><td class="mdescLeft">&#160;</td><td class="mdescRight">分解凹形多边形为三角形  <br /></td></tr>
+<tr class="separator:a7d20c683723f5e7dfe5f21ab89080752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56513fd686073784712e080db1d5c322" id="r_a56513fd686073784712e080db1d5c322"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a56513fd686073784712e080db1d5c322">floatapi_math::GJK_Collision_Plus</a> (const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape1, const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape2)</td></tr>
+<tr class="memdesc:a56513fd686073784712e080db1d5c322"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用改进的GJK算法判定形状碰撞  <br /></td></tr>
+<tr class="separator:a56513fd686073784712e080db1d5c322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18eeff6bc0325e4aa8853b6a1cf97bca" id="r_a18eeff6bc0325e4aa8853b6a1cf97bca"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefloatapi__math.html#a18eeff6bc0325e4aa8853b6a1cf97bca">floatapi_math::Get_Closest_Point_On_Rectangle</a> (const <a class="el" href="class_f___rectangle.html">F_Rectangle</a> &amp;rect, Vector2 point)</td></tr>
+<tr class="memdesc:a18eeff6bc0325e4aa8853b6a1cf97bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算点到矩形四条边上最近的那个点  <br /></td></tr>
+<tr class="separator:a18eeff6bc0325e4aa8853b6a1cf97bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>数学工具类 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

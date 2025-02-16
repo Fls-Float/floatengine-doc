@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Triangle类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_f___triangle-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Triangle类 参考<div class="ingroups"><a class="el" href="group___math.html">数学模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>三角形类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_f_math_8h_source.html">FMath.h</a>&gt;</code></p>
+<div class="dynheader">
+类 F_Triangle 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___triangle__inherit__graph.png" border="0" usemap="#a_f___triangle_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+F_Triangle 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___triangle__coll__graph.png" border="0" usemap="#a_f___triangle_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad05fcf43e49bb41079f9c60a85d5887f" id="r_ad05fcf43e49bb41079f9c60a85d5887f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05fcf43e49bb41079f9c60a85d5887f">F_Triangle</a> ()</td></tr>
+<tr class="memdesc:ad05fcf43e49bb41079f9c60a85d5887f"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="separator:ad05fcf43e49bb41079f9c60a85d5887f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cef9c6ef76f30c1be7c7cbf37781164" id="r_a4cef9c6ef76f30c1be7c7cbf37781164"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cef9c6ef76f30c1be7c7cbf37781164">F_Triangle</a> (const <a class="el" href="class_f___triangle.html">F_Triangle</a> &amp;triangle)</td></tr>
+<tr class="memdesc:a4cef9c6ef76f30c1be7c7cbf37781164"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数  <br /></td></tr>
+<tr class="separator:a4cef9c6ef76f30c1be7c7cbf37781164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f225861547a6ccc1b87960f2ca5d131" id="r_a4f225861547a6ccc1b87960f2ca5d131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f225861547a6ccc1b87960f2ca5d131">F_Triangle</a> (<a class="el" href="class_f_vec2.html">FVec2</a> _a, <a class="el" href="class_f_vec2.html">FVec2</a> _b, <a class="el" href="class_f_vec2.html">FVec2</a> _c)</td></tr>
+<tr class="memdesc:a4f225861547a6ccc1b87960f2ca5d131"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a4f225861547a6ccc1b87960f2ca5d131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552f6f9925338384a493f078ec5e6ddb" id="r_a552f6f9925338384a493f078ec5e6ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a552f6f9925338384a493f078ec5e6ddb">Shape_Set</a> ()</td></tr>
+<tr class="memdesc:a552f6f9925338384a493f078ec5e6ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">利用三角形的参数设置图形信息  <br /></td></tr>
+<tr class="separator:a552f6f9925338384a493f078ec5e6ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af160a954c3786accea1b1336f116b866" id="r_af160a954c3786accea1b1336f116b866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af160a954c3786accea1b1336f116b866">Set_Triangle</a> (<a class="el" href="class_f_vec2.html">FVec2</a> _a, <a class="el" href="class_f_vec2.html">FVec2</a> _b, <a class="el" href="class_f_vec2.html">FVec2</a> _c)</td></tr>
+<tr class="memdesc:af160a954c3786accea1b1336f116b866"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置三角形  <br /></td></tr>
+<tr class="separator:af160a954c3786accea1b1336f116b866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccfe1c6315dfbc4585c7a69ac08b527" id="r_afccfe1c6315dfbc4585c7a69ac08b527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afccfe1c6315dfbc4585c7a69ac08b527">Set_Angle</a> (float _angle)</td></tr>
+<tr class="memdesc:afccfe1c6315dfbc4585c7a69ac08b527"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置角度  <br /></td></tr>
+<tr class="separator:afccfe1c6315dfbc4585c7a69ac08b527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0824872e035efe3716fbf5146c308a66" id="r_a0824872e035efe3716fbf5146c308a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0824872e035efe3716fbf5146c308a66">Set_A</a> (<a class="el" href="class_f_vec2.html">FVec2</a> _a)</td></tr>
+<tr class="memdesc:a0824872e035efe3716fbf5146c308a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置顶点a  <br /></td></tr>
+<tr class="separator:a0824872e035efe3716fbf5146c308a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710cf25ab5e213a979e22f4bfd89b358" id="r_a710cf25ab5e213a979e22f4bfd89b358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710cf25ab5e213a979e22f4bfd89b358">Set_B</a> (<a class="el" href="class_f_vec2.html">FVec2</a> _b)</td></tr>
+<tr class="memdesc:a710cf25ab5e213a979e22f4bfd89b358"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置顶点b  <br /></td></tr>
+<tr class="separator:a710cf25ab5e213a979e22f4bfd89b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f17da0d32ae15a931e70829fff92f6" id="r_a74f17da0d32ae15a931e70829fff92f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f17da0d32ae15a931e70829fff92f6">Set_C</a> (<a class="el" href="class_f_vec2.html">FVec2</a> _c)</td></tr>
+<tr class="memdesc:a74f17da0d32ae15a931e70829fff92f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置顶点c  <br /></td></tr>
+<tr class="separator:a74f17da0d32ae15a931e70829fff92f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905187bf9b960df9f682257a24807309" id="r_a905187bf9b960df9f682257a24807309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a905187bf9b960df9f682257a24807309">Set_Origin</a> (<a class="el" href="class_f_vec2.html">FVec2</a> origin)</td></tr>
+<tr class="memdesc:a905187bf9b960df9f682257a24807309"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置旋转原点  <br /></td></tr>
+<tr class="separator:a905187bf9b960df9f682257a24807309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_f___shape"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_f___shape')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_f___shape.html">F_Shape</a></td></tr>
+<tr class="memitem:a9c6414f72a3b60338fe4843a967e193d inherit pub_methods_class_f___shape" id="r_a9c6414f72a3b60338fe4843a967e193d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a9c6414f72a3b60338fe4843a967e193d">F_Shape</a> ()</td></tr>
+<tr class="memdesc:a9c6414f72a3b60338fe4843a967e193d inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="separator:a9c6414f72a3b60338fe4843a967e193d inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af405426f7900c8012849566a9dccd186 inherit pub_methods_class_f___shape" id="r_af405426f7900c8012849566a9dccd186"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#af405426f7900c8012849566a9dccd186">F_Shape</a> (const <a class="el" href="class_f___shape.html">F_Shape</a> &amp;shape)</td></tr>
+<tr class="memdesc:af405426f7900c8012849566a9dccd186 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数  <br /></td></tr>
+<tr class="separator:af405426f7900c8012849566a9dccd186 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db5b8cac6c4ee1267a1b17946815cfa inherit pub_methods_class_f___shape" id="r_a3db5b8cac6c4ee1267a1b17946815cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a3db5b8cac6c4ee1267a1b17946815cfa">F_Shape</a> (const std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; &amp;p)</td></tr>
+<tr class="memdesc:a3db5b8cac6c4ee1267a1b17946815cfa inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a3db5b8cac6c4ee1267a1b17946815cfa inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b358f19ac854bdb34343bf8b8847ab inherit pub_methods_class_f___shape" id="r_a15b358f19ac854bdb34343bf8b8847ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a15b358f19ac854bdb34343bf8b8847ab">Add_Point</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;point)</td></tr>
+<tr class="memdesc:a15b358f19ac854bdb34343bf8b8847ab inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入点  <br /></td></tr>
+<tr class="separator:a15b358f19ac854bdb34343bf8b8847ab inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06736d39b9c069a0f46fd00502f9ecf inherit pub_methods_class_f___shape" id="r_af06736d39b9c069a0f46fd00502f9ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#af06736d39b9c069a0f46fd00502f9ecf">Delete_Point_Back</a> ()</td></tr>
+<tr class="memdesc:af06736d39b9c069a0f46fd00502f9ecf inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除最后一个点  <br /></td></tr>
+<tr class="separator:af06736d39b9c069a0f46fd00502f9ecf inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64664bc8c3dd23132af879e48365a32 inherit pub_methods_class_f___shape" id="r_aa64664bc8c3dd23132af879e48365a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#aa64664bc8c3dd23132af879e48365a32">Delete_Point</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;point, int number=-1)</td></tr>
+<tr class="memdesc:aa64664bc8c3dd23132af879e48365a32 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除number个值为point的点(-1为删除所有)  <br /></td></tr>
+<tr class="separator:aa64664bc8c3dd23132af879e48365a32 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd90a4a0492a5f09d98f83e07da3470b inherit pub_methods_class_f___shape" id="r_abd90a4a0492a5f09d98f83e07da3470b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#abd90a4a0492a5f09d98f83e07da3470b">Delete_Point</a> (int index)</td></tr>
+<tr class="memdesc:abd90a4a0492a5f09d98f83e07da3470b inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除第index个点  <br /></td></tr>
+<tr class="separator:abd90a4a0492a5f09d98f83e07da3470b inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93bb720cdb39401ad9540ddbd3a60b7 inherit pub_methods_class_f___shape" id="r_ad93bb720cdb39401ad9540ddbd3a60b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#ad93bb720cdb39401ad9540ddbd3a60b7">Is_Exists_Point</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;point)</td></tr>
+<tr class="memdesc:ad93bb720cdb39401ad9540ddbd3a60b7 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有某个点  <br /></td></tr>
+<tr class="separator:ad93bb720cdb39401ad9540ddbd3a60b7 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e03f553c003a14447f1ac4835b8628 inherit pub_methods_class_f___shape" id="r_a25e03f553c003a14447f1ac4835b8628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a25e03f553c003a14447f1ac4835b8628">Points_Deduplication</a> ()</td></tr>
+<tr class="memdesc:a25e03f553c003a14447f1ac4835b8628 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">点去重  <br /></td></tr>
+<tr class="separator:a25e03f553c003a14447f1ac4835b8628 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65c0e7d704dbe7c8fce8b03e594a429 inherit pub_methods_class_f___shape" id="r_ab65c0e7d704dbe7c8fce8b03e594a429"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#ab65c0e7d704dbe7c8fce8b03e594a429">Get_Point_FromIndex</a> (int index) const</td></tr>
+<tr class="memdesc:ab65c0e7d704dbe7c8fce8b03e594a429 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据点的索引来获取点  <br /></td></tr>
+<tr class="separator:ab65c0e7d704dbe7c8fce8b03e594a429 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75147e3a4c6ac28b592da77b5cdacb13 inherit pub_methods_class_f___shape" id="r_a75147e3a4c6ac28b592da77b5cdacb13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a75147e3a4c6ac28b592da77b5cdacb13">Get_Point_Index</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;point)</td></tr>
+<tr class="memdesc:a75147e3a4c6ac28b592da77b5cdacb13 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取点的编号  <br /></td></tr>
+<tr class="separator:a75147e3a4c6ac28b592da77b5cdacb13 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c9ad8a6f147999f6cf2da7f67a01ff inherit pub_methods_class_f___shape" id="r_aa5c9ad8a6f147999f6cf2da7f67a01ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#aa5c9ad8a6f147999f6cf2da7f67a01ff">Set_Angle</a> (float _angle)</td></tr>
+<tr class="memdesc:aa5c9ad8a6f147999f6cf2da7f67a01ff inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置角度  <br /></td></tr>
+<tr class="separator:aa5c9ad8a6f147999f6cf2da7f67a01ff inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade33d7500dc21f83ee8bd96c42cbee0c inherit pub_methods_class_f___shape" id="r_ade33d7500dc21f83ee8bd96c42cbee0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#ade33d7500dc21f83ee8bd96c42cbee0c">Set_Rot_Origin</a> (<a class="el" href="class_f_vec2.html">FVec2</a> origin)</td></tr>
+<tr class="memdesc:ade33d7500dc21f83ee8bd96c42cbee0c inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置旋转原点(同绘制原点)  <br /></td></tr>
+<tr class="separator:ade33d7500dc21f83ee8bd96c42cbee0c inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8fcced484878a8f56c8df184397941 inherit pub_methods_class_f___shape" id="r_aae8fcced484878a8f56c8df184397941"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#aae8fcced484878a8f56c8df184397941">Get_Points_Number</a> () const</td></tr>
+<tr class="memdesc:aae8fcced484878a8f56c8df184397941 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取点的数量  <br /></td></tr>
+<tr class="separator:aae8fcced484878a8f56c8df184397941 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd34f059ea968254d7aa099c37ab2380 inherit pub_methods_class_f___shape" id="r_abd34f059ea968254d7aa099c37ab2380"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#abd34f059ea968254d7aa099c37ab2380">Get_Points</a> () const</td></tr>
+<tr class="memdesc:abd34f059ea968254d7aa099c37ab2380 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取所有点  <br /></td></tr>
+<tr class="separator:abd34f059ea968254d7aa099c37ab2380 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7bd6a03ac48c40c25d99c40f8748b5 inherit pub_methods_class_f___shape" id="r_a4a7bd6a03ac48c40c25d99c40f8748b5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a4a7bd6a03ac48c40c25d99c40f8748b5">Support</a> (const <a class="el" href="class_f_vec2.html">FVec2</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a4a7bd6a03ac48c40c25d99c40f8748b5 inherit pub_methods_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">支持函数  <br /></td></tr>
+<tr class="separator:a4a7bd6a03ac48c40c25d99c40f8748b5 inherit pub_methods_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4d6a053b0598de8cdc1d1ecbcd996e86" id="r_a4d6a053b0598de8cdc1d1ecbcd996e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6a053b0598de8cdc1d1ecbcd996e86">a</a></td></tr>
+<tr class="separator:a4d6a053b0598de8cdc1d1ecbcd996e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0b42df1909200352a56a45667490c7" id="r_a2b0b42df1909200352a56a45667490c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0b42df1909200352a56a45667490c7">b</a></td></tr>
+<tr class="separator:a2b0b42df1909200352a56a45667490c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4e4f069fe351577ed5352d49e7c755" id="r_a0d4e4f069fe351577ed5352d49e7c755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d4e4f069fe351577ed5352d49e7c755">c</a></td></tr>
+<tr class="separator:a0d4e4f069fe351577ed5352d49e7c755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_f___shape"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_f___shape')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_f___shape.html">F_Shape</a></td></tr>
+<tr class="memitem:a23c80a49027adecf900dfb72aadedc97 inherit pub_attribs_class_f___shape" id="r_a23c80a49027adecf900dfb72aadedc97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a23c80a49027adecf900dfb72aadedc97">angle</a></td></tr>
+<tr class="memdesc:a23c80a49027adecf900dfb72aadedc97 inherit pub_attribs_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状的旋转角度  <br /></td></tr>
+<tr class="separator:a23c80a49027adecf900dfb72aadedc97 inherit pub_attribs_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce3e6daf32b722fa3ff2206fc716a52 inherit pub_attribs_class_f___shape" id="r_a7ce3e6daf32b722fa3ff2206fc716a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_vec2.html">FVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#a7ce3e6daf32b722fa3ff2206fc716a52">rot_origin</a></td></tr>
+<tr class="memdesc:a7ce3e6daf32b722fa3ff2206fc716a52 inherit pub_attribs_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状的旋转原点  <br /></td></tr>
+<tr class="separator:a7ce3e6daf32b722fa3ff2206fc716a52 inherit pub_attribs_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_f___shape"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_f___shape')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_f___shape.html">F_Shape</a></td></tr>
+<tr class="memitem:ae10fb0ba45ce4e45156da53a4d48286c inherit pro_attribs_class_f___shape" id="r_ae10fb0ba45ce4e45156da53a4d48286c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f___shape.html#ae10fb0ba45ce4e45156da53a4d48286c">points</a></td></tr>
+<tr class="memdesc:ae10fb0ba45ce4e45156da53a4d48286c inherit pro_attribs_class_f___shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状的顶点  <br /></td></tr>
+<tr class="separator:ae10fb0ba45ce4e45156da53a4d48286c inherit pro_attribs_class_f___shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>三角形类 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad05fcf43e49bb41079f9c60a85d5887f" name="ad05fcf43e49bb41079f9c60a85d5887f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05fcf43e49bb41079f9c60a85d5887f">&#9670;&#160;</a></span>F_Triangle() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Triangle::F_Triangle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>默认构造函数 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___triangle_ad05fcf43e49bb41079f9c60a85d5887f_icgraph.png" border="0" usemap="#aclass_f___triangle_ad05fcf43e49bb41079f9c60a85d5887f_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4cef9c6ef76f30c1be7c7cbf37781164" name="a4cef9c6ef76f30c1be7c7cbf37781164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cef9c6ef76f30c1be7c7cbf37781164">&#9670;&#160;</a></span>F_Triangle() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Triangle::F_Triangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f___triangle.html">F_Triangle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>triangle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">triangle</td><td>F_Triangle对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f___triangle_a4cef9c6ef76f30c1be7c7cbf37781164_cgraph.png" border="0" usemap="#aclass_f___triangle_a4cef9c6ef76f30c1be7c7cbf37781164_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4f225861547a6ccc1b87960f2ca5d131" name="a4f225861547a6ccc1b87960f2ca5d131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f225861547a6ccc1b87960f2ca5d131">&#9670;&#160;</a></span>F_Triangle() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">F_Triangle::F_Triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_a</td><td>顶点a </td></tr>
+    <tr><td class="paramname">_b</td><td>顶点b </td></tr>
+    <tr><td class="paramname">_c</td><td>顶点c </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a0824872e035efe3716fbf5146c308a66" name="a0824872e035efe3716fbf5146c308a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0824872e035efe3716fbf5146c308a66">&#9670;&#160;</a></span>Set_A()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_A </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置顶点a </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_a</td><td>顶点a </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afccfe1c6315dfbc4585c7a69ac08b527" name="afccfe1c6315dfbc4585c7a69ac08b527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccfe1c6315dfbc4585c7a69ac08b527">&#9670;&#160;</a></span>Set_Angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_Angle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置角度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_angle</td><td>角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a710cf25ab5e213a979e22f4bfd89b358" name="a710cf25ab5e213a979e22f4bfd89b358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710cf25ab5e213a979e22f4bfd89b358">&#9670;&#160;</a></span>Set_B()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_B </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_b</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置顶点b </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_b</td><td>顶点b </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74f17da0d32ae15a931e70829fff92f6" name="a74f17da0d32ae15a931e70829fff92f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f17da0d32ae15a931e70829fff92f6">&#9670;&#160;</a></span>Set_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_C </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置顶点c </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>顶点c </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a905187bf9b960df9f682257a24807309" name="a905187bf9b960df9f682257a24807309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905187bf9b960df9f682257a24807309">&#9670;&#160;</a></span>Set_Origin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_Origin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置旋转原点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>旋转原点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af160a954c3786accea1b1336f116b866" name="af160a954c3786accea1b1336f116b866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af160a954c3786accea1b1336f116b866">&#9670;&#160;</a></span>Set_Triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Set_Triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>_c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置三角形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_a</td><td>顶点a </td></tr>
+    <tr><td class="paramname">_b</td><td>顶点b </td></tr>
+    <tr><td class="paramname">_c</td><td>顶点c </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a552f6f9925338384a493f078ec5e6ddb" name="a552f6f9925338384a493f078ec5e6ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552f6f9925338384a493f078ec5e6ddb">&#9670;&#160;</a></span>Shape_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void F_Triangle::Shape_Set </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>利用三角形的参数设置图形信息 </p>
+
+<p>重载 <a class="el" href="class_f___shape.html#a2bd1a19a9438c1505f82faeba439d7dd">F_Shape</a> .</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a4d6a053b0598de8cdc1d1ecbcd996e86" name="a4d6a053b0598de8cdc1d1ecbcd996e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6a053b0598de8cdc1d1ecbcd996e86">&#9670;&#160;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_vec2.html">FVec2</a> F_Triangle::a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b0b42df1909200352a56a45667490c7" name="a2b0b42df1909200352a56a45667490c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0b42df1909200352a56a45667490c7">&#9670;&#160;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_vec2.html">FVec2</a> F_Triangle::b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d4e4f069fe351577ed5352d49e7c755" name="a0d4e4f069fe351577ed5352d49e7c755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4e4f069fe351577ed5352d49e7c755">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_vec2.html">FVec2</a> F_Triangle::c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_f_math_8h_source.html">FMath.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

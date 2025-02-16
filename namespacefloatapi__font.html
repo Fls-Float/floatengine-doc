@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatapi_font 命名空间参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">floatapi_font 命名空间参考<div class="ingroups"><a class="el" href="group___font.html">字体模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供字体相关的辅助函数  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a38888bfd353be10efbad8fbf23b3ce78" id="r_a38888bfd353be10efbad8fbf23b3ce78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38888bfd353be10efbad8fbf23b3ce78">InitDefaultFont</a> ()</td></tr>
+<tr class="memdesc:a38888bfd353be10efbad8fbf23b3ce78"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化默认字体  <br /></td></tr>
+<tr class="separator:a38888bfd353be10efbad8fbf23b3ce78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22b02c14d43492605458018f0cc995e" id="r_ab22b02c14d43492605458018f0cc995e"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22b02c14d43492605458018f0cc995e">LoadFontRaylib</a> (const char *filename, const char *type, int font_size, int *codepoints, int codepoints_count)</td></tr>
+<tr class="memdesc:ab22b02c14d43492605458018f0cc995e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件加载raylib字体  <br /></td></tr>
+<tr class="separator:ab22b02c14d43492605458018f0cc995e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b2e59b3a0323ea567b1fbd2ca2cfbe" id="r_a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32b2e59b3a0323ea567b1fbd2ca2cfbe">LoadFontRaylibFromData</a> (const unsigned char *data, int data_size, const char *type, int font_size, int *codepoints, int codepoints_count)</td></tr>
+<tr class="memdesc:a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">从数据中加载raylib字体  <br /></td></tr>
+<tr class="separator:a32b2e59b3a0323ea567b1fbd2ca2cfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8f1f0ee0c964ef1fc3eb2785303e0" id="r_abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abee8f1f0ee0c964ef1fc3eb2785303e0">LoadChineseFontDefault</a> ()</td></tr>
+<tr class="memdesc:abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载默认中文字体  <br /></td></tr>
+<tr class="separator:abee8f1f0ee0c964ef1fc3eb2785303e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a8953e5bddf23ac3e3f02cc906c82" id="r_a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e6a8953e5bddf23ac3e3f02cc906c82">LoadCommonCodepoints</a> (int &amp;count, std::string other=&quot;&quot;)</td></tr>
+<tr class="memdesc:a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载常用字符码点  <br /></td></tr>
+<tr class="separator:a0e6a8953e5bddf23ac3e3f02cc906c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab762804bdb2811bf130031f5973d134" id="r_aab762804bdb2811bf130031f5973d134"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab762804bdb2811bf130031f5973d134">LoadCodepointsFromRange</a> (int start, int end, int &amp;count)</td></tr>
+<tr class="memdesc:aab762804bdb2811bf130031f5973d134"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据范围加载码点  <br /></td></tr>
+<tr class="separator:aab762804bdb2811bf130031f5973d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1940e8c7dbf62e21b48434a051b0a826" id="r_a1940e8c7dbf62e21b48434a051b0a826"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1940e8c7dbf62e21b48434a051b0a826">LoadChineseCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a1940e8c7dbf62e21b48434a051b0a826"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载中文字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a1940e8c7dbf62e21b48434a051b0a826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27765d88361bb0ffc42b3095699e69d2" id="r_a27765d88361bb0ffc42b3095699e69d2"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27765d88361bb0ffc42b3095699e69d2">LoadJapaneseCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a27765d88361bb0ffc42b3095699e69d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载日文字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a27765d88361bb0ffc42b3095699e69d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b775afcec352b4b06b883f1f9c50809" id="r_a4b775afcec352b4b06b883f1f9c50809"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b775afcec352b4b06b883f1f9c50809">LoadFrenchCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a4b775afcec352b4b06b883f1f9c50809"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载法语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a4b775afcec352b4b06b883f1f9c50809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa94bb5dc467a5c2b679bf4971558d0" id="r_affa94bb5dc467a5c2b679bf4971558d0"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affa94bb5dc467a5c2b679bf4971558d0">LoadGermanCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:affa94bb5dc467a5c2b679bf4971558d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载德语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:affa94bb5dc467a5c2b679bf4971558d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320793d2e2d6e8c9681b801f637e9c98" id="r_a320793d2e2d6e8c9681b801f637e9c98"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a320793d2e2d6e8c9681b801f637e9c98">LoadSpanishCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a320793d2e2d6e8c9681b801f637e9c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载西班牙语字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a320793d2e2d6e8c9681b801f637e9c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3dac51042ccaa3920901692c90e15b" id="r_a1c3dac51042ccaa3920901692c90e15b"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c3dac51042ccaa3920901692c90e15b">LoadAsciiCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a1c3dac51042ccaa3920901692c90e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载ASCII字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a1c3dac51042ccaa3920901692c90e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828744a8030f33555fe5f998fe73de1d" id="r_a828744a8030f33555fe5f998fe73de1d"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a828744a8030f33555fe5f998fe73de1d">LoadEmojiCodepoints</a> (int &amp;count)</td></tr>
+<tr class="memdesc:a828744a8030f33555fe5f998fe73de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载Emoji字符集的所有Unicode码点  <br /></td></tr>
+<tr class="separator:a828744a8030f33555fe5f998fe73de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cef9fde95e06a7abd1a452f77ab510" id="r_ab9cef9fde95e06a7abd1a452f77ab510"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9cef9fde95e06a7abd1a452f77ab510">IsValidUnicodeCodepoint</a> (int codepoint)</td></tr>
+<tr class="memdesc:ab9cef9fde95e06a7abd1a452f77ab510"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否是有效的Unicode字符  <br /></td></tr>
+<tr class="separator:ab9cef9fde95e06a7abd1a452f77ab510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ce86dc8c8dc9f707899793acffd101" id="r_a82ce86dc8c8dc9f707899793acffd101"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82ce86dc8c8dc9f707899793acffd101">LoadUnicodeCodepoints</a> (int &amp;count, bool filter=true)</td></tr>
+<tr class="memdesc:a82ce86dc8c8dc9f707899793acffd101"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载0到0xFFFF范围内所有有效的Unicode码点  <br /></td></tr>
+<tr class="separator:a82ce86dc8c8dc9f707899793acffd101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40128d1885c09b528f2eb5d7460762b" id="r_ae40128d1885c09b528f2eb5d7460762b"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae40128d1885c09b528f2eb5d7460762b">ConcatenateCodepoints</a> (int *codepoints1, int count1, int *codepoints2, int count2, int &amp;count)</td></tr>
+<tr class="memdesc:ae40128d1885c09b528f2eb5d7460762b"><td class="mdescLeft">&#160;</td><td class="mdescRight">拼接多个codepoints数组  <br /></td></tr>
+<tr class="separator:ae40128d1885c09b528f2eb5d7460762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供字体相关的辅助函数 </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae40128d1885c09b528f2eb5d7460762b" name="ae40128d1885c09b528f2eb5d7460762b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40128d1885c09b528f2eb5d7460762b">&#9670;&#160;</a></span>ConcatenateCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::ConcatenateCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>codepoints1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>codepoints2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拼接多个codepoints数组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codepoints1</td><td>码点数组1 </td></tr>
+    <tr><td class="paramname">count1</td><td>码点数量1 </td></tr>
+    <tr><td class="paramname">codepoints2</td><td>码点数组2 </td></tr>
+    <tr><td class="paramname">count2</td><td>码点数量2 </td></tr>
+    <tr><td class="paramname">count</td><td>拼接后的码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>拼接后的码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a38888bfd353be10efbad8fbf23b3ce78" name="a38888bfd353be10efbad8fbf23b3ce78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38888bfd353be10efbad8fbf23b3ce78">&#9670;&#160;</a></span>InitDefaultFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void floatapi_font::InitDefaultFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化默认字体 </p>
+
+</div>
+</div>
+<a id="ab9cef9fde95e06a7abd1a452f77ab510" name="ab9cef9fde95e06a7abd1a452f77ab510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9cef9fde95e06a7abd1a452f77ab510">&#9670;&#160;</a></span>IsValidUnicodeCodepoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool floatapi_font::IsValidUnicodeCodepoint </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>codepoint</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断是否是有效的Unicode字符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codepoint</td><td>Unicode码点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果有效返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a1c3dac51042ccaa3920901692c90e15b" name="a1c3dac51042ccaa3920901692c90e15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3dac51042ccaa3920901692c90e15b">&#9670;&#160;</a></span>LoadAsciiCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadAsciiCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载ASCII字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a1940e8c7dbf62e21b48434a051b0a826" name="a1940e8c7dbf62e21b48434a051b0a826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1940e8c7dbf62e21b48434a051b0a826">&#9670;&#160;</a></span>LoadChineseCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadChineseCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载中文字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="abee8f1f0ee0c964ef1fc3eb2785303e0" name="abee8f1f0ee0c964ef1fc3eb2785303e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee8f1f0ee0c964ef1fc3eb2785303e0">&#9670;&#160;</a></span>LoadChineseFontDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font floatapi_font::LoadChineseFontDefault </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载默认中文字体 </p>
+<dl class="section return"><dt>返回</dt><dd>加载的Font对象 </dd></dl>
+
+</div>
+</div>
+<a id="aab762804bdb2811bf130031f5973d134" name="aab762804bdb2811bf130031f5973d134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab762804bdb2811bf130031f5973d134">&#9670;&#160;</a></span>LoadCodepointsFromRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadCodepointsFromRange </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据范围加载码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>起始码点 </td></tr>
+    <tr><td class="paramname">end</td><td>结束码点 </td></tr>
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a0e6a8953e5bddf23ac3e3f02cc906c82" name="a0e6a8953e5bddf23ac3e3f02cc906c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6a8953e5bddf23ac3e3f02cc906c82">&#9670;&#160;</a></span>LoadCommonCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadCommonCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>other</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载常用字符码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+    <tr><td class="paramname">other</td><td>其他字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a828744a8030f33555fe5f998fe73de1d" name="a828744a8030f33555fe5f998fe73de1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828744a8030f33555fe5f998fe73de1d">&#9670;&#160;</a></span>LoadEmojiCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadEmojiCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载Emoji字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="ab22b02c14d43492605458018f0cc995e" name="ab22b02c14d43492605458018f0cc995e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22b02c14d43492605458018f0cc995e">&#9670;&#160;</a></span>LoadFontRaylib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font floatapi_font::LoadFontRaylib </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>codepoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>codepoints_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从文件加载raylib字体 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramname">type</td><td>文件类型 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">codepoints</td><td>码点数组 </td></tr>
+    <tr><td class="paramname">codepoints_count</td><td>码点数组大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载的Font对象 </dd></dl>
+
+</div>
+</div>
+<a id="a32b2e59b3a0323ea567b1fbd2ca2cfbe" name="a32b2e59b3a0323ea567b1fbd2ca2cfbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b2e59b3a0323ea567b1fbd2ca2cfbe">&#9670;&#160;</a></span>LoadFontRaylibFromData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font floatapi_font::LoadFontRaylibFromData </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>data_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>codepoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>codepoints_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从数据中加载raylib字体 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>字体数据 </td></tr>
+    <tr><td class="paramname">data_size</td><td>数据大小 </td></tr>
+    <tr><td class="paramname">type</td><td>文件类型 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">codepoints</td><td>码点数组 </td></tr>
+    <tr><td class="paramname">codepoints_count</td><td>码点数组大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载的Font对象 </dd></dl>
+
+</div>
+</div>
+<a id="a4b775afcec352b4b06b883f1f9c50809" name="a4b775afcec352b4b06b883f1f9c50809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b775afcec352b4b06b883f1f9c50809">&#9670;&#160;</a></span>LoadFrenchCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadFrenchCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载法语字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="affa94bb5dc467a5c2b679bf4971558d0" name="affa94bb5dc467a5c2b679bf4971558d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa94bb5dc467a5c2b679bf4971558d0">&#9670;&#160;</a></span>LoadGermanCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadGermanCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载德语字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a27765d88361bb0ffc42b3095699e69d2" name="a27765d88361bb0ffc42b3095699e69d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27765d88361bb0ffc42b3095699e69d2">&#9670;&#160;</a></span>LoadJapaneseCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadJapaneseCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载日文字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a320793d2e2d6e8c9681b801f637e9c98" name="a320793d2e2d6e8c9681b801f637e9c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320793d2e2d6e8c9681b801f637e9c98">&#9670;&#160;</a></span>LoadSpanishCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadSpanishCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载西班牙语字符集的所有Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+<a id="a82ce86dc8c8dc9f707899793acffd101" name="a82ce86dc8c8dc9f707899793acffd101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ce86dc8c8dc9f707899793acffd101">&#9670;&#160;</a></span>LoadUnicodeCodepoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * floatapi_font::LoadUnicodeCodepoints </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载0到0xFFFF范围内所有有效的Unicode码点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>码点数量 </td></tr>
+    <tr><td class="paramname">filter</td><td>是否过滤无效码点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>码点数组 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

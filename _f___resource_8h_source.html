@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/F_Resource.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">F_Resource.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_f___resource_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef F_RESOURCE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define F_RESOURCE_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;raylib.hpp&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">   26</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae62ea3ea779f433da5dc73b726e8a2db">   27</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae62ea3ea779f433da5dc73b726e8a2db">ResText</a>,    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3cf366955198dbfb9ffe474ba72d7e3">   28</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3cf366955198dbfb9ffe474ba72d7e3">ResSound</a>,   </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3510cdaed484c0dd83d627b3e264def">   29</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3510cdaed484c0dd83d627b3e264def">ResMusic</a>,   </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082">   30</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082">ResTexture</a>, </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a4d8e41f974a883ae159b7529c974cac6">   31</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a4d8e41f974a883ae159b7529c974cac6">ResFont</a>,    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ad1c01b8c8fd9ee84ad8d541570139bee">   32</a></span>    <a class="code hl_enumvalue" href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ad1c01b8c8fd9ee84ad8d541570139bee">ResData</a>     </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_f___resource.html">   50</a></span><span class="keyword">class </span><a class="code hl_function" href="class_f___resource.html#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource</a> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* _password;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::string _zip_path;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> has_password;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_f___resource.html#a5c26e5aaddac5f71dbcd6f13b196f2c6">   58</a></span>    <a class="code hl_function" href="class_f___resource.html#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_f___resource.html#a40bb10f2504e91c024a6143c4c4443ac">   63</a></span>    <a class="code hl_function" href="class_f___resource.html#a40bb10f2504e91c024a6143c4c4443ac">~F_Resource</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_f___resource.html#a40da082f757652e8d46be73da070730e">   69</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#a40da082f757652e8d46be73da070730e">SetZipPath</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_f___resource.html#aed3b9a702966621e23df561d1a5bf396">   75</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#aed3b9a702966621e23df561d1a5bf396">SetPassword</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* password);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_f___resource.html#a99c7491bfbd54a08112f7c4900316105">   80</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#a99c7491bfbd54a08112f7c4900316105">NoPassword</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_f___resource.html#ae9def8cac5e627c6964d4960e9c6642b">   88</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#ae9def8cac5e627c6964d4960e9c6642b">Setup</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> <span class="keywordtype">char</span>* password = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">bool</span> _has_password = 0) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_function" href="class_f___resource.html#a40da082f757652e8d46be73da070730e">SetZipPath</a>(path);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_function" href="class_f___resource.html#aed3b9a702966621e23df561d1a5bf396">SetPassword</a>(password);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        has_password = _has_password;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_f___resource.html#a7cd5cccda8aa090acef0e208d47b390f">  101</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___resource.html#a7cd5cccda8aa090acef0e208d47b390f">LoadResource</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <a class="code hl_enumeration" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_f___resource.html#a751e6bbbd17e49d8a6f9ce6da379ac96">  112</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___resource.html#a751e6bbbd17e49d8a6f9ce6da379ac96">LoadFontResource</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <span class="keywordtype">int</span> font_size, <span class="keywordtype">int</span>* codepoints, <span class="keywordtype">int</span> codepoints_size);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_f___resource.html#af806dcaddb9b04cfb5de0889c3e71716">  120</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#af806dcaddb9b04cfb5de0889c3e71716">AddResource</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <a class="code hl_enumeration" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type, <span class="keywordtype">void</span>* resource);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_f___resource.html#a407ed5aede6cb05f8dc110ce3cbf3877">  127</a></span>    Texture2D <a class="code hl_function" href="class_f___resource.html#a407ed5aede6cb05f8dc110ce3cbf3877">GetTexture</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_f___resource.html#ae7a47699a7e5dd292fd3befede83c9d8">  134</a></span>    Sound <a class="code hl_function" href="class_f___resource.html#ae7a47699a7e5dd292fd3befede83c9d8">GetSound</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_f___resource.html#aae9318ab92c4fe405b930e35359f2f9c">  141</a></span>    Music <a class="code hl_function" href="class_f___resource.html#aae9318ab92c4fe405b930e35359f2f9c">GetMusic</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_f___resource.html#ac513e98f8c1243b421514681f242af9b">  148</a></span>    Font <a class="code hl_function" href="class_f___resource.html#ac513e98f8c1243b421514681f242af9b">GetFont</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_f___resource.html#a79bc2c8397d719d1402b2103af5e9b7a">  155</a></span>    std::string <a class="code hl_function" href="class_f___resource.html#a79bc2c8397d719d1402b2103af5e9b7a">GetText</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="class_f___resource.html#a4c5b3eb12ff5f3a3cfe0d6671afbfbc9">  162</a></span>    std::vector&lt;unsigned char&gt; <a class="code hl_function" href="class_f___resource.html#a4c5b3eb12ff5f3a3cfe0d6671afbfbc9">GetData</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_f___resource.html#aa80e2cb6dd1a4119c3b3aad6416f2fe7">  169</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___resource.html#aa80e2cb6dd1a4119c3b3aad6416f2fe7">HasResource</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="class_f___resource.html#aa8fdde2b44f00f644e73fa3869277cdb">  177</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___resource.html#aa8fdde2b44f00f644e73fa3869277cdb">HasResource</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <a class="code hl_enumeration" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="class_f___resource.html#a3167d60ac47e8bfdd65eb052d6023088">  184</a></span>    Texture2D* <a class="code hl_function" href="class_f___resource.html#a3167d60ac47e8bfdd65eb052d6023088">GetTextureP</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_f___resource.html#af1ee18ae90da2bba9d0c46d7f9c20f15">  191</a></span>    Sound* <a class="code hl_function" href="class_f___resource.html#af1ee18ae90da2bba9d0c46d7f9c20f15">GetSoundP</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="class_f___resource.html#ac55cdcf4563c4aaee0efacca9da4021f">  198</a></span>    Music* <a class="code hl_function" href="class_f___resource.html#ac55cdcf4563c4aaee0efacca9da4021f">GetMusicP</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="class_f___resource.html#a277e8fd6a516f88ee809106f20188f78">  205</a></span>    Font* <a class="code hl_function" href="class_f___resource.html#a277e8fd6a516f88ee809106f20188f78">GetFontP</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="class_f___resource.html#ab0c0ec3fa2cad9f4e8ed5b991ed78e75">  212</a></span>    std::string* <a class="code hl_function" href="class_f___resource.html#ab0c0ec3fa2cad9f4e8ed5b991ed78e75">GetTextP</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="class_f___resource.html#a34d8024fc0bd7f5b0e5fce89bb14411b">  219</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#a34d8024fc0bd7f5b0e5fce89bb14411b">UnloadResource</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <a class="code hl_enumeration" href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a> type);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="class_f___resource.html#a48f0ebc595785a89c03180fc65da4c8d">  224</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___resource.html#a48f0ebc595785a89c03180fc65da4c8d">UnloadAllResources</a>();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// 资源缓存</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    std::map&lt;std::string, Texture2D&gt; textures;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    std::map&lt;std::string, Sound&gt; sounds;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    std::map&lt;std::string, Music&gt; musics;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    std::map&lt;std::string, Font&gt; fonts;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    std::map&lt;std::string, std::string&gt; texts;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    std::map&lt;std::string, std::vector&lt;unsigned char&gt;&gt; datas;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="comment">// 资源加载辅助函数</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">bool</span> LoadTextureFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordtype">bool</span> LoadSoundFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordtype">bool</span> LoadMusicFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordtype">bool</span> LoadFontFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <span class="keywordtype">int</span> font_size, <span class="keywordtype">int</span>* codepoints, <span class="keywordtype">int</span> codepoints_size);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordtype">bool</span> LoadTextFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordtype">bool</span> LoadDataFromZlib(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="comment">// 卸载资源辅助函数</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">void</span> UnloadTextureById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordtype">void</span> UnloadSoundById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordtype">void</span> UnloadMusicById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordtype">void</span> UnloadFontById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">void</span> UnloadTextById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordtype">void</span> UnloadDataById(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="comment">// 解压缩辅助函数</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordtype">bool</span> DecompressZlib(<span class="keyword">const</span> std::string&amp; path, std::vector&lt;unsigned char&gt;&amp; out_data);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">bool</span> DecompressZlibWithPassword(<span class="keyword">const</span> std::string&amp; path, std::vector&lt;unsigned char&gt;&amp; out_data, <span class="keyword">const</span> <span class="keywordtype">char</span>* password);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>};</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#endif </span><span class="comment">// F_RESOURCE_H</span></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a2013990a133ee377389ef3a9bb1c3082">ResTexture</a></div><div class="ttdeci">@ ResTexture</div><div class="ttdoc">纹理资源</div><div class="ttdef"><b>定义</b> F_Resource.h:30</div></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1a4d8e41f974a883ae159b7529c974cac6"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1a4d8e41f974a883ae159b7529c974cac6">ResFont</a></div><div class="ttdeci">@ ResFont</div><div class="ttdoc">字体资源</div><div class="ttdef"><b>定义</b> F_Resource.h:31</div></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1ad1c01b8c8fd9ee84ad8d541570139bee"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ad1c01b8c8fd9ee84ad8d541570139bee">ResData</a></div><div class="ttdeci">@ ResData</div><div class="ttdoc">数据资源</div><div class="ttdef"><b>定义</b> F_Resource.h:32</div></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1ae3510cdaed484c0dd83d627b3e264def"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3510cdaed484c0dd83d627b3e264def">ResMusic</a></div><div class="ttdeci">@ ResMusic</div><div class="ttdoc">音乐资源</div><div class="ttdef"><b>定义</b> F_Resource.h:29</div></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1ae3cf366955198dbfb9ffe474ba72d7e3"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae3cf366955198dbfb9ffe474ba72d7e3">ResSound</a></div><div class="ttdeci">@ ResSound</div><div class="ttdoc">声音资源</div><div class="ttdef"><b>定义</b> F_Resource.h:28</div></div>
+<div class="ttc" id="a_f___resource_8h_html_ga8571efa4409be32e28abf3ea74a0dbb1ae62ea3ea779f433da5dc73b726e8a2db"><div class="ttname"><a href="_f___resource_8h.html#ga8571efa4409be32e28abf3ea74a0dbb1ae62ea3ea779f433da5dc73b726e8a2db">ResText</a></div><div class="ttdeci">@ ResText</div><div class="ttdoc">文本资源</div><div class="ttdef"><b>定义</b> F_Resource.h:27</div></div>
+<div class="ttc" id="aclass_f___resource_html_a277e8fd6a516f88ee809106f20188f78"><div class="ttname"><a href="class_f___resource.html#a277e8fd6a516f88ee809106f20188f78">F_Resource::GetFontP</a></div><div class="ttdeci">Font * GetFontP(const std::string &amp;id)</div><div class="ttdoc">获取字体资源指针</div></div>
+<div class="ttc" id="aclass_f___resource_html_a3167d60ac47e8bfdd65eb052d6023088"><div class="ttname"><a href="class_f___resource.html#a3167d60ac47e8bfdd65eb052d6023088">F_Resource::GetTextureP</a></div><div class="ttdeci">Texture2D * GetTextureP(const std::string &amp;id)</div><div class="ttdoc">获取纹理资源指针</div></div>
+<div class="ttc" id="aclass_f___resource_html_a34d8024fc0bd7f5b0e5fce89bb14411b"><div class="ttname"><a href="class_f___resource.html#a34d8024fc0bd7f5b0e5fce89bb14411b">F_Resource::UnloadResource</a></div><div class="ttdeci">void UnloadResource(const std::string &amp;id, ResourceType type)</div><div class="ttdoc">卸载单个资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a407ed5aede6cb05f8dc110ce3cbf3877"><div class="ttname"><a href="class_f___resource.html#a407ed5aede6cb05f8dc110ce3cbf3877">F_Resource::GetTexture</a></div><div class="ttdeci">Texture2D GetTexture(const std::string &amp;id)</div><div class="ttdoc">获取纹理资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a40bb10f2504e91c024a6143c4c4443ac"><div class="ttname"><a href="class_f___resource.html#a40bb10f2504e91c024a6143c4c4443ac">F_Resource::~F_Resource</a></div><div class="ttdeci">~F_Resource()</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclass_f___resource_html_a40da082f757652e8d46be73da070730e"><div class="ttname"><a href="class_f___resource.html#a40da082f757652e8d46be73da070730e">F_Resource::SetZipPath</a></div><div class="ttdeci">void SetZipPath(const std::string &amp;path)</div><div class="ttdoc">设置zip路径</div></div>
+<div class="ttc" id="aclass_f___resource_html_a48f0ebc595785a89c03180fc65da4c8d"><div class="ttname"><a href="class_f___resource.html#a48f0ebc595785a89c03180fc65da4c8d">F_Resource::UnloadAllResources</a></div><div class="ttdeci">void UnloadAllResources()</div><div class="ttdoc">卸载所有资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a4c5b3eb12ff5f3a3cfe0d6671afbfbc9"><div class="ttname"><a href="class_f___resource.html#a4c5b3eb12ff5f3a3cfe0d6671afbfbc9">F_Resource::GetData</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; GetData(const std::string &amp;id)</div><div class="ttdoc">获取数据资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a5c26e5aaddac5f71dbcd6f13b196f2c6"><div class="ttname"><a href="class_f___resource.html#a5c26e5aaddac5f71dbcd6f13b196f2c6">F_Resource::F_Resource</a></div><div class="ttdeci">F_Resource()</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_f___resource_html_a751e6bbbd17e49d8a6f9ce6da379ac96"><div class="ttname"><a href="class_f___resource.html#a751e6bbbd17e49d8a6f9ce6da379ac96">F_Resource::LoadFontResource</a></div><div class="ttdeci">bool LoadFontResource(const std::string &amp;path, const std::string &amp;id, int font_size, int *codepoints, int codepoints_size)</div><div class="ttdoc">加载字体资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a79bc2c8397d719d1402b2103af5e9b7a"><div class="ttname"><a href="class_f___resource.html#a79bc2c8397d719d1402b2103af5e9b7a">F_Resource::GetText</a></div><div class="ttdeci">std::string GetText(const std::string &amp;id)</div><div class="ttdoc">获取文本资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a7cd5cccda8aa090acef0e208d47b390f"><div class="ttname"><a href="class_f___resource.html#a7cd5cccda8aa090acef0e208d47b390f">F_Resource::LoadResource</a></div><div class="ttdeci">bool LoadResource(const std::string &amp;path, const std::string &amp;id, ResourceType type)</div><div class="ttdoc">加载资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_a99c7491bfbd54a08112f7c4900316105"><div class="ttname"><a href="class_f___resource.html#a99c7491bfbd54a08112f7c4900316105">F_Resource::NoPassword</a></div><div class="ttdeci">void NoPassword()</div><div class="ttdoc">不使用密码</div></div>
+<div class="ttc" id="aclass_f___resource_html_aa80e2cb6dd1a4119c3b3aad6416f2fe7"><div class="ttname"><a href="class_f___resource.html#aa80e2cb6dd1a4119c3b3aad6416f2fe7">F_Resource::HasResource</a></div><div class="ttdeci">bool HasResource(const std::string &amp;id)</div><div class="ttdoc">判断资源是否存在</div></div>
+<div class="ttc" id="aclass_f___resource_html_aa8fdde2b44f00f644e73fa3869277cdb"><div class="ttname"><a href="class_f___resource.html#aa8fdde2b44f00f644e73fa3869277cdb">F_Resource::HasResource</a></div><div class="ttdeci">bool HasResource(const std::string &amp;id, ResourceType type)</div><div class="ttdoc">判断资源是否存在</div></div>
+<div class="ttc" id="aclass_f___resource_html_aae9318ab92c4fe405b930e35359f2f9c"><div class="ttname"><a href="class_f___resource.html#aae9318ab92c4fe405b930e35359f2f9c">F_Resource::GetMusic</a></div><div class="ttdeci">Music GetMusic(const std::string &amp;id)</div><div class="ttdoc">获取音乐资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_ab0c0ec3fa2cad9f4e8ed5b991ed78e75"><div class="ttname"><a href="class_f___resource.html#ab0c0ec3fa2cad9f4e8ed5b991ed78e75">F_Resource::GetTextP</a></div><div class="ttdeci">std::string * GetTextP(const std::string &amp;id)</div><div class="ttdoc">获取文本资源指针</div></div>
+<div class="ttc" id="aclass_f___resource_html_ac513e98f8c1243b421514681f242af9b"><div class="ttname"><a href="class_f___resource.html#ac513e98f8c1243b421514681f242af9b">F_Resource::GetFont</a></div><div class="ttdeci">Font GetFont(const std::string &amp;id)</div><div class="ttdoc">获取字体资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_ac55cdcf4563c4aaee0efacca9da4021f"><div class="ttname"><a href="class_f___resource.html#ac55cdcf4563c4aaee0efacca9da4021f">F_Resource::GetMusicP</a></div><div class="ttdeci">Music * GetMusicP(const std::string &amp;id)</div><div class="ttdoc">获取音乐资源指针</div></div>
+<div class="ttc" id="aclass_f___resource_html_ae7a47699a7e5dd292fd3befede83c9d8"><div class="ttname"><a href="class_f___resource.html#ae7a47699a7e5dd292fd3befede83c9d8">F_Resource::GetSound</a></div><div class="ttdeci">Sound GetSound(const std::string &amp;id)</div><div class="ttdoc">获取声音资源</div></div>
+<div class="ttc" id="aclass_f___resource_html_ae9def8cac5e627c6964d4960e9c6642b"><div class="ttname"><a href="class_f___resource.html#ae9def8cac5e627c6964d4960e9c6642b">F_Resource::Setup</a></div><div class="ttdeci">void Setup(const std::string &amp;path, const char *password=&quot;&quot;, bool _has_password=0)</div><div class="ttdoc">设置压缩包</div><div class="ttdef"><b>定义</b> F_Resource.h:88</div></div>
+<div class="ttc" id="aclass_f___resource_html_aed3b9a702966621e23df561d1a5bf396"><div class="ttname"><a href="class_f___resource.html#aed3b9a702966621e23df561d1a5bf396">F_Resource::SetPassword</a></div><div class="ttdeci">void SetPassword(const char *password)</div><div class="ttdoc">设置压缩包密码</div></div>
+<div class="ttc" id="aclass_f___resource_html_af1ee18ae90da2bba9d0c46d7f9c20f15"><div class="ttname"><a href="class_f___resource.html#af1ee18ae90da2bba9d0c46d7f9c20f15">F_Resource::GetSoundP</a></div><div class="ttdeci">Sound * GetSoundP(const std::string &amp;id)</div><div class="ttdoc">获取声音资源指针</div></div>
+<div class="ttc" id="aclass_f___resource_html_af806dcaddb9b04cfb5de0889c3e71716"><div class="ttname"><a href="class_f___resource.html#af806dcaddb9b04cfb5de0889c3e71716">F_Resource::AddResource</a></div><div class="ttdeci">void AddResource(const std::string &amp;id, ResourceType type, void *resource)</div><div class="ttdoc">加入资源</div></div>
+<div class="ttc" id="agroup___resource_html_ga8571efa4409be32e28abf3ea74a0dbb1"><div class="ttname"><a href="group___resource.html#ga8571efa4409be32e28abf3ea74a0dbb1">ResourceType</a></div><div class="ttdeci">ResourceType</div><div class="ttdoc">资源类型枚举</div><div class="ttdef"><b>定义</b> F_Resource.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

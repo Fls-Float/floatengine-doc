@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/Room.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">Room.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_object_8h_source.html">Object.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Room.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_room_8h__incl.png" border="0" usemap="#afloatengine_2_room_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_room_8h__dep__incl.png" border="0" usemap="#afloatengine_2_room_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="_room_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html">Room</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acd2f95d9e929d20ef66d25bcaf7ce65a" id="r_acd2f95d9e929d20ef66d25bcaf7ce65a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2f95d9e929d20ef66d25bcaf7ce65a">Room_Goto</a> (<a class="el" href="class_room.html">Room</a> *room)</td></tr>
+<tr class="separator:acd2f95d9e929d20ef66d25bcaf7ce65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131240dce3c079be43e8be488ece516e" id="r_a131240dce3c079be43e8be488ece516e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a131240dce3c079be43e8be488ece516e">Room_Set_Next</a> (<a class="el" href="class_room.html">Room</a> *nextRoom)</td></tr>
+<tr class="separator:a131240dce3c079be43e8be488ece516e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9600f6ffc7c4d17eb4086baef0fd229c" id="r_a9600f6ffc7c4d17eb4086baef0fd229c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9600f6ffc7c4d17eb4086baef0fd229c">Room_Goto_Next</a> (<a class="el" href="class_room.html">Room</a> *nextRoom)</td></tr>
+<tr class="separator:a9600f6ffc7c4d17eb4086baef0fd229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41e560f8e5906a7ca38a6760557e111" id="r_ad41e560f8e5906a7ca38a6760557e111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad41e560f8e5906a7ca38a6760557e111">Room_Reset</a> ()</td></tr>
+<tr class="separator:ad41e560f8e5906a7ca38a6760557e111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f84cf3b026d0cab093eb338ee11d07" id="r_ac7f84cf3b026d0cab093eb338ee11d07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room.html">Room</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7f84cf3b026d0cab093eb338ee11d07">Room_Get_Now</a> ()</td></tr>
+<tr class="separator:ac7f84cf3b026d0cab093eb338ee11d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0653f4c79743aae6ccce531d81dd6b52" id="r_a0653f4c79743aae6ccce531d81dd6b52"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_room.html">Room</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0653f4c79743aae6ccce531d81dd6b52">Room_Get_NowC</a> ()</td></tr>
+<tr class="separator:a0653f4c79743aae6ccce531d81dd6b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d69a9f9482c3fe88120f9c0a4fcdc09" id="r_a9d69a9f9482c3fe88120f9c0a4fcdc09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d69a9f9482c3fe88120f9c0a4fcdc09">Room_Is_Ready</a> ()</td></tr>
+<tr class="separator:a9d69a9f9482c3fe88120f9c0a4fcdc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac176c9db3afed2c6ea3053b1ecb01bcf" id="r_ac176c9db3afed2c6ea3053b1ecb01bcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac176c9db3afed2c6ea3053b1ecb01bcf">Room_Run_Now</a> (const char *event)</td></tr>
+<tr class="separator:ac176c9db3afed2c6ea3053b1ecb01bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae909de6a535a83f057e389f1bba1da9a" id="r_ae909de6a535a83f057e389f1bba1da9a"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:ae909de6a535a83f057e389f1bba1da9a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae909de6a535a83f057e389f1bba1da9a">Create_InstanceTemplate</a> (float x, float y, const char *name=&quot;NONE&quot;)</td></tr>
+<tr class="separator:ae909de6a535a83f057e389f1bba1da9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57eb5c312a310bd98b9cb640debabe3" id="r_ab57eb5c312a310bd98b9cb640debabe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57eb5c312a310bd98b9cb640debabe3">Create_Instance</a> (float x, float y, <a class="el" href="class_object.html">Object</a> *instance, const char *name)</td></tr>
+<tr class="separator:ab57eb5c312a310bd98b9cb640debabe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b62674863776f4f1c2b0e05f464d1f" id="r_a05b62674863776f4f1c2b0e05f464d1f"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a05b62674863776f4f1c2b0e05f464d1f"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a05b62674863776f4f1c2b0e05f464d1f">Create_InstanceTemplate</a> (const char *name=&quot;NONE&quot;)</td></tr>
+<tr class="separator:a05b62674863776f4f1c2b0e05f464d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6b0a26bde9d6dc146c8120dc4a9a03" id="r_a4c6b0a26bde9d6dc146c8120dc4a9a03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c6b0a26bde9d6dc146c8120dc4a9a03">Create_Instance</a> (<a class="el" href="class_object.html">Object</a> *instance, const char *name)</td></tr>
+<tr class="separator:a4c6b0a26bde9d6dc146c8120dc4a9a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d35f3f392c1ff4ee8894742fa5ae5a" id="r_ac7d35f3f392c1ff4ee8894742fa5ae5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7d35f3f392c1ff4ee8894742fa5ae5a">Destroy_Instance</a> (const char *name, int num=0)</td></tr>
+<tr class="separator:ac7d35f3f392c1ff4ee8894742fa5ae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad434efd260742d74675e2bd47414e094" id="r_ad434efd260742d74675e2bd47414e094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad434efd260742d74675e2bd47414e094">Destroy_Instance</a> (int id)</td></tr>
+<tr class="separator:ad434efd260742d74675e2bd47414e094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e812071442b6bea0865e69b0a976ef" id="r_ac6e812071442b6bea0865e69b0a976ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e812071442b6bea0865e69b0a976ef">IsExist_Instance</a> (const char *name)</td></tr>
+<tr class="separator:ac6e812071442b6bea0865e69b0a976ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354c5429586e966d35bd2a1748817881" id="r_a354c5429586e966d35bd2a1748817881"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a354c5429586e966d35bd2a1748817881">IsExist_Instance</a> (int id)</td></tr>
+<tr class="separator:a354c5429586e966d35bd2a1748817881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafffca082d2e0a1a6d2c7e6bcc8e52b" id="r_acafffca082d2e0a1a6d2c7e6bcc8e52b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acafffca082d2e0a1a6d2c7e6bcc8e52b">Count_Instance</a> (const char *name)</td></tr>
+<tr class="separator:acafffca082d2e0a1a6d2c7e6bcc8e52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284679ce7daca918027854219f28530e" id="r_a284679ce7daca918027854219f28530e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a284679ce7daca918027854219f28530e">Count_Instance</a> (int id)</td></tr>
+<tr class="separator:a284679ce7daca918027854219f28530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a84b564560cbce606c217d96a9dade7" id="r_a1a84b564560cbce606c217d96a9dade7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a84b564560cbce606c217d96a9dade7">Count_Instance</a> ()</td></tr>
+<tr class="separator:a1a84b564560cbce606c217d96a9dade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ddbff6f901968ee2e6c62fde554b5e" id="r_a99ddbff6f901968ee2e6c62fde554b5e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ddbff6f901968ee2e6c62fde554b5e">Get_Instance_Name</a> (int id)</td></tr>
+<tr class="separator:a99ddbff6f901968ee2e6c62fde554b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a346afb786242d3f27bf4e8b9c38249" id="r_a7a346afb786242d3f27bf4e8b9c38249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a346afb786242d3f27bf4e8b9c38249">Show_Instance_Info</a> ()</td></tr>
+<tr class="separator:a7a346afb786242d3f27bf4e8b9c38249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a1a84b564560cbce606c217d96a9dade7" name="a1a84b564560cbce606c217d96a9dade7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a84b564560cbce606c217d96a9dade7">&#9670;&#160;</a></span>Count_Instance() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Count_Instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acafffca082d2e0a1a6d2c7e6bcc8e52b" name="acafffca082d2e0a1a6d2c7e6bcc8e52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafffca082d2e0a1a6d2c7e6bcc8e52b">&#9670;&#160;</a></span>Count_Instance() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Count_Instance </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a284679ce7daca918027854219f28530e" name="a284679ce7daca918027854219f28530e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284679ce7daca918027854219f28530e">&#9670;&#160;</a></span>Count_Instance() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Count_Instance </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab57eb5c312a310bd98b9cb640debabe3" name="ab57eb5c312a310bd98b9cb640debabe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57eb5c312a310bd98b9cb640debabe3">&#9670;&#160;</a></span>Create_Instance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_object.html">Object</a> * Create_Instance </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>instance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c6b0a26bde9d6dc146c8120dc4a9a03" name="a4c6b0a26bde9d6dc146c8120dc4a9a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6b0a26bde9d6dc146c8120dc4a9a03">&#9670;&#160;</a></span>Create_Instance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_object.html">Object</a> * Create_Instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>instance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05b62674863776f4f1c2b0e05f464d1f" name="a05b62674863776f4f1c2b0e05f464d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b62674863776f4f1c2b0e05f464d1f">&#9670;&#160;</a></span>Create_InstanceTemplate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Create_InstanceTemplate </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;NONE&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_room_8h_a05b62674863776f4f1c2b0e05f464d1f_cgraph.png" border="0" usemap="#a_room_8h_a05b62674863776f4f1c2b0e05f464d1f_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae909de6a535a83f057e389f1bba1da9a" name="ae909de6a535a83f057e389f1bba1da9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae909de6a535a83f057e389f1bba1da9a">&#9670;&#160;</a></span>Create_InstanceTemplate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Create_InstanceTemplate </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;NONE&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_room_8h_ae909de6a535a83f057e389f1bba1da9a_cgraph.png" border="0" usemap="#a_room_8h_ae909de6a535a83f057e389f1bba1da9a_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ac7d35f3f392c1ff4ee8894742fa5ae5a" name="ac7d35f3f392c1ff4ee8894742fa5ae5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d35f3f392c1ff4ee8894742fa5ae5a">&#9670;&#160;</a></span>Destroy_Instance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Destroy_Instance </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad434efd260742d74675e2bd47414e094" name="ad434efd260742d74675e2bd47414e094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad434efd260742d74675e2bd47414e094">&#9670;&#160;</a></span>Destroy_Instance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Destroy_Instance </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99ddbff6f901968ee2e6c62fde554b5e" name="a99ddbff6f901968ee2e6c62fde554b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ddbff6f901968ee2e6c62fde554b5e">&#9670;&#160;</a></span>Get_Instance_Name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Get_Instance_Name </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6e812071442b6bea0865e69b0a976ef" name="ac6e812071442b6bea0865e69b0a976ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e812071442b6bea0865e69b0a976ef">&#9670;&#160;</a></span>IsExist_Instance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsExist_Instance </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a354c5429586e966d35bd2a1748817881" name="a354c5429586e966d35bd2a1748817881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354c5429586e966d35bd2a1748817881">&#9670;&#160;</a></span>IsExist_Instance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsExist_Instance </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7f84cf3b026d0cab093eb338ee11d07" name="ac7f84cf3b026d0cab093eb338ee11d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f84cf3b026d0cab093eb338ee11d07">&#9670;&#160;</a></span>Room_Get_Now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room.html">Room</a> * Room_Get_Now </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_room_8h_ac7f84cf3b026d0cab093eb338ee11d07_icgraph.png" border="0" usemap="#a_room_8h_ac7f84cf3b026d0cab093eb338ee11d07_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a0653f4c79743aae6ccce531d81dd6b52" name="a0653f4c79743aae6ccce531d81dd6b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0653f4c79743aae6ccce531d81dd6b52">&#9670;&#160;</a></span>Room_Get_NowC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_room.html">Room</a> * Room_Get_NowC </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd2f95d9e929d20ef66d25bcaf7ce65a" name="acd2f95d9e929d20ef66d25bcaf7ce65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2f95d9e929d20ef66d25bcaf7ce65a">&#9670;&#160;</a></span>Room_Goto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room_Goto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_room.html">Room</a> *</td>          <td class="paramname"><span class="paramname"><em>room</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9600f6ffc7c4d17eb4086baef0fd229c" name="a9600f6ffc7c4d17eb4086baef0fd229c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9600f6ffc7c4d17eb4086baef0fd229c">&#9670;&#160;</a></span>Room_Goto_Next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room_Goto_Next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_room.html">Room</a> *</td>          <td class="paramname"><span class="paramname"><em>nextRoom</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d69a9f9482c3fe88120f9c0a4fcdc09" name="a9d69a9f9482c3fe88120f9c0a4fcdc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d69a9f9482c3fe88120f9c0a4fcdc09">&#9670;&#160;</a></span>Room_Is_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room_Is_Ready </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad41e560f8e5906a7ca38a6760557e111" name="ad41e560f8e5906a7ca38a6760557e111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41e560f8e5906a7ca38a6760557e111">&#9670;&#160;</a></span>Room_Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room_Reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac176c9db3afed2c6ea3053b1ecb01bcf" name="ac176c9db3afed2c6ea3053b1ecb01bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac176c9db3afed2c6ea3053b1ecb01bcf">&#9670;&#160;</a></span>Room_Run_Now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Room_Run_Now </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a131240dce3c079be43e8be488ece516e" name="a131240dce3c079be43e8be488ece516e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131240dce3c079be43e8be488ece516e">&#9670;&#160;</a></span>Room_Set_Next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room_Set_Next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_room.html">Room</a> *</td>          <td class="paramname"><span class="paramname"><em>nextRoom</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a346afb786242d3f27bf4e8b9c38249" name="a7a346afb786242d3f27bf4e8b9c38249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a346afb786242d3f27bf4e8b9c38249">&#9670;&#160;</a></span>Show_Instance_Info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Show_Instance_Info </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

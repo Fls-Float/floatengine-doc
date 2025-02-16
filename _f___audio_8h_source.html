@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/F_Audio.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">F_Audio.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_f___audio_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_enum_8h.html">Enum.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_f___audio.html">   27</a></span><span class="keyword">class </span><a class="code hl_function" href="class_f___audio.html#a8fc0dd734d66aa6f349300a685b7f56f">F_Audio</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_enumeration" href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a> m_Audio_Mode; <span class="comment">// 1 -- sound,2 -- music...</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Sound m_sound;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Music m_music;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">float</span> x; <span class="comment">// 声源x</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">float</span> y; <span class="comment">// 声源y</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">float</span> target_direction;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Vector2 target;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> start_direction_mode;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_f___audio.html#a8fc0dd734d66aa6f349300a685b7f56f">   40</a></span>    <a class="code hl_function" href="class_f___audio.html#a8fc0dd734d66aa6f349300a685b7f56f">F_Audio</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_f___audio.html#aef0a8d3fa62a0a0418d6b58c30c241b5">   46</a></span>    <a class="code hl_function" href="class_f___audio.html#aef0a8d3fa62a0a0418d6b58c30c241b5">F_Audio</a>(<a class="code hl_enumeration" href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a> audio_mode);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_f___audio.html#a1d3bc3631175315feb648f6d784ac2c8">   53</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a1d3bc3631175315feb648f6d784ac2c8">LoadFromFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <a class="code hl_enumeration" href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a> am);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_f___audio.html#add0fcec451708aeaabeb07da0f8147a7">   59</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#add0fcec451708aeaabeb07da0f8147a7">LoadFromSound</a>(Sound snd);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_f___audio.html#ab70e0604551fa4e5cd4dc217bda6e051">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#ab70e0604551fa4e5cd4dc217bda6e051">LoadFromMusic</a>(Music mus);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_f___audio.html#a2d05b459d3293e5b9901de163d42557e">   71</a></span>    Sound <a class="code hl_function" href="class_f___audio.html#a2d05b459d3293e5b9901de163d42557e">GetSound</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_f___audio.html#aef7b0ac991fade437b55f5eaf9c56252">   77</a></span>    Music <a class="code hl_function" href="class_f___audio.html#aef7b0ac991fade437b55f5eaf9c56252">GetMusic</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_f___audio.html#aa9066e57627239732bea822d014714de">   83</a></span>    <a class="code hl_enumeration" href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a> <a class="code hl_function" href="class_f___audio.html#aa9066e57627239732bea822d014714de">GetAudioMode</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_f___audio.html#a1062aaa1e869634ea3c193036e93bd5a">   90</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f___audio.html#a1062aaa1e869634ea3c193036e93bd5a">IsTheAudioMode</a>(<a class="code hl_enumeration" href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a> am);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_f___audio.html#a670f2a46111080e45f5ba058ff7d677b">   96</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a670f2a46111080e45f5ba058ff7d677b">SetX</a>(<span class="keywordtype">float</span> _x);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_f___audio.html#a062b3a230da50268c4ff718250d9b6d6">  102</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a062b3a230da50268c4ff718250d9b6d6">SetY</a>(<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_f___audio.html#a9854a8772c720b8cb6434cced1afc413">  108</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a9854a8772c720b8cb6434cced1afc413">SetPos</a>(Vector2 pos);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_f___audio.html#a516774cd526067d20f551b0b59142c21">  115</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a516774cd526067d20f551b0b59142c21">SetTarget</a>(<span class="keywordtype">float</span> _x_target, <span class="keywordtype">float</span> _y_target);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_f___audio.html#abd1fec830ec0a841121eda0e36670846">  121</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#abd1fec830ec0a841121eda0e36670846">SetTarget</a>(Vector2 _target);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_f___audio.html#a6492163f3bf9fb6695c1a5053524788d">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a6492163f3bf9fb6695c1a5053524788d">SetTargetDirection</a>(<span class="keywordtype">float</span> dir);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_f___audio.html#a24155e9ebb669780de393ef71bd1d3ac">  132</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a24155e9ebb669780de393ef71bd1d3ac">ResetAudioMode</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="class_f___audio.html#a088bc49a96ef145d286dcd265cbde6f7">  137</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f___audio.html#a088bc49a96ef145d286dcd265cbde6f7">FlushAll</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>};</div>
+</div>
+<div class="ttc" id="a_enum_8h_html"><div class="ttname"><a href="_enum_8h.html">Enum.h</a></div><div class="ttdoc">枚举和常量定义</div></div>
+<div class="ttc" id="aclass_f___audio_html_a062b3a230da50268c4ff718250d9b6d6"><div class="ttname"><a href="class_f___audio.html#a062b3a230da50268c4ff718250d9b6d6">F_Audio::SetY</a></div><div class="ttdeci">void SetY(float _y)</div><div class="ttdoc">设置声源y坐标</div></div>
+<div class="ttc" id="aclass_f___audio_html_a088bc49a96ef145d286dcd265cbde6f7"><div class="ttname"><a href="class_f___audio.html#a088bc49a96ef145d286dcd265cbde6f7">F_Audio::FlushAll</a></div><div class="ttdeci">void FlushAll()</div><div class="ttdoc">刷新音频</div></div>
+<div class="ttc" id="aclass_f___audio_html_a1062aaa1e869634ea3c193036e93bd5a"><div class="ttname"><a href="class_f___audio.html#a1062aaa1e869634ea3c193036e93bd5a">F_Audio::IsTheAudioMode</a></div><div class="ttdeci">bool IsTheAudioMode(AudioMode am)</div><div class="ttdoc">判断音频模式是否匹配</div></div>
+<div class="ttc" id="aclass_f___audio_html_a1d3bc3631175315feb648f6d784ac2c8"><div class="ttname"><a href="class_f___audio.html#a1d3bc3631175315feb648f6d784ac2c8">F_Audio::LoadFromFile</a></div><div class="ttdeci">void LoadFromFile(const char *filename, AudioMode am)</div><div class="ttdoc">从文件加载音频</div></div>
+<div class="ttc" id="aclass_f___audio_html_a24155e9ebb669780de393ef71bd1d3ac"><div class="ttname"><a href="class_f___audio.html#a24155e9ebb669780de393ef71bd1d3ac">F_Audio::ResetAudioMode</a></div><div class="ttdeci">void ResetAudioMode()</div><div class="ttdoc">重置音频模式</div></div>
+<div class="ttc" id="aclass_f___audio_html_a2d05b459d3293e5b9901de163d42557e"><div class="ttname"><a href="class_f___audio.html#a2d05b459d3293e5b9901de163d42557e">F_Audio::GetSound</a></div><div class="ttdeci">Sound GetSound()</div><div class="ttdoc">获取Sound对象</div></div>
+<div class="ttc" id="aclass_f___audio_html_a516774cd526067d20f551b0b59142c21"><div class="ttname"><a href="class_f___audio.html#a516774cd526067d20f551b0b59142c21">F_Audio::SetTarget</a></div><div class="ttdeci">void SetTarget(float _x_target, float _y_target)</div><div class="ttdoc">设置目标坐标</div></div>
+<div class="ttc" id="aclass_f___audio_html_a6492163f3bf9fb6695c1a5053524788d"><div class="ttname"><a href="class_f___audio.html#a6492163f3bf9fb6695c1a5053524788d">F_Audio::SetTargetDirection</a></div><div class="ttdeci">void SetTargetDirection(float dir)</div><div class="ttdoc">设置声源方向</div></div>
+<div class="ttc" id="aclass_f___audio_html_a670f2a46111080e45f5ba058ff7d677b"><div class="ttname"><a href="class_f___audio.html#a670f2a46111080e45f5ba058ff7d677b">F_Audio::SetX</a></div><div class="ttdeci">void SetX(float _x)</div><div class="ttdoc">设置声源x坐标</div></div>
+<div class="ttc" id="aclass_f___audio_html_a8fc0dd734d66aa6f349300a685b7f56f"><div class="ttname"><a href="class_f___audio.html#a8fc0dd734d66aa6f349300a685b7f56f">F_Audio::F_Audio</a></div><div class="ttdeci">F_Audio()</div><div class="ttdoc">默认构造函数</div></div>
+<div class="ttc" id="aclass_f___audio_html_a9854a8772c720b8cb6434cced1afc413"><div class="ttname"><a href="class_f___audio.html#a9854a8772c720b8cb6434cced1afc413">F_Audio::SetPos</a></div><div class="ttdeci">void SetPos(Vector2 pos)</div><div class="ttdoc">设置声源坐标</div></div>
+<div class="ttc" id="aclass_f___audio_html_aa9066e57627239732bea822d014714de"><div class="ttname"><a href="class_f___audio.html#aa9066e57627239732bea822d014714de">F_Audio::GetAudioMode</a></div><div class="ttdeci">AudioMode GetAudioMode()</div><div class="ttdoc">获取音频模式</div></div>
+<div class="ttc" id="aclass_f___audio_html_ab70e0604551fa4e5cd4dc217bda6e051"><div class="ttname"><a href="class_f___audio.html#ab70e0604551fa4e5cd4dc217bda6e051">F_Audio::LoadFromMusic</a></div><div class="ttdeci">void LoadFromMusic(Music mus)</div><div class="ttdoc">从Music对象加载音频</div></div>
+<div class="ttc" id="aclass_f___audio_html_abd1fec830ec0a841121eda0e36670846"><div class="ttname"><a href="class_f___audio.html#abd1fec830ec0a841121eda0e36670846">F_Audio::SetTarget</a></div><div class="ttdeci">void SetTarget(Vector2 _target)</div><div class="ttdoc">设置目标坐标</div></div>
+<div class="ttc" id="aclass_f___audio_html_add0fcec451708aeaabeb07da0f8147a7"><div class="ttname"><a href="class_f___audio.html#add0fcec451708aeaabeb07da0f8147a7">F_Audio::LoadFromSound</a></div><div class="ttdeci">void LoadFromSound(Sound snd)</div><div class="ttdoc">从Sound对象加载音频</div></div>
+<div class="ttc" id="aclass_f___audio_html_aef0a8d3fa62a0a0418d6b58c30c241b5"><div class="ttname"><a href="class_f___audio.html#aef0a8d3fa62a0a0418d6b58c30c241b5">F_Audio::F_Audio</a></div><div class="ttdeci">F_Audio(AudioMode audio_mode)</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_f___audio_html_aef7b0ac991fade437b55f5eaf9c56252"><div class="ttname"><a href="class_f___audio.html#aef7b0ac991fade437b55f5eaf9c56252">F_Audio::GetMusic</a></div><div class="ttdeci">Music GetMusic()</div><div class="ttdoc">获取Music对象</div></div>
+<div class="ttc" id="agroup___enum_html_ga58652856ead53600842f67cd9151c647"><div class="ttname"><a href="group___enum.html#ga58652856ead53600842f67cd9151c647">AudioMode</a></div><div class="ttdeci">AudioMode</div><div class="ttdoc">音频模式枚举</div><div class="ttdef"><b>定义</b> Enum.h:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

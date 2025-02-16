@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: floatengine/Game.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_07d40f7940121a4803a40167e5a2663f.html">floatengine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Game.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_float_api_8h.html">FloatApi.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_f___console_8h.html">F_Console.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game.html">   29</a></span><span class="keyword">class </span><a class="code hl_function" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> _fps; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> _w; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">int</span> _h; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">char</span>* _title; </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> _load_icon; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> _load_icon_pre; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> _icon_number; </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Image _icons[100]; </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FilePathList _icon_path; </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Color background_col; </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_game.html#ad59df6562a58a614fda24622d3715b65">   45</a></span>    <a class="code hl_function" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_game.html#ad5915edfddca1628f167992e390620f0">   55</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ad5915edfddca1628f167992e390620f0">CreateWindow</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keywordtype">bool</span> debug = <span class="keyword">true</span>, <span class="keywordtype">int</span> flags = 8608);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_game.html#a01b6b8c4283bf9d854b2e92780423ab2">   61</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game.html#a01b6b8c4283bf9d854b2e92780423ab2">CanStart</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_game.html#ab692678c065a7086cdd581dd3e259e87">   67</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ab692678c065a7086cdd581dd3e259e87">Play</a>(<span class="keywordtype">int</span> fps);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_game.html#ae8552e14784aa845a72502d83a628785">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ae8552e14784aa845a72502d83a628785">SetFPS</a>(<span class="keywordtype">int</span> fps);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_game.html#af4b899469f639cbd2700279ef7fb83e8">   79</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_game.html#af4b899469f639cbd2700279ef7fb83e8">GetFPS</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_game.html#a3ef212137a5bf50d8185542503a4f882">   86</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#a3ef212137a5bf50d8185542503a4f882">Set_Window_Pos</a>(<span class="keywordtype">int</span> x = -1, <span class="keywordtype">int</span> y = -1);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_game.html#ab708fbb16aa39aef652c976e517f8266">   92</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ab708fbb16aa39aef652c976e517f8266">Set_Window_Opacity</a>(<span class="keywordtype">float</span> op);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_game.html#a0311a22e53ddb906aa1024efdced0e2f">   97</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#a0311a22e53ddb906aa1024efdced0e2f">Destroy</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_game.html#ad6a9e2ccef5bd51b9faf539e54fb2108">  103</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ad6a9e2ccef5bd51b9faf539e54fb2108">Set_Background_Color</a>(Color bk_col);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_game.html#aee74d367f287a93cccf1b34a7b9cb794">  109</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#aee74d367f287a93cccf1b34a7b9cb794">Set_Console_Icon</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_game.html#ad869950eb6015d49457519a03c02deea">  115</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#ad869950eb6015d49457519a03c02deea">Set_Title</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* title);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_game.html#a4e1f8dc0da46d001af5cf08d33d02b8a">  122</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#a4e1f8dc0da46d001af5cf08d33d02b8a">Set_Icons</a>(Image* icons, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_game.html#aea1240da7048947acb184e05b6ab4b39">  128</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#aea1240da7048947acb184e05b6ab4b39">Set_Icon</a>(Image icon);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_game.html#a86091325e9e4968342c6ea684b3078b4">  134</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#a86091325e9e4968342c6ea684b3078b4">Set_Icon_Pre</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_game.html#a0a6d2b9b3197b902677b3d6ce0edc618">  140</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game.html#a0a6d2b9b3197b902677b3d6ce0edc618">Set_Icons_Pre</a>(FilePathList filePathList);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>};</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="ttc" id="a_f___console_8h_html"><div class="ttname"><a href="_f___console_8h.html">F_Console.h</a></div><div class="ttdoc">控制台初始化</div></div>
+<div class="ttc" id="a_float_api_8h_html"><div class="ttname"><a href="_float_api_8h.html">FloatApi.h</a></div><div class="ttdoc">浮动引擎API</div></div>
+<div class="ttc" id="aclass_game_html_a01b6b8c4283bf9d854b2e92780423ab2"><div class="ttname"><a href="class_game.html#a01b6b8c4283bf9d854b2e92780423ab2">Game::CanStart</a></div><div class="ttdeci">bool CanStart()</div><div class="ttdoc">判断游戏是否可以开始</div></div>
+<div class="ttc" id="aclass_game_html_a0311a22e53ddb906aa1024efdced0e2f"><div class="ttname"><a href="class_game.html#a0311a22e53ddb906aa1024efdced0e2f">Game::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">销毁游戏窗口</div></div>
+<div class="ttc" id="aclass_game_html_a0a6d2b9b3197b902677b3d6ce0edc618"><div class="ttname"><a href="class_game.html#a0a6d2b9b3197b902677b3d6ce0edc618">Game::Set_Icons_Pre</a></div><div class="ttdeci">void Set_Icons_Pre(FilePathList filePathList)</div><div class="ttdoc">预加载窗口图标</div></div>
+<div class="ttc" id="aclass_game_html_a3ef212137a5bf50d8185542503a4f882"><div class="ttname"><a href="class_game.html#a3ef212137a5bf50d8185542503a4f882">Game::Set_Window_Pos</a></div><div class="ttdeci">void Set_Window_Pos(int x=-1, int y=-1)</div><div class="ttdoc">设置窗口坐标</div></div>
+<div class="ttc" id="aclass_game_html_a4e1f8dc0da46d001af5cf08d33d02b8a"><div class="ttname"><a href="class_game.html#a4e1f8dc0da46d001af5cf08d33d02b8a">Game::Set_Icons</a></div><div class="ttdeci">void Set_Icons(Image *icons, int n)</div><div class="ttdoc">设置窗口图标</div></div>
+<div class="ttc" id="aclass_game_html_a86091325e9e4968342c6ea684b3078b4"><div class="ttname"><a href="class_game.html#a86091325e9e4968342c6ea684b3078b4">Game::Set_Icon_Pre</a></div><div class="ttdeci">void Set_Icon_Pre(const char *filePath)</div><div class="ttdoc">预加载窗口图标</div></div>
+<div class="ttc" id="aclass_game_html_ab692678c065a7086cdd581dd3e259e87"><div class="ttname"><a href="class_game.html#ab692678c065a7086cdd581dd3e259e87">Game::Play</a></div><div class="ttdeci">void Play(int fps)</div><div class="ttdoc">开始游戏循环</div></div>
+<div class="ttc" id="aclass_game_html_ab708fbb16aa39aef652c976e517f8266"><div class="ttname"><a href="class_game.html#ab708fbb16aa39aef652c976e517f8266">Game::Set_Window_Opacity</a></div><div class="ttdeci">void Set_Window_Opacity(float op)</div><div class="ttdoc">设置窗口透明度</div></div>
+<div class="ttc" id="aclass_game_html_ad5915edfddca1628f167992e390620f0"><div class="ttname"><a href="class_game.html#ad5915edfddca1628f167992e390620f0">Game::CreateWindow</a></div><div class="ttdeci">void CreateWindow(int w, int h, const char *title, bool debug=true, int flags=8608)</div><div class="ttdoc">创建游戏窗口</div></div>
+<div class="ttc" id="aclass_game_html_ad59df6562a58a614fda24622d3715b65"><div class="ttname"><a href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a></div><div class="ttdeci">Game()</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclass_game_html_ad6a9e2ccef5bd51b9faf539e54fb2108"><div class="ttname"><a href="class_game.html#ad6a9e2ccef5bd51b9faf539e54fb2108">Game::Set_Background_Color</a></div><div class="ttdeci">void Set_Background_Color(Color bk_col)</div><div class="ttdoc">设置背景颜色</div></div>
+<div class="ttc" id="aclass_game_html_ad869950eb6015d49457519a03c02deea"><div class="ttname"><a href="class_game.html#ad869950eb6015d49457519a03c02deea">Game::Set_Title</a></div><div class="ttdeci">void Set_Title(const char *title)</div><div class="ttdoc">设置窗口标题</div></div>
+<div class="ttc" id="aclass_game_html_ae8552e14784aa845a72502d83a628785"><div class="ttname"><a href="class_game.html#ae8552e14784aa845a72502d83a628785">Game::SetFPS</a></div><div class="ttdeci">void SetFPS(int fps)</div><div class="ttdoc">设置游戏帧率</div></div>
+<div class="ttc" id="aclass_game_html_aea1240da7048947acb184e05b6ab4b39"><div class="ttname"><a href="class_game.html#aea1240da7048947acb184e05b6ab4b39">Game::Set_Icon</a></div><div class="ttdeci">void Set_Icon(Image icon)</div><div class="ttdoc">设置窗口图标</div></div>
+<div class="ttc" id="aclass_game_html_aee74d367f287a93cccf1b34a7b9cb794"><div class="ttname"><a href="class_game.html#aee74d367f287a93cccf1b34a7b9cb794">Game::Set_Console_Icon</a></div><div class="ttdeci">void Set_Console_Icon(int id)</div><div class="ttdoc">设置控制台图标</div></div>
+<div class="ttc" id="aclass_game_html_af4b899469f639cbd2700279ef7fb83e8"><div class="ttname"><a href="class_game.html#af4b899469f639cbd2700279ef7fb83e8">Game::GetFPS</a></div><div class="ttdeci">int GetFPS() const</div><div class="ttdoc">获取游戏帧率</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

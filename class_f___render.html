@@ -1,0 +1,1905 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FloatEngine: F_Render类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FloatEngine
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_f___render-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">F_Render类 参考<div class="ingroups"><a class="el" href="group___float_api.html">浮动引擎模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供渲染功能  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_float_api_8h_source.html">FloatApi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a7b8f8a9d71cce3a48a3fa30d47811122" id="r_a7b8f8a9d71cce3a48a3fa30d47811122"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b8f8a9d71cce3a48a3fa30d47811122">Draw_Set_Line_Thick</a> (float thick)</td></tr>
+<tr class="memdesc:a7b8f8a9d71cce3a48a3fa30d47811122"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置线条粗细  <br /></td></tr>
+<tr class="separator:a7b8f8a9d71cce3a48a3fa30d47811122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecd18666ee969953728222e8baead2b" id="r_a9ecd18666ee969953728222e8baead2b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ecd18666ee969953728222e8baead2b">Draw_Sprite_Ex</a> (struct Texture *img, int ind, float x, float y, float x_scale, float y_scale, float x_origin, float y_origin, float angle, float alpha, struct Color col)</td></tr>
+<tr class="memdesc:a9ecd18666ee969953728222e8baead2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制精灵  <br /></td></tr>
+<tr class="separator:a9ecd18666ee969953728222e8baead2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1c4e59aca5058a4817685b1408f066" id="r_a6e1c4e59aca5058a4817685b1408f066"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e1c4e59aca5058a4817685b1408f066">Draw_Text_Ex</a> (struct Font font, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float size, struct Color col, float alpha=1.0f)</td></tr>
+<tr class="memdesc:a6e1c4e59aca5058a4817685b1408f066"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制文本  <br /></td></tr>
+<tr class="separator:a6e1c4e59aca5058a4817685b1408f066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a4100c322c4607f9f013013ccb9f57" id="r_ab4a4100c322c4607f9f013013ccb9f57"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a4100c322c4607f9f013013ccb9f57">Draw_Shape</a> (<a class="el" href="class_f___shape.html">F_Shape</a> shape, struct Color col)</td></tr>
+<tr class="memdesc:ab4a4100c322c4607f9f013013ccb9f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制形状  <br /></td></tr>
+<tr class="separator:ab4a4100c322c4607f9f013013ccb9f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a576384f2ec77a9907599eccdc5f068" id="r_a0a576384f2ec77a9907599eccdc5f068"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a576384f2ec77a9907599eccdc5f068">Draw_Rectangle</a> (<a class="el" href="class_f___rectangle.html">F_Rectangle</a> rect, struct Color col)</td></tr>
+<tr class="memdesc:a0a576384f2ec77a9907599eccdc5f068"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制矩形  <br /></td></tr>
+<tr class="separator:a0a576384f2ec77a9907599eccdc5f068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781c7bb39deea0695711cbddd4a7ffdf" id="r_a781c7bb39deea0695711cbddd4a7ffdf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a781c7bb39deea0695711cbddd4a7ffdf">Draw_Circle</a> (<a class="el" href="class_f___circle.html">F_Circle</a> circle, struct Color col)</td></tr>
+<tr class="memdesc:a781c7bb39deea0695711cbddd4a7ffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制圆形  <br /></td></tr>
+<tr class="separator:a781c7bb39deea0695711cbddd4a7ffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766c09e2f0ea56a55be787d32f3d5a44" id="r_a766c09e2f0ea56a55be787d32f3d5a44"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a766c09e2f0ea56a55be787d32f3d5a44">Draw_Ellipse</a> (<a class="el" href="class_f___ellipse.html">F_Ellipse</a> ellipse, struct Color col)</td></tr>
+<tr class="memdesc:a766c09e2f0ea56a55be787d32f3d5a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制椭圆  <br /></td></tr>
+<tr class="separator:a766c09e2f0ea56a55be787d32f3d5a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd54df1c1239814a5a6e28ccc17b70c6" id="r_afd54df1c1239814a5a6e28ccc17b70c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd54df1c1239814a5a6e28ccc17b70c6">Draw_Shape_Fill</a> (<a class="el" href="class_f___shape.html">F_Shape</a> shape, struct Color col)</td></tr>
+<tr class="memdesc:afd54df1c1239814a5a6e28ccc17b70c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充形状  <br /></td></tr>
+<tr class="separator:afd54df1c1239814a5a6e28ccc17b70c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6646f4c18b8d0442496ef35dde82a96a" id="r_a6646f4c18b8d0442496ef35dde82a96a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6646f4c18b8d0442496ef35dde82a96a">Draw_Polygon</a> (<a class="el" href="class_f___polygon.html">F_Polygon</a> polygon, struct Color col)</td></tr>
+<tr class="memdesc:a6646f4c18b8d0442496ef35dde82a96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制多边形  <br /></td></tr>
+<tr class="separator:a6646f4c18b8d0442496ef35dde82a96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275d162f3db056bd6c32b00f14e72b8f" id="r_a275d162f3db056bd6c32b00f14e72b8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a275d162f3db056bd6c32b00f14e72b8f">Draw_Polygon</a> (std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt; points, Color color)</td></tr>
+<tr class="memdesc:a275d162f3db056bd6c32b00f14e72b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制多边形  <br /></td></tr>
+<tr class="separator:a275d162f3db056bd6c32b00f14e72b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f243464d7d0eb33b493dc48eb24b0" id="r_a825f243464d7d0eb33b493dc48eb24b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825f243464d7d0eb33b493dc48eb24b0">Draw_Triangle</a> (<a class="el" href="class_f___triangle.html">F_Triangle</a> triangle, struct Color col)</td></tr>
+<tr class="memdesc:a825f243464d7d0eb33b493dc48eb24b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制三角形  <br /></td></tr>
+<tr class="separator:a825f243464d7d0eb33b493dc48eb24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9242cb1bbc37f32bcca4b98bec4c179f" id="r_a9242cb1bbc37f32bcca4b98bec4c179f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9242cb1bbc37f32bcca4b98bec4c179f">Draw_Line</a> (<a class="el" href="class_f___line.html">F_Line</a> line, Color col)</td></tr>
+<tr class="memdesc:a9242cb1bbc37f32bcca4b98bec4c179f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制线条  <br /></td></tr>
+<tr class="separator:a9242cb1bbc37f32bcca4b98bec4c179f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6669276618b167ea6c4eeebd590fb4" id="r_aac6669276618b167ea6c4eeebd590fb4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac6669276618b167ea6c4eeebd590fb4">Draw_Text_Outline</a> (struct Font fnt, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float font_size, float thick, Color col, Color outline_color, float alpha=1.0f, bool fill_all=false)</td></tr>
+<tr class="memdesc:aac6669276618b167ea6c4eeebd590fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制带轮廓的文本  <br /></td></tr>
+<tr class="separator:aac6669276618b167ea6c4eeebd590fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f621ecb68840b780ec3bf6ed042b741" id="r_a7f621ecb68840b780ec3bf6ed042b741"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f621ecb68840b780ec3bf6ed042b741">Draw_Text_Shadow</a> (struct Font fnt, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float font_size, float thick, Color col, Color shadow_color, float alpha=1.0f, bool fill_all=false)</td></tr>
+<tr class="memdesc:a7f621ecb68840b780ec3bf6ed042b741"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制带阴影的文本  <br /></td></tr>
+<tr class="separator:a7f621ecb68840b780ec3bf6ed042b741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b359ed6cad375a7cfce1e2669f40d50" id="r_a3b359ed6cad375a7cfce1e2669f40d50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b359ed6cad375a7cfce1e2669f40d50">Draw_Text_Outline</a> (<a class="el" href="class_f___font.html">F_Font</a> fnt, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float font_size, float thick, Color col, Color outline_color, float alpha=1.0f, bool fill_all=false)</td></tr>
+<tr class="memdesc:a3b359ed6cad375a7cfce1e2669f40d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制带轮廓的文本  <br /></td></tr>
+<tr class="separator:a3b359ed6cad375a7cfce1e2669f40d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725495f0f314230142fc8a9c2d136fe8" id="r_a725495f0f314230142fc8a9c2d136fe8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a725495f0f314230142fc8a9c2d136fe8">Draw_Text_Shadow</a> (<a class="el" href="class_f___font.html">F_Font</a> fnt, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float font_size, float thick, Color col, Color shadow_color, float alpha=1.0f, bool fill_all=false)</td></tr>
+<tr class="memdesc:a725495f0f314230142fc8a9c2d136fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制带阴影的文本  <br /></td></tr>
+<tr class="separator:a725495f0f314230142fc8a9c2d136fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c9de9f22fd95235c5911d7f300be6b" id="r_a82c9de9f22fd95235c5911d7f300be6b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c9de9f22fd95235c5911d7f300be6b">Draw_Text_Ex</a> (<a class="el" href="class_f___font.html">F_Font</a> font, const char *text, float x, float y, float o_x, float o_y, float rot, float spacing, float size, struct Color col, float alpha=1.0f)</td></tr>
+<tr class="memdesc:a82c9de9f22fd95235c5911d7f300be6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制文本  <br /></td></tr>
+<tr class="separator:a82c9de9f22fd95235c5911d7f300be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0fc9aa9e43699bccdc416f5a0b9748" id="r_a2b0fc9aa9e43699bccdc416f5a0b9748"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0fc9aa9e43699bccdc416f5a0b9748">Draw_Text</a> (const char *text, float x, float y, float o_x, float o_y, float rot, float size, struct Color col, float alpha=1.0f)</td></tr>
+<tr class="memdesc:a2b0fc9aa9e43699bccdc416f5a0b9748"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制文本  <br /></td></tr>
+<tr class="separator:a2b0fc9aa9e43699bccdc416f5a0b9748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992c75865384f27c9b4ae85a1047cf46" id="r_a992c75865384f27c9b4ae85a1047cf46"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a992c75865384f27c9b4ae85a1047cf46">Draw_Line</a> (float x1, float y1, float x2, float y2, Color col)</td></tr>
+<tr class="memdesc:a992c75865384f27c9b4ae85a1047cf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制线条  <br /></td></tr>
+<tr class="separator:a992c75865384f27c9b4ae85a1047cf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766a6152065336d101aee4bdc8a155ab" id="r_a766a6152065336d101aee4bdc8a155ab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a766a6152065336d101aee4bdc8a155ab">Draw_Rectangle</a> (float x, float y, float w, float h, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:a766a6152065336d101aee4bdc8a155ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制矩形  <br /></td></tr>
+<tr class="separator:a766a6152065336d101aee4bdc8a155ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3618af9b3fc8bc8a7775967ec687df8" id="r_ab3618af9b3fc8bc8a7775967ec687df8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3618af9b3fc8bc8a7775967ec687df8">Draw_Rectangle</a> (float x, float y, float w, float h, float rot, <a class="el" href="class_f_vec2.html">FVec2</a> origin, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:ab3618af9b3fc8bc8a7775967ec687df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制旋转矩形  <br /></td></tr>
+<tr class="separator:ab3618af9b3fc8bc8a7775967ec687df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f7aa4acf33454a5a504a2faf95e340" id="r_aa8f7aa4acf33454a5a504a2faf95e340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f7aa4acf33454a5a504a2faf95e340">Draw_Circle</a> (float x, float y, float radius, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:aa8f7aa4acf33454a5a504a2faf95e340"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制圆形  <br /></td></tr>
+<tr class="separator:aa8f7aa4acf33454a5a504a2faf95e340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f9444bac153df973f392349740b9ec" id="r_a35f9444bac153df973f392349740b9ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35f9444bac153df973f392349740b9ec">Draw_Circle</a> (float x, float y, float radius, float startAngle, float angle, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:a35f9444bac153df973f392349740b9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制圆弧  <br /></td></tr>
+<tr class="separator:a35f9444bac153df973f392349740b9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92da6e276b932b67f7960387e4f85eca" id="r_a92da6e276b932b67f7960387e4f85eca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92da6e276b932b67f7960387e4f85eca">Draw_Ellipse</a> (float x, float y, float a, float b, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:a92da6e276b932b67f7960387e4f85eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制椭圆  <br /></td></tr>
+<tr class="separator:a92da6e276b932b67f7960387e4f85eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44433633d655e42e9768ba7d9c628501" id="r_a44433633d655e42e9768ba7d9c628501"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44433633d655e42e9768ba7d9c628501">Draw_Triangle</a> (float x1, float y1, float x2, float y2, float x3, float y3, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:a44433633d655e42e9768ba7d9c628501"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制三角形  <br /></td></tr>
+<tr class="separator:a44433633d655e42e9768ba7d9c628501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0166d87d758d01a51ed177e0c754d93" id="r_af0166d87d758d01a51ed177e0c754d93"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0166d87d758d01a51ed177e0c754d93">Draw_Triangle</a> (float x1, float y1, float x2, float y2, float x3, float y3, float rot, Color col, bool line_mode=false)</td></tr>
+<tr class="memdesc:af0166d87d758d01a51ed177e0c754d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制旋转三角形  <br /></td></tr>
+<tr class="separator:af0166d87d758d01a51ed177e0c754d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供渲染功能 </p>
+<dl class="section note"><dt>注解</dt><dd>使用示例： <div class="fragment"><div class="line"><a class="code hl_function" href="#a9ecd18666ee969953728222e8baead2b">F_Render::Draw_Sprite_Ex</a>(&amp;texture, 0, 100, 100, 1.0f, 1.0f, 0.5f, 0.5f, 0.0f, 1.0f, RED);</div>
+<div class="ttc" id="aclass_f___render_html_a9ecd18666ee969953728222e8baead2b"><div class="ttname"><a href="#a9ecd18666ee969953728222e8baead2b">F_Render::Draw_Sprite_Ex</a></div><div class="ttdeci">static void Draw_Sprite_Ex(struct Texture *img, int ind, float x, float y, float x_scale, float y_scale, float x_origin, float y_origin, float angle, float alpha, struct Color col)</div><div class="ttdoc">绘制精灵</div></div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a781c7bb39deea0695711cbddd4a7ffdf" name="a781c7bb39deea0695711cbddd4a7ffdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781c7bb39deea0695711cbddd4a7ffdf">&#9670;&#160;</a></span>Draw_Circle() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Circle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___circle.html">F_Circle</a></td>          <td class="paramname"><span class="paramname"><em>circle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制圆形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">circle</td><td>圆形对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8f7aa4acf33454a5a504a2faf95e340" name="aa8f7aa4acf33454a5a504a2faf95e340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f7aa4acf33454a5a504a2faf95e340">&#9670;&#160;</a></span>Draw_Circle() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Circle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制圆形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">radius</td><td>半径 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35f9444bac153df973f392349740b9ec" name="a35f9444bac153df973f392349740b9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f9444bac153df973f392349740b9ec">&#9670;&#160;</a></span>Draw_Circle() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Circle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>startAngle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制圆弧 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">radius</td><td>半径 </td></tr>
+    <tr><td class="paramname">startAngle</td><td>起始角度 </td></tr>
+    <tr><td class="paramname">angle</td><td>角度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a766c09e2f0ea56a55be787d32f3d5a44" name="a766c09e2f0ea56a55be787d32f3d5a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766c09e2f0ea56a55be787d32f3d5a44">&#9670;&#160;</a></span>Draw_Ellipse() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Ellipse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___ellipse.html">F_Ellipse</a></td>          <td class="paramname"><span class="paramname"><em>ellipse</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制椭圆 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ellipse</td><td>椭圆对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92da6e276b932b67f7960387e4f85eca" name="a92da6e276b932b67f7960387e4f85eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92da6e276b932b67f7960387e4f85eca">&#9670;&#160;</a></span>Draw_Ellipse() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Ellipse </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制椭圆 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">a</td><td>长轴 </td></tr>
+    <tr><td class="paramname">b</td><td>短轴 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9242cb1bbc37f32bcca4b98bec4c179f" name="a9242cb1bbc37f32bcca4b98bec4c179f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9242cb1bbc37f32bcca4b98bec4c179f">&#9670;&#160;</a></span>Draw_Line() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___line.html">F_Line</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制线条 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>线条对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a992c75865384f27c9b4ae85a1047cf46" name="a992c75865384f27c9b4ae85a1047cf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992c75865384f27c9b4ae85a1047cf46">&#9670;&#160;</a></span>Draw_Line() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Line </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制线条 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>起点x坐标 </td></tr>
+    <tr><td class="paramname">y1</td><td>起点y坐标 </td></tr>
+    <tr><td class="paramname">x2</td><td>终点x坐标 </td></tr>
+    <tr><td class="paramname">y2</td><td>终点y坐标 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6646f4c18b8d0442496ef35dde82a96a" name="a6646f4c18b8d0442496ef35dde82a96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6646f4c18b8d0442496ef35dde82a96a">&#9670;&#160;</a></span>Draw_Polygon() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Polygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___polygon.html">F_Polygon</a></td>          <td class="paramname"><span class="paramname"><em>polygon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制多边形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>多边形对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a275d162f3db056bd6c32b00f14e72b8f" name="a275d162f3db056bd6c32b00f14e72b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275d162f3db056bd6c32b00f14e72b8f">&#9670;&#160;</a></span>Draw_Polygon() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Polygon </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_f_vec2.html">FVec2</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制多边形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>多边形顶点 </td></tr>
+    <tr><td class="paramname">color</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a576384f2ec77a9907599eccdc5f068" name="a0a576384f2ec77a9907599eccdc5f068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a576384f2ec77a9907599eccdc5f068">&#9670;&#160;</a></span>Draw_Rectangle() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___rectangle.html">F_Rectangle</a></td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>矩形对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a766a6152065336d101aee4bdc8a155ab" name="a766a6152065336d101aee4bdc8a155ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766a6152065336d101aee4bdc8a155ab">&#9670;&#160;</a></span>Draw_Rectangle() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Rectangle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">w</td><td>宽度 </td></tr>
+    <tr><td class="paramname">h</td><td>高度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3618af9b3fc8bc8a7775967ec687df8" name="ab3618af9b3fc8bc8a7775967ec687df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3618af9b3fc8bc8a7775967ec687df8">&#9670;&#160;</a></span>Draw_Rectangle() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Rectangle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_vec2.html">FVec2</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制旋转矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">w</td><td>宽度 </td></tr>
+    <tr><td class="paramname">h</td><td>高度 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">origin</td><td>旋转原点 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b8f8a9d71cce3a48a3fa30d47811122" name="a7b8f8a9d71cce3a48a3fa30d47811122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8f8a9d71cce3a48a3fa30d47811122">&#9670;&#160;</a></span>Draw_Set_Line_Thick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Set_Line_Thick </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thick</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置线条粗细 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thick</td><td>粗细值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4a4100c322c4607f9f013013ccb9f57" name="ab4a4100c322c4607f9f013013ccb9f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a4100c322c4607f9f013013ccb9f57">&#9670;&#160;</a></span>Draw_Shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___shape.html">F_Shape</a></td>          <td class="paramname"><span class="paramname"><em>shape</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制形状 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>形状对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd54df1c1239814a5a6e28ccc17b70c6" name="afd54df1c1239814a5a6e28ccc17b70c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd54df1c1239814a5a6e28ccc17b70c6">&#9670;&#160;</a></span>Draw_Shape_Fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Shape_Fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___shape.html">F_Shape</a></td>          <td class="paramname"><span class="paramname"><em>shape</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>填充形状 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>形状对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ecd18666ee969953728222e8baead2b" name="a9ecd18666ee969953728222e8baead2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecd18666ee969953728222e8baead2b">&#9670;&#160;</a></span>Draw_Sprite_Ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Sprite_Ex </td>
+          <td>(</td>
+          <td class="paramtype">struct Texture *</td>          <td class="paramname"><span class="paramname"><em>img</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x_scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y_scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x_origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y_origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制精灵 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>图片纹理 </td></tr>
+    <tr><td class="paramname">ind</td><td>帧索引 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">x_scale</td><td>x轴缩放 </td></tr>
+    <tr><td class="paramname">y_scale</td><td>y轴缩放 </td></tr>
+    <tr><td class="paramname">x_origin</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">y_origin</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">angle</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b0fc9aa9e43699bccdc416f5a0b9748" name="a2b0fc9aa9e43699bccdc416f5a0b9748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0fc9aa9e43699bccdc416f5a0b9748">&#9670;&#160;</a></span>Draw_Text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82c9de9f22fd95235c5911d7f300be6b" name="a82c9de9f22fd95235c5911d7f300be6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c9de9f22fd95235c5911d7f300be6b">&#9670;&#160;</a></span>Draw_Text_Ex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Ex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___font.html">F_Font</a></td>          <td class="paramname"><span class="paramname"><em>font</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e1c4e59aca5058a4817685b1408f066" name="a6e1c4e59aca5058a4817685b1408f066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1c4e59aca5058a4817685b1408f066">&#9670;&#160;</a></span>Draw_Text_Ex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Ex </td>
+          <td>(</td>
+          <td class="paramtype">struct Font</td>          <td class="paramname"><span class="paramname"><em>font</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b359ed6cad375a7cfce1e2669f40d50" name="a3b359ed6cad375a7cfce1e2669f40d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b359ed6cad375a7cfce1e2669f40d50">&#9670;&#160;</a></span>Draw_Text_Outline() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Outline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___font.html">F_Font</a></td>          <td class="paramname"><span class="paramname"><em>fnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>outline_color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fill_all</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制带轮廓的文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fnt</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">thick</td><td>轮廓厚度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">outline_color</td><td>轮廓颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+    <tr><td class="paramname">fill_all</td><td>是否填充所有字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac6669276618b167ea6c4eeebd590fb4" name="aac6669276618b167ea6c4eeebd590fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6669276618b167ea6c4eeebd590fb4">&#9670;&#160;</a></span>Draw_Text_Outline() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Outline </td>
+          <td>(</td>
+          <td class="paramtype">struct Font</td>          <td class="paramname"><span class="paramname"><em>fnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>outline_color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fill_all</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制带轮廓的文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fnt</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">thick</td><td>轮廓厚度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">outline_color</td><td>轮廓颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+    <tr><td class="paramname">fill_all</td><td>是否填充所有字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a725495f0f314230142fc8a9c2d136fe8" name="a725495f0f314230142fc8a9c2d136fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725495f0f314230142fc8a9c2d136fe8">&#9670;&#160;</a></span>Draw_Text_Shadow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Shadow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___font.html">F_Font</a></td>          <td class="paramname"><span class="paramname"><em>fnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>shadow_color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fill_all</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制带阴影的文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fnt</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">thick</td><td>阴影厚度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">shadow_color</td><td>阴影颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+    <tr><td class="paramname">fill_all</td><td>是否填充所有字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f621ecb68840b780ec3bf6ed042b741" name="a7f621ecb68840b780ec3bf6ed042b741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f621ecb68840b780ec3bf6ed042b741">&#9670;&#160;</a></span>Draw_Text_Shadow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Text_Shadow </td>
+          <td>(</td>
+          <td class="paramtype">struct Font</td>          <td class="paramname"><span class="paramname"><em>fnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>spacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>font_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thick</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>shadow_color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fill_all</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制带阴影的文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fnt</td><td>字体 </td></tr>
+    <tr><td class="paramname">text</td><td>文本内容 </td></tr>
+    <tr><td class="paramname">x</td><td>x坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>y坐标 </td></tr>
+    <tr><td class="paramname">o_x</td><td>x轴原点 </td></tr>
+    <tr><td class="paramname">o_y</td><td>y轴原点 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">spacing</td><td>字符间距 </td></tr>
+    <tr><td class="paramname">font_size</td><td>字体大小 </td></tr>
+    <tr><td class="paramname">thick</td><td>阴影厚度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">shadow_color</td><td>阴影颜色 </td></tr>
+    <tr><td class="paramname">alpha</td><td>透明度 </td></tr>
+    <tr><td class="paramname">fill_all</td><td>是否填充所有字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a825f243464d7d0eb33b493dc48eb24b0" name="a825f243464d7d0eb33b493dc48eb24b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f243464d7d0eb33b493dc48eb24b0">&#9670;&#160;</a></span>Draw_Triangle() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f___triangle.html">F_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>triangle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制三角形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">triangle</td><td>三角形对象 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44433633d655e42e9768ba7d9c628501" name="a44433633d655e42e9768ba7d9c628501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44433633d655e42e9768ba7d9c628501">&#9670;&#160;</a></span>Draw_Triangle() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Triangle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制三角形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>顶点1 x坐标 </td></tr>
+    <tr><td class="paramname">y1</td><td>顶点1 y坐标 </td></tr>
+    <tr><td class="paramname">x2</td><td>顶点2 x坐标 </td></tr>
+    <tr><td class="paramname">y2</td><td>顶点2 y坐标 </td></tr>
+    <tr><td class="paramname">x3</td><td>顶点3 x坐标 </td></tr>
+    <tr><td class="paramname">y3</td><td>顶点3 y坐标 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0166d87d758d01a51ed177e0c754d93" name="af0166d87d758d01a51ed177e0c754d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0166d87d758d01a51ed177e0c754d93">&#9670;&#160;</a></span>Draw_Triangle() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void F_Render::Draw_Triangle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>line_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制旋转三角形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>顶点1 x坐标 </td></tr>
+    <tr><td class="paramname">y1</td><td>顶点1 y坐标 </td></tr>
+    <tr><td class="paramname">x2</td><td>顶点2 x坐标 </td></tr>
+    <tr><td class="paramname">y2</td><td>顶点2 y坐标 </td></tr>
+    <tr><td class="paramname">x3</td><td>顶点3 x坐标 </td></tr>
+    <tr><td class="paramname">y3</td><td>顶点3 y坐标 </td></tr>
+    <tr><td class="paramname">rot</td><td>旋转角度 </td></tr>
+    <tr><td class="paramname">col</td><td>颜色 </td></tr>
+    <tr><td class="paramname">line_mode</td><td>是否为线框模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>floatengine/<a class="el" href="_float_api_8h_source.html">FloatApi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
